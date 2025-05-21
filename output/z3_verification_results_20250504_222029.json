@@ -1,0 +1,55 @@
+{
+  "timestamp": "2025-05-04T22:20:29.173826",
+  "total_statements": 8,
+  "successful": 0,
+  "results": [
+    {
+      "statement": "A TCP segment has a sequence number.",
+      "timestamp": "2025-05-04T22:20:29.154493",
+      "success": false,
+      "error": "Error parsing assertion: Z3 declaration or constant expected"
+    },
+    {
+      "statement": "A SYN segment has a SYN flag.",
+      "timestamp": "2025-05-04T22:20:29.156004",
+      "success": false,
+      "error": "'Int'"
+    },
+    {
+      "statement": "An ACK segment has an ACK flag.",
+      "timestamp": "2025-05-04T22:20:29.157014",
+      "success": false,
+      "error": "'Int'"
+    },
+    {
+      "statement": "A TCP endpoint has a state.",
+      "timestamp": "2025-05-04T22:20:29.160012",
+      "success": false,
+      "error": "Error parsing assertion: Z3 declaration or constant expected"
+    },
+    {
+      "statement": "A TCP endpoint has a window size.",
+      "timestamp": "2025-05-04T22:20:29.163338",
+      "success": false,
+      "error": "Error parsing assertion: Z3 declaration or constant expected"
+    },
+    {
+      "statement": "A TCP segment has a source port.",
+      "timestamp": "2025-05-04T22:20:29.166699",
+      "success": false,
+      "error": "Error parsing assertion: Z3 declaration or constant expected"
+    },
+    {
+      "statement": "A TCP segment has a destination port.",
+      "timestamp": "2025-05-04T22:20:29.171050",
+      "success": false,
+      "error": "Error parsing assertion: Z3 declaration or constant expected"
+    },
+    {
+      "statement": "A TCP endpoint has a socket.",
+      "timestamp": "2025-05-04T22:20:29.173826",
+      "success": false,
+      "error": "Error parsing assertion: Z3 declaration or constant expected"
+    }
+  ]
+}

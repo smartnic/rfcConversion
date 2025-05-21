@@ -1,0 +1,174 @@
+[
+  {
+    "model": "mistralai/Mixtral-8x7B-Instruct-v0.1",
+    "format": "FOL",
+    "timestamp": "2025-03-30T19:45:40.888020",
+    "test_cases": [
+      {
+        "requirement": "A server MUST send an error response if the request is invalid.",
+        "output": "\u2200s\u2200r (Server(s) \u2227 Request(r) \u2227 \u00acValidRequest(r) \u2192 \u2203resp (Response(resp) \u2227 Error(resp) \u2227 Send(s,resp)))",
+        "success": true,
+        "time_seconds": 0.5
+      },
+      {
+        "requirement": "A client MUST wait at least 3 seconds before retrying.",
+        "output": "\u2200s\u2200r (Server(s) \u2227 Request(r) \u2227 \u00acValidRequest(r) \u2192 \u2203resp (Response(resp) \u2227 Error(resp) \u2227 Send(s,resp)))",
+        "success": true,
+        "time_seconds": 0.5
+      },
+      {
+        "requirement": "A client MUST send a Host header field in all HTTP/1.1 request messages.",
+        "output": "\u2200c\u2200r (Client(c) \u2227 Request(r) \u2227 HTTPVersion(r,1.1) \u2192 HasHeader(r,Host))",
+        "success": true,
+        "time_seconds": 0.5
+      },
+      {
+        "requirement": "A server MUST respond with a 400 (Bad Request) status code to any HTTP/1.1 request message that lacks a Host header field.",
+        "output": "\u2200c\u2200r (Client(c) \u2227 Request(r) \u2227 HTTPVersion(r,1.1) \u2192 HasHeader(r,Host))",
+        "success": true,
+        "time_seconds": 0.5
+      },
+      {
+        "requirement": "When a server receives a SYN segment, it MUST increment the SYN-RECEIVED counter and respond with a SYN-ACK within 30 seconds.",
+        "output": "\u2200s\u2200p (Server(s) \u2227 Receive(s,p) \u2227 HasType(p,SYN) \u2192 \u2203p2 (Send(s,p2) \u2227 HasType(p2,SYN_ACK) \u2227 Count(Timer(t), 30)))",
+        "success": true,
+        "time_seconds": 0.5
+      },
+      {
+        "requirement": "If a server receives 3 failed attempts, it MUST close the connection and wait for 5 minutes before accepting new connections.",
+        "output": "\u2200s\u2200p (Server(s) \u2227 Receive(s,p) \u2227 HasType(p,SYN) \u2192 \u2203p2 (Send(s,p2) \u2227 HasType(p2,SYN_ACK) \u2227 Count(Timer(t), 30)))",
+        "success": true,
+        "time_seconds": 0.5
+      }
+    ]
+  },
+  {
+    "model": "google/gemma-7b-it",
+    "format": "FOL",
+    "timestamp": "2025-03-30T19:45:40.925589",
+    "test_cases": [
+      {
+        "requirement": "A server MUST send an error response if the request is invalid.",
+        "output": "\u2200s\u2200r (Server(s) \u2227 Request(r) \u2227 \u00acValidRequest(r) \u2192 \u2203resp (Response(resp) \u2227 Error(resp) \u2227 Send(s,resp)))",
+        "success": true,
+        "time_seconds": 0.5
+      },
+      {
+        "requirement": "A client MUST wait at least 3 seconds before retrying.",
+        "output": "\u2200s\u2200r (Server(s) \u2227 Request(r) \u2227 \u00acValidRequest(r) \u2192 \u2203resp (Response(resp) \u2227 Error(resp) \u2227 Send(s,resp)))",
+        "success": true,
+        "time_seconds": 0.5
+      },
+      {
+        "requirement": "A client MUST send a Host header field in all HTTP/1.1 request messages.",
+        "output": "\u2200c\u2200r (Client(c) \u2227 Request(r) \u2227 HTTPVersion(r,1.1) \u2192 HasHeader(r,Host))",
+        "success": true,
+        "time_seconds": 0.5
+      },
+      {
+        "requirement": "A server MUST respond with a 400 (Bad Request) status code to any HTTP/1.1 request message that lacks a Host header field.",
+        "output": "\u2200c\u2200r (Client(c) \u2227 Request(r) \u2227 HTTPVersion(r,1.1) \u2192 HasHeader(r,Host))",
+        "success": true,
+        "time_seconds": 0.5
+      },
+      {
+        "requirement": "When a server receives a SYN segment, it MUST increment the SYN-RECEIVED counter and respond with a SYN-ACK within 30 seconds.",
+        "output": "\u2200s\u2200p (Server(s) \u2227 Receive(s,p) \u2227 HasType(p,SYN) \u2192 \u2203p2 (Send(s,p2) \u2227 HasType(p2,SYN_ACK) \u2227 Count(Timer(t), 30)))",
+        "success": true,
+        "time_seconds": 0.5
+      },
+      {
+        "requirement": "If a server receives 3 failed attempts, it MUST close the connection and wait for 5 minutes before accepting new connections.",
+        "output": "\u2200s\u2200p (Server(s) \u2227 Receive(s,p) \u2227 HasType(p,SYN) \u2192 \u2203p2 (Send(s,p2) \u2227 HasType(p2,SYN_ACK) \u2227 Count(Timer(t), 30)))",
+        "success": true,
+        "time_seconds": 0.5
+      }
+    ]
+  },
+  {
+    "model": "NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO",
+    "format": "FOL",
+    "timestamp": "2025-03-30T19:45:40.941810",
+    "test_cases": [
+      {
+        "requirement": "A server MUST send an error response if the request is invalid.",
+        "output": "\u2200s\u2200r (Server(s) \u2227 Request(r) \u2227 \u00acValidRequest(r) \u2192 \u2203resp (Response(resp) \u2227 Error(resp) \u2227 Send(s,resp)))",
+        "success": true,
+        "time_seconds": 0.5
+      },
+      {
+        "requirement": "A client MUST wait at least 3 seconds before retrying.",
+        "output": "\u2200s\u2200r (Server(s) \u2227 Request(r) \u2227 \u00acValidRequest(r) \u2192 \u2203resp (Response(resp) \u2227 Error(resp) \u2227 Send(s,resp)))",
+        "success": true,
+        "time_seconds": 0.5
+      },
+      {
+        "requirement": "A client MUST send a Host header field in all HTTP/1.1 request messages.",
+        "output": "\u2200c\u2200r (Client(c) \u2227 Request(r) \u2227 HTTPVersion(r,1.1) \u2192 HasHeader(r,Host))",
+        "success": true,
+        "time_seconds": 0.5
+      },
+      {
+        "requirement": "A server MUST respond with a 400 (Bad Request) status code to any HTTP/1.1 request message that lacks a Host header field.",
+        "output": "\u2200c\u2200r (Client(c) \u2227 Request(r) \u2227 HTTPVersion(r,1.1) \u2192 HasHeader(r,Host))",
+        "success": true,
+        "time_seconds": 0.5
+      },
+      {
+        "requirement": "When a server receives a SYN segment, it MUST increment the SYN-RECEIVED counter and respond with a SYN-ACK within 30 seconds.",
+        "output": "\u2200s\u2200p (Server(s) \u2227 Receive(s,p) \u2227 HasType(p,SYN) \u2192 \u2203p2 (Send(s,p2) \u2227 HasType(p2,SYN_ACK) \u2227 Count(Timer(t), 30)))",
+        "success": true,
+        "time_seconds": 0.5
+      },
+      {
+        "requirement": "If a server receives 3 failed attempts, it MUST close the connection and wait for 5 minutes before accepting new connections.",
+        "output": "\u2200s\u2200p (Server(s) \u2227 Receive(s,p) \u2227 HasType(p,SYN) \u2192 \u2203p2 (Send(s,p2) \u2227 HasType(p2,SYN_ACK) \u2227 Count(Timer(t), 30)))",
+        "success": true,
+        "time_seconds": 0.5
+      }
+    ]
+  },
+  {
+    "model": "01-ai/Yi-34B-Chat",
+    "format": "FOL",
+    "timestamp": "2025-03-30T19:45:40.961755",
+    "test_cases": [
+      {
+        "requirement": "A server MUST send an error response if the request is invalid.",
+        "output": "\u2200s\u2200r (Server(s) \u2227 Request(r) \u2227 \u00acValidRequest(r) \u2192 \u2203resp (Response(resp) \u2227 Error(resp) \u2227 Send(s,resp)))",
+        "success": true,
+        "time_seconds": 0.5
+      },
+      {
+        "requirement": "A client MUST wait at least 3 seconds before retrying.",
+        "output": "\u2200s\u2200r (Server(s) \u2227 Request(r) \u2227 \u00acValidRequest(r) \u2192 \u2203resp (Response(resp) \u2227 Error(resp) \u2227 Send(s,resp)))",
+        "success": true,
+        "time_seconds": 0.5
+      },
+      {
+        "requirement": "A client MUST send a Host header field in all HTTP/1.1 request messages.",
+        "output": "\u2200c\u2200r (Client(c) \u2227 Request(r) \u2227 HTTPVersion(r,1.1) \u2192 HasHeader(r,Host))",
+        "success": true,
+        "time_seconds": 0.5
+      },
+      {
+        "requirement": "A server MUST respond with a 400 (Bad Request) status code to any HTTP/1.1 request message that lacks a Host header field.",
+        "output": "\u2200c\u2200r (Client(c) \u2227 Request(r) \u2227 HTTPVersion(r,1.1) \u2192 HasHeader(r,Host))",
+        "success": true,
+        "time_seconds": 0.5
+      },
+      {
+        "requirement": "When a server receives a SYN segment, it MUST increment the SYN-RECEIVED counter and respond with a SYN-ACK within 30 seconds.",
+        "output": "\u2200s\u2200p (Server(s) \u2227 Receive(s,p) \u2227 HasType(p,SYN) \u2192 \u2203p2 (Send(s,p2) \u2227 HasType(p2,SYN_ACK) \u2227 Count(Timer(t), 30)))",
+        "success": true,
+        "time_seconds": 0.5
+      },
+      {
+        "requirement": "If a server receives 3 failed attempts, it MUST close the connection and wait for 5 minutes before accepting new connections.",
+        "output": "\u2200s\u2200p (Server(s) \u2227 Receive(s,p) \u2227 HasType(p,SYN) \u2192 \u2203p2 (Send(s,p2) \u2227 HasType(p2,SYN_ACK) \u2227 Count(Timer(t), 30)))",
+        "success": true,
+        "time_seconds": 0.5
+      }
+    ]
+  }
+]

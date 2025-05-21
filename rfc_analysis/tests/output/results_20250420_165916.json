@@ -1,0 +1,95 @@
+{
+  "timestamp": "2025-04-20T16:59:16.143357",
+  "total_statements": 8,
+  "successful": 8,
+  "results": [
+    {
+      "statement": {
+        "id": 1,
+        "statement": "The sequence number field is a 32-bit number that identifies the first data octet in this segment."
+      },
+      "timestamp": "2025-04-20T16:57:57.001164",
+      "success": true,
+      "fol_conversion": "",
+      "predicates_used": [],
+      "explanation": ""
+    },
+    {
+      "statement": {
+        "id": 2,
+        "statement": "The urgent pointer is interpreted only if the URG control bit is set."
+      },
+      "timestamp": "2025-04-20T16:58:08.369694",
+      "success": true,
+      "fol_conversion": "",
+      "predicates_used": [],
+      "explanation": ""
+    },
+    {
+      "statement": {
+        "id": 3,
+        "statement": "A TCP connection is established by the exchange of a SYN, a SYN-ACK, and an ACK."
+      },
+      "timestamp": "2025-04-20T16:58:19.645696",
+      "success": true,
+      "fol_conversion": "",
+      "predicates_used": [],
+      "explanation": ""
+    },
+    {
+      "statement": {
+        "id": 4,
+        "statement": "If no acknowledgment is received before the timer expires, the segment is retransmitted."
+      },
+      "timestamp": "2025-04-20T16:58:30.996387",
+      "success": true,
+      "fol_conversion": "",
+      "predicates_used": [],
+      "explanation": ""
+    },
+    {
+      "statement": {
+        "id": 5,
+        "statement": "The window field is a 16-bit field that specifies the size of the receive window."
+      },
+      "timestamp": "2025-04-20T16:58:42.313820",
+      "success": true,
+      "fol_conversion": "",
+      "predicates_used": [],
+      "explanation": ""
+    },
+    {
+      "statement": {
+        "id": 6,
+        "statement": "A TCP endpoint in LISTEN state must ignore RST segments."
+      },
+      "timestamp": "2025-04-20T16:58:53.667263",
+      "success": true,
+      "fol_conversion": "",
+      "predicates_used": [],
+      "explanation": ""
+    },
+    {
+      "statement": {
+        "id": 7,
+        "statement": "When a SYN segment arrives with a valid sequence number, the receiving TCP must return an acknowledgment."
+      },
+      "timestamp": "2025-04-20T16:59:04.898949",
+      "success": true,
+      "fol_conversion": "",
+      "predicates_used": [],
+      "explanation": ""
+    },
+    {
+      "statement": {
+        "id": 8,
+        "statement": "A FIN segment must contain the sequence number of the last data octet being sent."
+      },
+      "timestamp": "2025-04-20T16:59:16.143357",
+      "success": true,
+      "fol_conversion": "",
+      "predicates_used": [],
+      "explanation": ""
+    }
+  ]
+}

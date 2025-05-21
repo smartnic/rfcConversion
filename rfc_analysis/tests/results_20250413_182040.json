@@ -1,0 +1,47 @@
+{
+  "timestamp": "2025-04-13T18:20:40.043785",
+  "total_statements": 5,
+  "successful": 5,
+  "results": [
+    {
+      "statement": "The sequence number field is a 32-bit number that identifies the first data octet in this segment.",
+      "timestamp": "2025-04-13T18:19:53.887995",
+      "success": true,
+      "fol_conversion": "",
+      "predicates_used": [],
+      "explanation": ""
+    },
+    {
+      "statement": "The urgent pointer is interpreted only if the URG control bit is set.",
+      "timestamp": "2025-04-13T18:20:05.650113",
+      "success": true,
+      "fol_conversion": "",
+      "predicates_used": [],
+      "explanation": ""
+    },
+    {
+      "statement": "A TCP connection is established by the exchange of a SYN, a SYN-ACK, and an ACK.",
+      "timestamp": "2025-04-13T18:20:17.108293",
+      "success": true,
+      "fol_conversion": "",
+      "predicates_used": [],
+      "explanation": ""
+    },
+    {
+      "statement": "If no acknowledgment is received before the timer expires, the segment is retransmitted.",
+      "timestamp": "2025-04-13T18:20:28.635560",
+      "success": true,
+      "fol_conversion": "",
+      "predicates_used": [],
+      "explanation": ""
+    },
+    {
+      "statement": "The window field is a 16-bit field that specifies the size of the receive window.",
+      "timestamp": "2025-04-13T18:20:40.041531",
+      "success": true,
+      "fol_conversion": "",
+      "predicates_used": [],
+      "explanation": ""
+    }
+  ]
+}

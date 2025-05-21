@@ -1,0 +1,79 @@
+{
+  "timestamp": "2025-04-28T12:08:48.510427",
+  "total_statements": 8,
+  "successful": 6,
+  "results": [
+    {
+      "statement": "A TCP segment has a sequence number.",
+      "timestamp": "2025-04-28T12:08:48.487282",
+      "success": true,
+      "smtlib_conversion": "(declare-sort Message)\n(declare-fun has_sequence_number (Message Int) Bool)\n\n(assert (forall ((x Message))\n  (exists ((y Int))\n    (has_sequence_number x y))))",
+      "predicates_used": [
+        "has_sequence_number"
+      ],
+      "explanation": "We declare the necessary sorts and functions for this TCP requirement. The SMT-LIB expression:\n1. Declares the Message sort to represent TCP entities\n2. Declares the Number sort for the property values\n3. Defines the has_sequence_number predicate to relate Messages to their Number values\n4. Uses quantifiers to express that every Message must have a corresponding Number value"
+    },
+    {
+      "statement": "A SYN segment has a SYN flag.",
+      "timestamp": "2025-04-28T12:08:48.490674",
+      "success": false,
+      "error": "'Int'"
+    },
+    {
+      "statement": "An ACK segment has an ACK flag.",
+      "timestamp": "2025-04-28T12:08:48.490674",
+      "success": false,
+      "error": "'Int'"
+    },
+    {
+      "statement": "A TCP endpoint has a state.",
+      "timestamp": "2025-04-28T12:08:48.490674",
+      "success": true,
+      "smtlib_conversion": "(declare-sort Node)\n(declare-fun in_state (Node State) Bool)\n\n(assert (forall ((x Node))\n  (exists ((y State))\n    (in_state x y))))",
+      "predicates_used": [
+        "in_state"
+      ],
+      "explanation": "We declare the necessary sorts and functions for this TCP requirement. The SMT-LIB expression:\n1. Declares the Node sort to represent TCP entities\n2. Declares the State sort for the property values\n3. Defines the in_state predicate to relate Nodes to their State values\n4. Uses quantifiers to express that every Node must have a corresponding State value"
+    },
+    {
+      "statement": "A TCP endpoint has a window size.",
+      "timestamp": "2025-04-28T12:08:48.490674",
+      "success": true,
+      "smtlib_conversion": "(declare-sort Node)\n(declare-fun has_window_size (Node Int) Bool)\n\n(assert (forall ((x Node))\n  (exists ((y Int))\n    (has_window_size x y))))",
+      "predicates_used": [
+        "has_window_size"
+      ],
+      "explanation": "We declare the necessary sorts and functions for this TCP requirement. The SMT-LIB expression:\n1. Declares the Node sort to represent TCP entities\n2. Declares the WindowSize sort for the property values\n3. Defines the has_window_size predicate to relate Nodes to their WindowSize values\n4. Uses quantifiers to express that every Node must have a corresponding WindowSize value"
+    },
+    {
+      "statement": "A TCP segment has a source port.",
+      "timestamp": "2025-04-28T12:08:48.502202",
+      "success": true,
+      "smtlib_conversion": "(declare-sort Message)\n(declare-fun has_source_port (Message Port) Bool)\n\n(assert (forall ((x Message))\n  (exists ((y Port))\n    (has_source_port x y))))",
+      "predicates_used": [
+        "has_source_port"
+      ],
+      "explanation": "We declare the necessary sorts and functions for this TCP requirement. The SMT-LIB expression:\n1. Declares the Message sort to represent TCP entities\n2. Declares the Port sort for the property values\n3. Defines the has_source_port predicate to relate Messages to their Port values\n4. Uses quantifiers to express that every Message must have a corresponding Port value"
+    },
+    {
+      "statement": "A TCP segment has a destination port.",
+      "timestamp": "2025-04-28T12:08:48.508713",
+      "success": true,
+      "smtlib_conversion": "(declare-sort Message)\n(declare-fun has_destination_port (Message Port) Bool)\n\n(assert (forall ((x Message))\n  (exists ((y Port))\n    (has_destination_port x y))))",
+      "predicates_used": [
+        "has_destination_port"
+      ],
+      "explanation": "We declare the necessary sorts and functions for this TCP requirement. The SMT-LIB expression:\n1. Declares the Message sort to represent TCP entities\n2. Declares the Port sort for the property values\n3. Defines the has_destination_port predicate to relate Messages to their Port values\n4. Uses quantifiers to express that every Message must have a corresponding Port value"
+    },
+    {
+      "statement": "A TCP endpoint has a socket.",
+      "timestamp": "2025-04-28T12:08:48.510427",
+      "success": true,
+      "smtlib_conversion": "(declare-sort Node)\n(declare-fun has_socket (Node Socket) Bool)\n\n(assert (forall ((x Node))\n  (exists ((y Socket))\n    (has_socket x y))))",
+      "predicates_used": [
+        "has_socket"
+      ],
+      "explanation": "We declare the necessary sorts and functions for this TCP requirement. The SMT-LIB expression:\n1. Declares the Node sort to represent TCP entities\n2. Declares the Socket sort for the property values\n3. Defines the has_socket predicate to relate Nodes to their Socket values\n4. Uses quantifiers to express that every Node must have a corresponding Socket value"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+    "examples": [
+      {
+        "sentence": "If a SYN is received, the server MUST send a SYN-ACK.",
+        "fol": "∀x (Server(x) ∧ received_SYN(x) → send_SYN_ACK(x))"
+      }
+    ]
+  }

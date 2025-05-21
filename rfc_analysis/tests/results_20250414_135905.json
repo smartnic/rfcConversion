@@ -1,0 +1,61 @@
+{
+  "timestamp": "2025-04-14T13:59:05.311850",
+  "total_statements": 5,
+  "successful": 5,
+  "results": [
+    {
+      "statement": "The sequence number field is a 32-bit number that identifies the first data octet in this segment.",
+      "timestamp": "2025-04-14T13:58:51.450721",
+      "success": true,
+      "fol_conversion": "",
+      "predicates_used": [],
+      "explanation": ""
+    },
+    {
+      "statement": "The urgent pointer is interpreted only if the URG control bit is set.",
+      "timestamp": "2025-04-14T13:58:54.668473",
+      "success": true,
+      "fol_conversion": "urg_ptr_interpreted(u) -> \u2203 m, flag_set(m, urgcbit) \u2227 used_in(u, m)",
+      "predicates_used": [
+        "urg_ptr_interpreted(u)",
+        "flag_set(m, urgcbit)",
+        "used_in(u, m)"
+      ],
+      "explanation": "This FOL expression states that \"the urgent pointer is interpreted (urg_ptr_interpreted(u)) if there exists a message (m) which has its URG control bit flag set (flag_set(m, urgcbit)), and the urgent pointer is used in that message (used_in(u, m)).\""
+    },
+    {
+      "statement": "A TCP connection is established by the exchange of a SYN, a SYN-ACK, and an ACK.",
+      "timestamp": "2025-04-14T13:58:56.365880",
+      "success": true,
+      "fol_conversion": "",
+      "predicates_used": [],
+      "explanation": ""
+    },
+    {
+      "statement": "If no acknowledgment is received before the timer expires, the segment is retransmitted.",
+      "timestamp": "2025-04-14T13:58:59.888681",
+      "success": true,
+      "fol_conversion": "retransmit(S) \u2190 segment(S) \u2227 \u2203T (timer_expires(T) \u2227 \u00acreceived_acknowledgement(T, S))",
+      "predicates_used": [
+        "retransmit(S)",
+        "segment(S)",
+        "timer_expires(T)",
+        "received_acknowledgement(T, S)"
+      ],
+      "explanation": "This FOL expression states that a segment \"S\" should be retransmitted if two conditions are met: first, there exists a segment \"S\"; second, there does not exist an acknowledged time \"T\" at which an acknowledgement was received for segment \"S\". Additionally, it is assumed that there is a separate predicate indicating when the timer expires (i.e., `timer_expires(T)`)."
+    },
+    {
+      "statement": "The window field is a 16-bit field that specifies the size of the receive window.",
+      "timestamp": "2025-04-14T13:59:05.311850",
+      "success": true,
+      "fol_conversion": "window_field_is_16_bits(w) \u2227 is_window_field(w) \u2192 (\u2203 s [0, 65535]. has_size_in_bytes(w, s)) \u2227 is_power_of_two(s)",
+      "predicates_used": [
+        "_bits(w)",
+        "is_window_field(w)",
+        "has_size_in_bytes(w, s)",
+        "is_power_of_two(s)"
+      ],
+      "explanation": "- window_field_is_16_bits(w): This unary predicate represents that the window 'w' is a 16-bit field.\n   - is_window_field(w): This unary predicate denotes that 'w' is a window field.\n   - has_size_in_bytes(w, s): This binary predicate indicates that the window 'w' has a size in bytes represented by 's'.\n   - is_power_of_two(s): This unary predicate determines if 's' is a power of two.\n   \n   The whole expression states that if 'w' is a 16-bit window field, then there exists some value 's' between 0 and 65535 inclusive such that 'w' has a size in bytes of 's', and 's' must be a power of two."
+    }
+  ]
+}

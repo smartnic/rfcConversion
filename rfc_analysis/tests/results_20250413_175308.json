@@ -1,0 +1,25 @@
+{
+  "timestamp": "2025-04-13T17:53:08.038455",
+  "total_statements": 3,
+  "successful": 0,
+  "results": [
+    {
+      "statement": "A SYN segment must have a sequence number.",
+      "timestamp": "2025-04-13T17:53:06.021771",
+      "success": false,
+      "error": "Expected 8 sections, got 1"
+    },
+    {
+      "statement": "When in CLOSED state, a TCP endpoint must respond to any incoming segment with a RST.",
+      "timestamp": "2025-04-13T17:53:07.034732",
+      "success": false,
+      "error": "Expected 8 sections, got 1"
+    },
+    {
+      "statement": "A TCP endpoint in LISTEN state must ignore RST segments.",
+      "timestamp": "2025-04-13T17:53:08.038455",
+      "success": false,
+      "error": "Expected 8 sections, got 1"
+    }
+  ]
+}

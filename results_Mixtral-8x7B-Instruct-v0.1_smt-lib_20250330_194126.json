@@ -1,0 +1,28 @@
+{
+  "model": "mistralai/Mixtral-8x7B-Instruct-v0.1",
+  "format": "SMT-LIB",
+  "timestamp": "2025-03-30T19:41:25.113440",
+  "examples": [
+    {
+      "input": "The server MUST terminate the connection after 5 failed attempts.",
+      "output": null,
+      "success": false,
+      "error": "Failed to generate valid output after 3 attempts. Last error: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1 (Request ID: Root=1-67e9d6a3-4914fab84e5d68e145294bdf;09c86ba7-49b2-4817-8490-dd1f772d3157)\n\nYou have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits.",
+      "time_seconds": 0.6730265617370605
+    },
+    {
+      "input": "If a client sends more than 3 retransmissions without receiving an ACK, it MUST abort the connection.",
+      "output": null,
+      "success": false,
+      "error": "Failed to generate valid output after 3 attempts. Last error: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1 (Request ID: Root=1-67e9d6a4-6bf6301f0a9407d34351cdea;01537312-7eca-488c-8ae6-f81191a18895)\n\nYou have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits.",
+      "time_seconds": 0.17700576782226562
+    },
+    {
+      "input": "When a server receives a SYN segment, it MUST increment the SYN-RECEIVED counter.",
+      "output": null,
+      "success": false,
+      "error": "Failed to generate valid output after 3 attempts. Last error: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1 (Request ID: Root=1-67e9d6a4-5b67f4db4dcd0d73329c7f8b;9f907603-09d9-4571-b8d8-03cfe55c4d50)\n\nYou have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits.",
+      "time_seconds": 0.2330644130706787
+    }
+  ]
+}

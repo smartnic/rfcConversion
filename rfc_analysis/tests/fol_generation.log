@@ -1,0 +1,532 @@
+2025-04-13 17:50:38,644 - WARNING - rfc_statements.json not found, using example statements
+2025-04-13 17:50:38,644 - INFO - Processing statement 1/3
+2025-04-13 17:50:38,644 - INFO - Processing statement: A SYN segment must have a sequence number.
+2025-04-13 17:50:38,644 - ERROR - Error processing statement: name 'get_prompt_sections' is not defined
+2025-04-13 17:50:39,648 - INFO - Processing statement 2/3
+2025-04-13 17:50:39,648 - INFO - Processing statement: When in CLOSED state, a TCP endpoint must respond to any incoming segment with a RST.
+2025-04-13 17:50:39,648 - ERROR - Error processing statement: name 'get_prompt_sections' is not defined
+2025-04-13 17:50:40,651 - INFO - Processing statement 3/3
+2025-04-13 17:50:40,653 - INFO - Processing statement: A TCP endpoint in LISTEN state must ignore RST segments.
+2025-04-13 17:50:40,653 - ERROR - Error processing statement: name 'get_prompt_sections' is not defined
+2025-04-13 17:50:40,653 - INFO - Results saved to results_20250413_175040.json
+2025-04-13 17:52:32,947 - WARNING - rfc_statements.json not found, using example statements
+2025-04-13 17:52:32,963 - INFO - Processing statement 1/3
+2025-04-13 17:52:32,963 - INFO - Processing statement: A SYN segment must have a sequence number.
+2025-04-13 17:52:32,963 - ERROR - Error processing statement: Expected 8 sections, got 1
+2025-04-13 17:52:33,965 - INFO - Processing statement 2/3
+2025-04-13 17:52:33,965 - INFO - Processing statement: When in CLOSED state, a TCP endpoint must respond to any incoming segment with a RST.
+2025-04-13 17:52:33,965 - ERROR - Error processing statement: Expected 8 sections, got 1
+2025-04-13 17:52:34,969 - INFO - Processing statement 3/3
+2025-04-13 17:52:34,969 - INFO - Processing statement: A TCP endpoint in LISTEN state must ignore RST segments.
+2025-04-13 17:52:34,969 - ERROR - Error processing statement: Expected 8 sections, got 1
+2025-04-13 17:52:34,969 - INFO - Results saved to results_20250413_175234.json
+2025-04-13 17:53:06,021 - WARNING - rfc_statements.json not found, using example statements
+2025-04-13 17:53:06,021 - INFO - Processing statement 1/3
+2025-04-13 17:53:06,021 - INFO - Processing statement: A SYN segment must have a sequence number.
+2025-04-13 17:53:06,021 - ERROR - Error processing statement: Expected 8 sections, got 1
+2025-04-13 17:53:07,034 - INFO - Processing statement 2/3
+2025-04-13 17:53:07,034 - INFO - Processing statement: When in CLOSED state, a TCP endpoint must respond to any incoming segment with a RST.
+2025-04-13 17:53:07,034 - ERROR - Error processing statement: Expected 8 sections, got 1
+2025-04-13 17:53:08,036 - INFO - Processing statement 3/3
+2025-04-13 17:53:08,037 - INFO - Processing statement: A TCP endpoint in LISTEN state must ignore RST segments.
+2025-04-13 17:53:08,037 - ERROR - Error processing statement: Expected 8 sections, got 1
+2025-04-13 17:53:08,039 - INFO - Results saved to results_20250413_175308.json
+2025-04-13 17:55:03,800 - WARNING - rfc_statements.json not found, using example statements
+2025-04-13 17:55:03,800 - INFO - Processing statement 1/3
+2025-04-13 17:55:03,800 - INFO - Processing statement: A SYN segment must have a sequence number.
+2025-04-13 17:55:04,821 - INFO - Processing statement 2/3
+2025-04-13 17:55:04,822 - INFO - Processing statement: When in CLOSED state, a TCP endpoint must respond to any incoming segment with a RST.
+2025-04-13 17:55:05,839 - INFO - Processing statement 3/3
+2025-04-13 17:55:05,839 - INFO - Processing statement: A TCP endpoint in LISTEN state must ignore RST segments.
+2025-04-13 17:55:05,862 - INFO - Results saved to results_20250413_175505.json
+2025-04-13 17:57:53,268 - WARNING - rfc_statements.json not found, using example statements
+2025-04-13 17:57:53,268 - INFO - Processing statement 1/3
+2025-04-13 17:57:53,268 - INFO - Processing statement: A SYN segment must have a sequence number.
+2025-04-13 17:57:54,305 - INFO - Processing statement 2/3
+2025-04-13 17:57:54,305 - INFO - Processing statement: When in CLOSED state, a TCP endpoint must respond to any incoming segment with a RST.
+2025-04-13 17:57:55,320 - INFO - Processing statement 3/3
+2025-04-13 17:57:55,320 - INFO - Processing statement: A TCP endpoint in LISTEN state must ignore RST segments.
+2025-04-13 17:57:55,350 - INFO - Results saved to results_20250413_175755.json
+2025-04-13 18:00:02,926 - WARNING - rfc_statements.json not found, using example statements
+2025-04-13 18:00:02,926 - INFO - Processing statement 1/3
+2025-04-13 18:00:02,926 - INFO - Processing statement: A SYN segment must have a sequence number.
+2025-04-13 18:00:03,954 - INFO - Processing statement 2/3
+2025-04-13 18:00:03,954 - INFO - Processing statement: When in CLOSED state, a TCP endpoint must respond to any incoming segment with a RST.
+2025-04-13 18:00:04,976 - INFO - Processing statement 3/3
+2025-04-13 18:00:04,977 - INFO - Processing statement: A TCP endpoint in LISTEN state must ignore RST segments.
+2025-04-13 18:00:04,993 - INFO - Results saved to results_20250413_180004.json
+2025-04-13 18:03:57,511 - WARNING - rfc_statements.json not found, using example statements
+2025-04-13 18:03:57,511 - INFO - Processing statement 1/3
+2025-04-13 18:03:57,511 - INFO - Processing statement: A SYN segment must have a sequence number.
+2025-04-13 18:03:58,514 - INFO - Processing statement 2/3
+2025-04-13 18:03:58,514 - INFO - Processing statement: When in CLOSED state, a TCP endpoint must respond to any incoming segment with a RST.
+2025-04-13 18:03:59,523 - INFO - Processing statement 3/3
+2025-04-13 18:03:59,524 - INFO - Processing statement: A TCP endpoint in LISTEN state must ignore RST segments.
+2025-04-13 18:03:59,530 - INFO - Results saved to results_20250413_180359.json
+2025-04-13 18:05:07,160 - WARNING - rfc_statements.json not found, using example statements
+2025-04-13 18:05:07,160 - INFO - Processing statement 1/3
+2025-04-13 18:05:07,176 - INFO - Processing statement: A SYN segment must have a sequence number.
+2025-04-13 18:05:10,332 - INFO - Processing statement 2/3
+2025-04-13 18:05:10,332 - INFO - Processing statement: When in CLOSED state, a TCP endpoint must respond to any incoming segment with a RST.
+2025-04-13 18:05:15,554 - INFO - Processing statement 3/3
+2025-04-13 18:05:15,554 - INFO - Processing statement: A TCP endpoint in LISTEN state must ignore RST segments.
+2025-04-13 18:05:17,517 - INFO - Results saved to results_20250413_180517.json
+2025-04-13 18:19:42,311 - WARNING - rfc_statements.json not found, using example statements
+2025-04-13 18:19:42,311 - INFO - Processing statement 1/5
+2025-04-13 18:19:42,311 - INFO - Processing statement: The sequence number field is a 32-bit number that identifies the first data octet in this segment.
+2025-04-13 18:19:54,889 - INFO - Processing statement 2/5
+2025-04-13 18:19:54,889 - INFO - Processing statement: The urgent pointer is interpreted only if the URG control bit is set.
+2025-04-13 18:20:06,652 - INFO - Processing statement 3/5
+2025-04-13 18:20:06,652 - INFO - Processing statement: A TCP connection is established by the exchange of a SYN, a SYN-ACK, and an ACK.
+2025-04-13 18:20:18,109 - INFO - Processing statement 4/5
+2025-04-13 18:20:18,109 - INFO - Processing statement: If no acknowledgment is received before the timer expires, the segment is retransmitted.
+2025-04-13 18:20:29,642 - INFO - Processing statement 5/5
+2025-04-13 18:20:29,642 - INFO - Processing statement: The window field is a 16-bit field that specifies the size of the receive window.
+2025-04-13 18:20:40,043 - INFO - Results saved to results_20250413_182040.json
+2025-04-13 18:30:15,434 - WARNING - rfc_statements.json not found, using example statements
+2025-04-13 18:30:15,434 - INFO - Processing statement 1/5
+2025-04-13 18:30:15,434 - INFO - Processing statement: The sequence number field is a 32-bit number that identifies the first data octet in this segment.
+2025-04-13 18:30:16,900 - INFO - Processing statement 2/5
+2025-04-13 18:30:16,900 - INFO - Processing statement: The urgent pointer is interpreted only if the URG control bit is set.
+2025-04-13 18:30:18,044 - INFO - Processing statement 3/5
+2025-04-13 18:30:18,044 - INFO - Processing statement: A TCP connection is established by the exchange of a SYN, a SYN-ACK, and an ACK.
+2025-04-13 18:30:19,657 - INFO - Processing statement 4/5
+2025-04-13 18:30:19,658 - INFO - Processing statement: If no acknowledgment is received before the timer expires, the segment is retransmitted.
+2025-04-13 18:30:20,799 - INFO - Processing statement 5/5
+2025-04-13 18:30:20,800 - INFO - Processing statement: The window field is a 16-bit field that specifies the size of the receive window.
+2025-04-13 18:30:20,934 - INFO - Results saved to results_20250413_183020.json
+2025-04-13 18:37:35,824 - WARNING - rfc_statements.json not found, using example statements
+2025-04-13 18:37:35,824 - INFO - Processing statement 1/5
+2025-04-13 18:37:35,824 - INFO - Processing statement: The sequence number field is a 32-bit number that identifies the first data octet in this segment.
+2025-04-13 18:37:37,356 - INFO - Processing statement 2/5
+2025-04-13 18:37:37,356 - INFO - Processing statement: The urgent pointer is interpreted only if the URG control bit is set.
+2025-04-13 18:37:38,516 - INFO - Processing statement 3/5
+2025-04-13 18:37:38,517 - INFO - Processing statement: A TCP connection is established by the exchange of a SYN, a SYN-ACK, and an ACK.
+2025-04-13 18:37:39,903 - INFO - Processing statement 4/5
+2025-04-13 18:37:39,903 - INFO - Processing statement: If no acknowledgment is received before the timer expires, the segment is retransmitted.
+2025-04-13 18:37:41,045 - INFO - Processing statement 5/5
+2025-04-13 18:37:41,045 - INFO - Processing statement: The window field is a 16-bit field that specifies the size of the receive window.
+2025-04-13 18:37:41,185 - INFO - Results saved to results_20250413_183741.json
+2025-04-14 13:58:50,553 - WARNING - rfc_statements.json not found, using example statements
+2025-04-14 13:58:50,556 - INFO - Processing statement 1/5
+2025-04-14 13:58:50,556 - INFO - Processing statement: The sequence number field is a 32-bit number that identifies the first data octet in this segment.
+2025-04-14 13:58:52,452 - INFO - Processing statement 2/5
+2025-04-14 13:58:52,452 - INFO - Processing statement: The urgent pointer is interpreted only if the URG control bit is set.
+2025-04-14 13:58:55,669 - INFO - Processing statement 3/5
+2025-04-14 13:58:55,669 - INFO - Processing statement: A TCP connection is established by the exchange of a SYN, a SYN-ACK, and an ACK.
+2025-04-14 13:58:57,371 - INFO - Processing statement 4/5
+2025-04-14 13:58:57,371 - INFO - Processing statement: If no acknowledgment is received before the timer expires, the segment is retransmitted.
+2025-04-14 13:59:00,889 - INFO - Processing statement 5/5
+2025-04-14 13:59:00,889 - INFO - Processing statement: The window field is a 16-bit field that specifies the size of the receive window.
+2025-04-14 13:59:05,315 - INFO - Results saved to results_20250414_135905.json
+2025-04-20 14:50:45,948 - WARNING - rfc_statements.json not found, using example statements
+2025-04-20 14:50:45,949 - INFO - Processing statement 1/5
+2025-04-20 14:50:45,949 - INFO - Processing statement: The sequence number field is a 32-bit number that identifies the first data octet in this segment.
+2025-04-20 14:50:47,506 - INFO - Processing statement 2/5
+2025-04-20 14:50:47,507 - INFO - Processing statement: The urgent pointer is interpreted only if the URG control bit is set.
+2025-04-20 14:50:50,444 - INFO - Processing statement 3/5
+2025-04-20 14:50:50,444 - INFO - Processing statement: A TCP connection is established by the exchange of a SYN, a SYN-ACK, and an ACK.
+2025-04-20 14:50:52,044 - INFO - Processing statement 4/5
+2025-04-20 14:50:52,044 - INFO - Processing statement: If no acknowledgment is received before the timer expires, the segment is retransmitted.
+2025-04-20 14:50:57,095 - INFO - Processing statement 5/5
+2025-04-20 14:50:57,095 - INFO - Processing statement: The window field is a 16-bit field that specifies the size of the receive window.
+2025-04-20 14:50:59,677 - INFO - Results saved to results_20250420_145059.json
+2025-04-20 16:54:29,105 - INFO - Current working directory: C:\Users\Simlo\Desktop\rfc-to-fol\rfc_analysis\tests
+2025-04-20 16:54:29,120 - INFO - Looking for statements file at: C:\Users\Simlo\Desktop\rfc-to-fol\rfc_analysis\tests\rfc_analysis\tests\rfc_statements.json
+2025-04-20 16:54:29,120 - WARNING - rfc_statements.json not found at C:\Users\Simlo\Desktop\rfc-to-fol\rfc_analysis\tests\rfc_analysis\tests\rfc_statements.json, using example statements
+2025-04-20 16:54:29,120 - INFO - Processing statement 1/8
+2025-04-20 16:54:29,120 - INFO - Processing statement: {'id': 1, 'statement': 'The sequence number field is a 32-bit number that identifies the first data octet in this segment.'}
+2025-04-20 16:54:29,120 - INFO - Sending prompt for statement: {'id': 1, 'statement': 'The sequence number field is a 32-bit number that identifies the first data octet in this segment.'}
+2025-04-20 16:54:30,155 - WARNING - Response missing Explanation section on attempt 1
+2025-04-20 16:54:30,155 - INFO - Sending prompt for statement: {'id': 1, 'statement': 'The sequence number field is a 32-bit number that identifies the first data octet in this segment.'}
+2025-04-20 16:54:30,246 - WARNING - Response missing Explanation section on attempt 2
+2025-04-20 16:54:30,246 - INFO - Sending prompt for statement: {'id': 1, 'statement': 'The sequence number field is a 32-bit number that identifies the first data octet in this segment.'}
+2025-04-20 16:54:30,321 - WARNING - Response missing Explanation section on attempt 3
+2025-04-20 16:54:31,331 - INFO - Processing statement 2/8
+2025-04-20 16:54:31,331 - INFO - Processing statement: {'id': 2, 'statement': 'The urgent pointer is interpreted only if the URG control bit is set.'}
+2025-04-20 16:54:31,331 - INFO - Sending prompt for statement: {'id': 2, 'statement': 'The urgent pointer is interpreted only if the URG control bit is set.'}
+2025-04-20 16:54:34,166 - INFO - Processing statement 3/8
+2025-04-20 16:54:34,166 - INFO - Processing statement: {'id': 3, 'statement': 'A TCP connection is established by the exchange of a SYN, a SYN-ACK, and an ACK.'}
+2025-04-20 16:54:34,167 - INFO - Sending prompt for statement: {'id': 3, 'statement': 'A TCP connection is established by the exchange of a SYN, a SYN-ACK, and an ACK.'}
+2025-04-20 16:54:38,554 - WARNING - Response missing Explanation section on attempt 1
+2025-04-20 16:54:38,554 - INFO - Sending prompt for statement: {'id': 3, 'statement': 'A TCP connection is established by the exchange of a SYN, a SYN-ACK, and an ACK.'}
+2025-04-20 16:54:38,633 - WARNING - Response missing Explanation section on attempt 2
+2025-04-20 16:54:38,634 - INFO - Sending prompt for statement: {'id': 3, 'statement': 'A TCP connection is established by the exchange of a SYN, a SYN-ACK, and an ACK.'}
+2025-04-20 16:54:38,724 - WARNING - Response missing Explanation section on attempt 3
+2025-04-20 16:54:39,735 - INFO - Processing statement 4/8
+2025-04-20 16:54:39,735 - INFO - Processing statement: {'id': 4, 'statement': 'If no acknowledgment is received before the timer expires, the segment is retransmitted.'}
+2025-04-20 16:54:39,735 - INFO - Sending prompt for statement: {'id': 4, 'statement': 'If no acknowledgment is received before the timer expires, the segment is retransmitted.'}
+2025-04-20 16:54:39,979 - INFO - Raw response: FOL:
+2025-04-20 16:54:39,979 - WARNING - Response missing Explanation section on attempt 1
+2025-04-20 16:54:39,979 - INFO - Sending prompt for statement: {'id': 4, 'statement': 'If no acknowledgment is received before the timer expires, the segment is retransmitted.'}
+2025-04-20 16:54:40,059 - INFO - Raw response: FOL:
+2025-04-20 16:54:40,060 - WARNING - Response missing Explanation section on attempt 2
+2025-04-20 16:54:40,060 - INFO - Sending prompt for statement: {'id': 4, 'statement': 'If no acknowledgment is received before the timer expires, the segment is retransmitted.'}
+2025-04-20 16:54:40,145 - INFO - Raw response: FOL:
+2025-04-20 16:54:40,145 - WARNING - Response missing Explanation section on attempt 3
+2025-04-20 16:54:41,154 - INFO - Processing statement 5/8
+2025-04-20 16:54:41,154 - INFO - Processing statement: {'id': 5, 'statement': 'The window field is a 16-bit field that specifies the size of the receive window.'}
+2025-04-20 16:54:41,154 - INFO - Sending prompt for statement: {'id': 5, 'statement': 'The window field is a 16-bit field that specifies the size of the receive window.'}
+2025-04-20 16:54:44,507 - INFO - Processing statement 6/8
+2025-04-20 16:54:44,507 - INFO - Processing statement: {'id': 6, 'statement': 'A TCP endpoint in LISTEN state must ignore RST segments.'}
+2025-04-20 16:54:44,509 - INFO - Sending prompt for statement: {'id': 6, 'statement': 'A TCP endpoint in LISTEN state must ignore RST segments.'}
+2025-04-20 16:54:44,792 - INFO - Raw response: FOL:
+2025-04-20 16:54:44,792 - WARNING - Response missing Explanation section on attempt 1
+2025-04-20 16:54:44,792 - INFO - Sending prompt for statement: {'id': 6, 'statement': 'A TCP endpoint in LISTEN state must ignore RST segments.'}
+2025-04-20 16:54:44,875 - INFO - Raw response: FOL:
+2025-04-20 16:54:44,875 - WARNING - Response missing Explanation section on attempt 2
+2025-04-20 16:54:44,875 - INFO - Sending prompt for statement: {'id': 6, 'statement': 'A TCP endpoint in LISTEN state must ignore RST segments.'}
+2025-04-20 16:54:44,944 - INFO - Raw response: FOL:
+2025-04-20 16:54:44,944 - WARNING - Response missing Explanation section on attempt 3
+2025-04-20 16:54:45,954 - INFO - Processing statement 7/8
+2025-04-20 16:54:45,954 - INFO - Processing statement: {'id': 7, 'statement': 'When a SYN segment arrives with a valid sequence number, the receiving TCP must return an acknowledgment.'}
+2025-04-20 16:54:45,954 - INFO - Sending prompt for statement: {'id': 7, 'statement': 'When a SYN segment arrives with a valid sequence number, the receiving TCP must return an acknowledgment.'}
+2025-04-20 16:54:46,221 - INFO - Raw response: FOL:
+2025-04-20 16:54:46,221 - WARNING - Response missing Explanation section on attempt 1
+2025-04-20 16:54:46,221 - INFO - Sending prompt for statement: {'id': 7, 'statement': 'When a SYN segment arrives with a valid sequence number, the receiving TCP must return an acknowledgment.'}
+2025-04-20 16:54:46,309 - INFO - Raw response: FOL:
+2025-04-20 16:54:46,309 - WARNING - Response missing Explanation section on attempt 2
+2025-04-20 16:54:46,309 - INFO - Sending prompt for statement: {'id': 7, 'statement': 'When a SYN segment arrives with a valid sequence number, the receiving TCP must return an acknowledgment.'}
+2025-04-20 16:54:46,437 - INFO - Raw response: FOL:
+2025-04-20 16:54:46,437 - WARNING - Response missing Explanation section on attempt 3
+2025-04-20 16:54:47,449 - INFO - Processing statement 8/8
+2025-04-20 16:54:47,449 - INFO - Processing statement: {'id': 8, 'statement': 'A FIN segment must contain the sequence number of the last data octet being sent.'}
+2025-04-20 16:54:47,449 - INFO - Sending prompt for statement: {'id': 8, 'statement': 'A FIN segment must contain the sequence number of the last data octet being sent.'}
+2025-04-20 16:54:50,735 - INFO - Results saved to C:\Users\Simlo\Desktop\rfc-to-fol\rfc_analysis\tests\output\results_20250420_165450.json
+2025-04-20 16:57:46,505 - INFO - Current working directory: C:\Users\Simlo\Desktop\rfc-to-fol\rfc_analysis\tests
+2025-04-20 16:57:46,505 - INFO - Looking for statements file at: C:\Users\Simlo\Desktop\rfc-to-fol\rfc_analysis\tests\rfc_analysis\tests\rfc_statements.json
+2025-04-20 16:57:46,505 - WARNING - rfc_statements.json not found at C:\Users\Simlo\Desktop\rfc-to-fol\rfc_analysis\tests\rfc_analysis\tests\rfc_statements.json, using example statements
+2025-04-20 16:57:46,505 - INFO - Processing statement 1/8
+2025-04-20 16:57:46,505 - INFO - Processing statement: {'id': 1, 'statement': 'The sequence number field is a 32-bit number that identifies the first data octet in this segment.'}
+2025-04-20 16:57:46,505 - INFO - Sending prompt for statement: {'id': 1, 'statement': 'The sequence number field is a 32-bit number that identifies the first data octet in this segment.'}
+2025-04-20 16:57:46,823 - ERROR - HTTP Error on attempt 1: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-20 16:57:46,823 - ERROR - Response: {"error":"You have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits."}
+2025-04-20 16:57:51,836 - INFO - Sending prompt for statement: {'id': 1, 'statement': 'The sequence number field is a 32-bit number that identifies the first data octet in this segment.'}
+2025-04-20 16:57:51,905 - ERROR - HTTP Error on attempt 2: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-20 16:57:51,918 - ERROR - Response: {"error":"You have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits."}
+2025-04-20 16:57:56,920 - INFO - Sending prompt for statement: {'id': 1, 'statement': 'The sequence number field is a 32-bit number that identifies the first data octet in this segment.'}
+2025-04-20 16:57:56,996 - ERROR - HTTP Error on attempt 3: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-20 16:57:56,996 - ERROR - Response: {"error":"You have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits."}
+2025-04-20 16:57:58,001 - INFO - Processing statement 2/8
+2025-04-20 16:57:58,001 - INFO - Processing statement: {'id': 2, 'statement': 'The urgent pointer is interpreted only if the URG control bit is set.'}
+2025-04-20 16:57:58,001 - INFO - Sending prompt for statement: {'id': 2, 'statement': 'The urgent pointer is interpreted only if the URG control bit is set.'}
+2025-04-20 16:57:58,096 - ERROR - HTTP Error on attempt 1: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-20 16:57:58,105 - ERROR - Response: {"error":"You have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits."}
+2025-04-20 16:58:03,106 - INFO - Sending prompt for statement: {'id': 2, 'statement': 'The urgent pointer is interpreted only if the URG control bit is set.'}
+2025-04-20 16:58:03,172 - ERROR - HTTP Error on attempt 2: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-20 16:58:03,172 - ERROR - Response: {"error":"You have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits."}
+2025-04-20 16:58:08,181 - INFO - Sending prompt for statement: {'id': 2, 'statement': 'The urgent pointer is interpreted only if the URG control bit is set.'}
+2025-04-20 16:58:08,354 - ERROR - HTTP Error on attempt 3: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-20 16:58:08,354 - ERROR - Response: {"error":"You have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits."}
+2025-04-20 16:58:09,373 - INFO - Processing statement 3/8
+2025-04-20 16:58:09,373 - INFO - Processing statement: {'id': 3, 'statement': 'A TCP connection is established by the exchange of a SYN, a SYN-ACK, and an ACK.'}
+2025-04-20 16:58:09,373 - INFO - Sending prompt for statement: {'id': 3, 'statement': 'A TCP connection is established by the exchange of a SYN, a SYN-ACK, and an ACK.'}
+2025-04-20 16:58:09,477 - ERROR - HTTP Error on attempt 1: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-20 16:58:09,477 - ERROR - Response: {"error":"You have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits."}
+2025-04-20 16:58:14,484 - INFO - Sending prompt for statement: {'id': 3, 'statement': 'A TCP connection is established by the exchange of a SYN, a SYN-ACK, and an ACK.'}
+2025-04-20 16:58:14,558 - ERROR - HTTP Error on attempt 2: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-20 16:58:14,558 - ERROR - Response: {"error":"You have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits."}
+2025-04-20 16:58:19,564 - INFO - Sending prompt for statement: {'id': 3, 'statement': 'A TCP connection is established by the exchange of a SYN, a SYN-ACK, and an ACK.'}
+2025-04-20 16:58:19,636 - ERROR - HTTP Error on attempt 3: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-20 16:58:19,636 - ERROR - Response: {"error":"You have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits."}
+2025-04-20 16:58:20,647 - INFO - Processing statement 4/8
+2025-04-20 16:58:20,647 - INFO - Processing statement: {'id': 4, 'statement': 'If no acknowledgment is received before the timer expires, the segment is retransmitted.'}
+2025-04-20 16:58:20,647 - INFO - Sending prompt for statement: {'id': 4, 'statement': 'If no acknowledgment is received before the timer expires, the segment is retransmitted.'}
+2025-04-20 16:58:20,788 - ERROR - HTTP Error on attempt 1: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-20 16:58:20,788 - ERROR - Response: {"error":"You have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits."}
+2025-04-20 16:58:25,791 - INFO - Sending prompt for statement: {'id': 4, 'statement': 'If no acknowledgment is received before the timer expires, the segment is retransmitted.'}
+2025-04-20 16:58:25,898 - ERROR - HTTP Error on attempt 2: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-20 16:58:25,898 - ERROR - Response: {"error":"You have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits."}
+2025-04-20 16:58:30,905 - INFO - Sending prompt for statement: {'id': 4, 'statement': 'If no acknowledgment is received before the timer expires, the segment is retransmitted.'}
+2025-04-20 16:58:30,993 - ERROR - HTTP Error on attempt 3: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-20 16:58:30,995 - ERROR - Response: {"error":"You have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits."}
+2025-04-20 16:58:32,000 - INFO - Processing statement 5/8
+2025-04-20 16:58:32,000 - INFO - Processing statement: {'id': 5, 'statement': 'The window field is a 16-bit field that specifies the size of the receive window.'}
+2025-04-20 16:58:32,000 - INFO - Sending prompt for statement: {'id': 5, 'statement': 'The window field is a 16-bit field that specifies the size of the receive window.'}
+2025-04-20 16:58:32,099 - ERROR - HTTP Error on attempt 1: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-20 16:58:32,099 - ERROR - Response: {"error":"You have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits."}
+2025-04-20 16:58:37,106 - INFO - Sending prompt for statement: {'id': 5, 'statement': 'The window field is a 16-bit field that specifies the size of the receive window.'}
+2025-04-20 16:58:37,201 - ERROR - HTTP Error on attempt 2: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-20 16:58:37,202 - ERROR - Response: {"error":"You have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits."}
+2025-04-20 16:58:42,204 - INFO - Sending prompt for statement: {'id': 5, 'statement': 'The window field is a 16-bit field that specifies the size of the receive window.'}
+2025-04-20 16:58:42,305 - ERROR - HTTP Error on attempt 3: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-20 16:58:42,305 - ERROR - Response: {"error":"You have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits."}
+2025-04-20 16:58:43,316 - INFO - Processing statement 6/8
+2025-04-20 16:58:43,316 - INFO - Processing statement: {'id': 6, 'statement': 'A TCP endpoint in LISTEN state must ignore RST segments.'}
+2025-04-20 16:58:43,316 - INFO - Sending prompt for statement: {'id': 6, 'statement': 'A TCP endpoint in LISTEN state must ignore RST segments.'}
+2025-04-20 16:58:43,398 - ERROR - HTTP Error on attempt 1: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-20 16:58:43,398 - ERROR - Response: {"error":"You have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits."}
+2025-04-20 16:58:48,401 - INFO - Sending prompt for statement: {'id': 6, 'statement': 'A TCP endpoint in LISTEN state must ignore RST segments.'}
+2025-04-20 16:58:48,562 - ERROR - HTTP Error on attempt 2: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-20 16:58:48,566 - ERROR - Response: {"error":"You have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits."}
+2025-04-20 16:58:53,567 - INFO - Sending prompt for statement: {'id': 6, 'statement': 'A TCP endpoint in LISTEN state must ignore RST segments.'}
+2025-04-20 16:58:53,663 - ERROR - HTTP Error on attempt 3: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-20 16:58:53,663 - ERROR - Response: {"error":"You have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits."}
+2025-04-20 16:58:54,671 - INFO - Processing statement 7/8
+2025-04-20 16:58:54,671 - INFO - Processing statement: {'id': 7, 'statement': 'When a SYN segment arrives with a valid sequence number, the receiving TCP must return an acknowledgment.'}
+2025-04-20 16:58:54,671 - INFO - Sending prompt for statement: {'id': 7, 'statement': 'When a SYN segment arrives with a valid sequence number, the receiving TCP must return an acknowledgment.'}
+2025-04-20 16:58:54,750 - ERROR - HTTP Error on attempt 1: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-20 16:58:54,750 - ERROR - Response: {"error":"You have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits."}
+2025-04-20 16:58:59,759 - INFO - Sending prompt for statement: {'id': 7, 'statement': 'When a SYN segment arrives with a valid sequence number, the receiving TCP must return an acknowledgment.'}
+2025-04-20 16:58:59,828 - ERROR - HTTP Error on attempt 2: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-20 16:58:59,829 - ERROR - Response: {"error":"You have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits."}
+2025-04-20 16:59:04,831 - INFO - Sending prompt for statement: {'id': 7, 'statement': 'When a SYN segment arrives with a valid sequence number, the receiving TCP must return an acknowledgment.'}
+2025-04-20 16:59:04,894 - ERROR - HTTP Error on attempt 3: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-20 16:59:04,894 - ERROR - Response: {"error":"You have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits."}
+2025-04-20 16:59:05,904 - INFO - Processing statement 8/8
+2025-04-20 16:59:05,904 - INFO - Processing statement: {'id': 8, 'statement': 'A FIN segment must contain the sequence number of the last data octet being sent.'}
+2025-04-20 16:59:05,904 - INFO - Sending prompt for statement: {'id': 8, 'statement': 'A FIN segment must contain the sequence number of the last data octet being sent.'}
+2025-04-20 16:59:05,984 - ERROR - HTTP Error on attempt 1: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-20 16:59:05,984 - ERROR - Response: {"error":"You have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits."}
+2025-04-20 16:59:10,987 - INFO - Sending prompt for statement: {'id': 8, 'statement': 'A FIN segment must contain the sequence number of the last data octet being sent.'}
+2025-04-20 16:59:11,067 - ERROR - HTTP Error on attempt 2: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-20 16:59:11,067 - ERROR - Response: {"error":"You have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits."}
+2025-04-20 16:59:16,070 - INFO - Sending prompt for statement: {'id': 8, 'statement': 'A FIN segment must contain the sequence number of the last data octet being sent.'}
+2025-04-20 16:59:16,137 - ERROR - HTTP Error on attempt 3: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-20 16:59:16,140 - ERROR - Response: {"error":"You have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits."}
+2025-04-20 16:59:16,143 - INFO - Results saved to C:\Users\Simlo\Desktop\rfc-to-fol\rfc_analysis\tests\output\results_20250420_165916.json
+2025-04-20 17:01:52,283 - INFO - Current working directory: C:\Users\Simlo\Desktop\rfc-to-fol\rfc_analysis\tests
+2025-04-20 17:01:52,283 - INFO - Looking for statements file at: C:\Users\Simlo\Desktop\rfc-to-fol\rfc_analysis\tests\rfc_analysis\tests\rfc_statements.json
+2025-04-20 17:01:52,283 - WARNING - rfc_statements.json not found at C:\Users\Simlo\Desktop\rfc-to-fol\rfc_analysis\tests\rfc_analysis\tests\rfc_statements.json, using example statements
+2025-04-20 17:01:52,283 - INFO - Processing statement 1/8
+2025-04-20 17:01:52,283 - INFO - Processing statement: {'id': 1, 'statement': 'The sequence number field is a 32-bit number that identifies the first data octet in this segment.'}
+2025-04-20 17:01:52,283 - INFO - Sending prompt for statement: {'id': 1, 'statement': 'The sequence number field is a 32-bit number that identifies the first data octet in this segment.'}
+2025-04-20 17:01:52,495 - WARNING - Response missing Explanation section on attempt 1
+2025-04-20 17:01:52,495 - INFO - Sending prompt for statement: {'id': 1, 'statement': 'The sequence number field is a 32-bit number that identifies the first data octet in this segment.'}
+2025-04-20 17:01:52,596 - WARNING - Response missing Explanation section on attempt 2
+2025-04-20 17:01:52,596 - INFO - Sending prompt for statement: {'id': 1, 'statement': 'The sequence number field is a 32-bit number that identifies the first data octet in this segment.'}
+2025-04-20 17:01:52,693 - WARNING - Response missing Explanation section on attempt 3
+2025-04-20 17:01:53,700 - INFO - Processing statement 2/8
+2025-04-20 17:01:53,700 - INFO - Processing statement: {'id': 2, 'statement': 'The urgent pointer is interpreted only if the URG control bit is set.'}
+2025-04-20 17:01:53,700 - INFO - Sending prompt for statement: {'id': 2, 'statement': 'The urgent pointer is interpreted only if the URG control bit is set.'}
+2025-04-20 17:01:54,827 - INFO - Processing statement 3/8
+2025-04-20 17:01:54,827 - INFO - Processing statement: {'id': 3, 'statement': 'A TCP connection is established by the exchange of a SYN, a SYN-ACK, and an ACK.'}
+2025-04-20 17:01:54,827 - INFO - Sending prompt for statement: {'id': 3, 'statement': 'A TCP connection is established by the exchange of a SYN, a SYN-ACK, and an ACK.'}
+2025-04-20 17:01:54,925 - WARNING - Response missing Explanation section on attempt 1
+2025-04-20 17:01:54,925 - INFO - Sending prompt for statement: {'id': 3, 'statement': 'A TCP connection is established by the exchange of a SYN, a SYN-ACK, and an ACK.'}
+2025-04-20 17:01:55,037 - WARNING - Response missing Explanation section on attempt 2
+2025-04-20 17:01:55,037 - INFO - Sending prompt for statement: {'id': 3, 'statement': 'A TCP connection is established by the exchange of a SYN, a SYN-ACK, and an ACK.'}
+2025-04-20 17:01:55,713 - WARNING - Response missing Explanation section on attempt 3
+2025-04-20 17:01:56,718 - INFO - Processing statement 4/8
+2025-04-20 17:01:56,718 - INFO - Processing statement: {'id': 4, 'statement': 'If no acknowledgment is received before the timer expires, the segment is retransmitted.'}
+2025-04-20 17:01:56,720 - INFO - Sending prompt for statement: {'id': 4, 'statement': 'If no acknowledgment is received before the timer expires, the segment is retransmitted.'}
+2025-04-20 17:01:56,813 - INFO - Raw response: FOL:
+2025-04-20 17:01:56,813 - WARNING - Response missing Explanation section on attempt 1
+2025-04-20 17:01:56,813 - INFO - Sending prompt for statement: {'id': 4, 'statement': 'If no acknowledgment is received before the timer expires, the segment is retransmitted.'}
+2025-04-20 17:01:56,906 - INFO - Raw response: FOL:
+2025-04-20 17:01:56,906 - WARNING - Response missing Explanation section on attempt 2
+2025-04-20 17:01:56,906 - INFO - Sending prompt for statement: {'id': 4, 'statement': 'If no acknowledgment is received before the timer expires, the segment is retransmitted.'}
+2025-04-20 17:01:57,011 - INFO - Raw response: FOL:
+2025-04-20 17:01:57,019 - WARNING - Response missing Explanation section on attempt 3
+2025-04-20 17:01:58,026 - INFO - Processing statement 5/8
+2025-04-20 17:01:58,026 - INFO - Processing statement: {'id': 5, 'statement': 'The window field is a 16-bit field that specifies the size of the receive window.'}
+2025-04-20 17:01:58,026 - INFO - Sending prompt for statement: {'id': 5, 'statement': 'The window field is a 16-bit field that specifies the size of the receive window.'}
+2025-04-20 17:01:59,121 - INFO - Processing statement 6/8
+2025-04-20 17:01:59,121 - INFO - Processing statement: {'id': 6, 'statement': 'A TCP endpoint in LISTEN state must ignore RST segments.'}
+2025-04-20 17:01:59,121 - INFO - Sending prompt for statement: {'id': 6, 'statement': 'A TCP endpoint in LISTEN state must ignore RST segments.'}
+2025-04-20 17:01:59,728 - INFO - Raw response: FOL:
+2025-04-20 17:01:59,730 - WARNING - Response missing Explanation section on attempt 1
+2025-04-20 17:01:59,730 - INFO - Sending prompt for statement: {'id': 6, 'statement': 'A TCP endpoint in LISTEN state must ignore RST segments.'}
+2025-04-20 17:01:59,830 - INFO - Raw response: FOL:
+2025-04-20 17:01:59,830 - WARNING - Response missing Explanation section on attempt 2
+2025-04-20 17:01:59,830 - INFO - Sending prompt for statement: {'id': 6, 'statement': 'A TCP endpoint in LISTEN state must ignore RST segments.'}
+2025-04-20 17:01:59,985 - INFO - Raw response: FOL:
+2025-04-20 17:01:59,985 - WARNING - Response missing Explanation section on attempt 3
+2025-04-20 17:02:01,005 - INFO - Processing statement 7/8
+2025-04-20 17:02:01,006 - INFO - Processing statement: {'id': 7, 'statement': 'When a SYN segment arrives with a valid sequence number, the receiving TCP must return an acknowledgment.'}
+2025-04-20 17:02:01,006 - INFO - Sending prompt for statement: {'id': 7, 'statement': 'When a SYN segment arrives with a valid sequence number, the receiving TCP must return an acknowledgment.'}
+2025-04-20 17:02:01,120 - INFO - Raw response: FOL:
+2025-04-20 17:02:01,120 - WARNING - Response missing Explanation section on attempt 1
+2025-04-20 17:02:01,120 - INFO - Sending prompt for statement: {'id': 7, 'statement': 'When a SYN segment arrives with a valid sequence number, the receiving TCP must return an acknowledgment.'}
+2025-04-20 17:02:01,207 - INFO - Raw response: FOL:
+2025-04-20 17:02:01,207 - WARNING - Response missing Explanation section on attempt 2
+2025-04-20 17:02:01,207 - INFO - Sending prompt for statement: {'id': 7, 'statement': 'When a SYN segment arrives with a valid sequence number, the receiving TCP must return an acknowledgment.'}
+2025-04-20 17:02:01,317 - INFO - Raw response: FOL:
+2025-04-20 17:02:01,317 - WARNING - Response missing Explanation section on attempt 3
+2025-04-20 17:02:02,325 - INFO - Processing statement 8/8
+2025-04-20 17:02:02,325 - INFO - Processing statement: {'id': 8, 'statement': 'A FIN segment must contain the sequence number of the last data octet being sent.'}
+2025-04-20 17:02:02,325 - INFO - Sending prompt for statement: {'id': 8, 'statement': 'A FIN segment must contain the sequence number of the last data octet being sent.'}
+2025-04-20 17:02:02,441 - INFO - Results saved to C:\Users\Simlo\Desktop\rfc-to-fol\rfc_analysis\tests\output\results_20250420_170202.json
+2025-04-20 17:03:56,038 - INFO - Current working directory: C:\Users\Simlo\Desktop\rfc-to-fol\rfc_analysis\tests
+2025-04-20 17:03:56,045 - INFO - Looking for statements file at: C:\Users\Simlo\Desktop\rfc-to-fol\rfc_analysis\tests\rfc_analysis\tests\rfc_statements.json
+2025-04-20 17:03:56,045 - WARNING - rfc_statements.json not found at C:\Users\Simlo\Desktop\rfc-to-fol\rfc_analysis\tests\rfc_analysis\tests\rfc_statements.json, using example statements
+2025-04-20 17:03:56,046 - INFO - Processing statement 1/8
+2025-04-20 17:03:56,046 - INFO - Processing statement: {'id': 1, 'statement': 'The sequence number field is a 32-bit number that identifies the first data octet in this segment.'}
+2025-04-20 17:03:56,046 - INFO - Sending prompt for statement: {'id': 1, 'statement': 'The sequence number field is a 32-bit number that identifies the first data octet in this segment.'}
+2025-04-20 17:03:56,234 - WARNING - Response missing Explanation section on attempt 1
+2025-04-20 17:03:56,238 - INFO - Sending prompt for statement: {'id': 1, 'statement': 'The sequence number field is a 32-bit number that identifies the first data octet in this segment.'}
+2025-04-20 17:03:56,329 - WARNING - Response missing Explanation section on attempt 2
+2025-04-20 17:03:56,329 - INFO - Sending prompt for statement: {'id': 1, 'statement': 'The sequence number field is a 32-bit number that identifies the first data octet in this segment.'}
+2025-04-20 17:03:56,413 - WARNING - Response missing Explanation section on attempt 3
+2025-04-20 17:03:57,423 - INFO - Processing statement 2/8
+2025-04-20 17:03:57,424 - INFO - Processing statement: {'id': 2, 'statement': 'The urgent pointer is interpreted only if the URG control bit is set.'}
+2025-04-20 17:03:57,424 - INFO - Sending prompt for statement: {'id': 2, 'statement': 'The urgent pointer is interpreted only if the URG control bit is set.'}
+2025-04-20 17:03:58,597 - INFO - Processing statement 3/8
+2025-04-20 17:03:58,597 - INFO - Processing statement: {'id': 3, 'statement': 'A TCP connection is established by the exchange of a SYN, a SYN-ACK, and an ACK.'}
+2025-04-20 17:03:58,597 - INFO - Sending prompt for statement: {'id': 3, 'statement': 'A TCP connection is established by the exchange of a SYN, a SYN-ACK, and an ACK.'}
+2025-04-20 17:03:58,708 - WARNING - Response missing Explanation section on attempt 1
+2025-04-20 17:03:58,708 - INFO - Sending prompt for statement: {'id': 3, 'statement': 'A TCP connection is established by the exchange of a SYN, a SYN-ACK, and an ACK.'}
+2025-04-20 17:03:58,807 - WARNING - Response missing Explanation section on attempt 2
+2025-04-20 17:03:58,807 - INFO - Sending prompt for statement: {'id': 3, 'statement': 'A TCP connection is established by the exchange of a SYN, a SYN-ACK, and an ACK.'}
+2025-04-20 17:03:58,890 - WARNING - Response missing Explanation section on attempt 3
+2025-04-20 17:03:59,896 - INFO - Processing statement 4/8
+2025-04-20 17:03:59,896 - INFO - Processing statement: {'id': 4, 'statement': 'If no acknowledgment is received before the timer expires, the segment is retransmitted.'}
+2025-04-20 17:03:59,896 - INFO - Sending prompt for statement: {'id': 4, 'statement': 'If no acknowledgment is received before the timer expires, the segment is retransmitted.'}
+2025-04-20 17:04:00,001 - INFO - Raw response: FOL:
+2025-04-20 17:04:00,001 - WARNING - Response missing Explanation section on attempt 1
+2025-04-20 17:04:00,001 - INFO - Sending prompt for statement: {'id': 4, 'statement': 'If no acknowledgment is received before the timer expires, the segment is retransmitted.'}
+2025-04-20 17:04:00,099 - INFO - Raw response: FOL:
+2025-04-20 17:04:00,099 - WARNING - Response missing Explanation section on attempt 2
+2025-04-20 17:04:00,099 - INFO - Sending prompt for statement: {'id': 4, 'statement': 'If no acknowledgment is received before the timer expires, the segment is retransmitted.'}
+2025-04-20 17:04:00,192 - INFO - Raw response: FOL:
+2025-04-20 17:04:00,192 - WARNING - Response missing Explanation section on attempt 3
+2025-04-20 17:04:01,196 - INFO - Processing statement 5/8
+2025-04-20 17:04:01,196 - INFO - Processing statement: {'id': 5, 'statement': 'The window field is a 16-bit field that specifies the size of the receive window.'}
+2025-04-20 17:04:01,196 - INFO - Sending prompt for statement: {'id': 5, 'statement': 'The window field is a 16-bit field that specifies the size of the receive window.'}
+2025-04-20 17:04:02,293 - INFO - Processing statement 6/8
+2025-04-20 17:04:02,293 - INFO - Processing statement: {'id': 6, 'statement': 'A TCP endpoint in LISTEN state must ignore RST segments.'}
+2025-04-20 17:04:02,293 - INFO - Sending prompt for statement: {'id': 6, 'statement': 'A TCP endpoint in LISTEN state must ignore RST segments.'}
+2025-04-20 17:04:02,392 - INFO - Raw response: FOL:
+2025-04-20 17:04:02,392 - WARNING - Response missing Explanation section on attempt 1
+2025-04-20 17:04:02,392 - INFO - Sending prompt for statement: {'id': 6, 'statement': 'A TCP endpoint in LISTEN state must ignore RST segments.'}
+2025-04-20 17:04:02,500 - INFO - Raw response: FOL:
+2025-04-20 17:04:02,500 - WARNING - Response missing Explanation section on attempt 2
+2025-04-20 17:04:02,500 - INFO - Sending prompt for statement: {'id': 6, 'statement': 'A TCP endpoint in LISTEN state must ignore RST segments.'}
+2025-04-20 17:04:02,579 - INFO - Raw response: FOL:
+2025-04-20 17:04:02,579 - WARNING - Response missing Explanation section on attempt 3
+2025-04-20 17:04:03,587 - INFO - Processing statement 7/8
+2025-04-20 17:04:03,587 - INFO - Processing statement: {'id': 7, 'statement': 'When a SYN segment arrives with a valid sequence number, the receiving TCP must return an acknowledgment.'}
+2025-04-20 17:04:03,587 - INFO - Sending prompt for statement: {'id': 7, 'statement': 'When a SYN segment arrives with a valid sequence number, the receiving TCP must return an acknowledgment.'}
+2025-04-20 17:04:03,680 - INFO - Raw response: FOL:
+2025-04-20 17:04:03,680 - WARNING - Response missing Explanation section on attempt 1
+2025-04-20 17:04:03,680 - INFO - Sending prompt for statement: {'id': 7, 'statement': 'When a SYN segment arrives with a valid sequence number, the receiving TCP must return an acknowledgment.'}
+2025-04-20 17:04:03,779 - INFO - Raw response: FOL:
+2025-04-20 17:04:03,779 - WARNING - Response missing Explanation section on attempt 2
+2025-04-20 17:04:03,779 - INFO - Sending prompt for statement: {'id': 7, 'statement': 'When a SYN segment arrives with a valid sequence number, the receiving TCP must return an acknowledgment.'}
+2025-04-20 17:04:03,880 - INFO - Raw response: FOL:
+2025-04-20 17:04:03,880 - WARNING - Response missing Explanation section on attempt 3
+2025-04-20 17:04:04,890 - INFO - Processing statement 8/8
+2025-04-20 17:04:04,890 - INFO - Processing statement: {'id': 8, 'statement': 'A FIN segment must contain the sequence number of the last data octet being sent.'}
+2025-04-20 17:04:04,890 - INFO - Sending prompt for statement: {'id': 8, 'statement': 'A FIN segment must contain the sequence number of the last data octet being sent.'}
+2025-04-20 17:04:04,983 - INFO - Results saved to C:\Users\Simlo\Desktop\rfc-to-fol\rfc_analysis\tests\output\results_20250420_170404.json
+2025-04-20 17:05:20,417 - INFO - Current working directory: C:\Users\Simlo\Desktop\rfc-to-fol\rfc_analysis\tests
+2025-04-20 17:05:20,417 - INFO - Looking for statements file at: C:\Users\Simlo\Desktop\rfc-to-fol\rfc_analysis\tests\rfc_analysis\tests\rfc_statements.json
+2025-04-20 17:05:20,417 - WARNING - rfc_statements.json not found at C:\Users\Simlo\Desktop\rfc-to-fol\rfc_analysis\tests\rfc_analysis\tests\rfc_statements.json, using example statements
+2025-04-20 17:05:20,417 - INFO - Processing statement 1/5
+2025-04-20 17:05:20,417 - INFO - Processing statement: {'id': 1, 'statement': 'A TCP segment has a sequence number.'}
+2025-04-20 17:05:20,417 - INFO - Sending prompt for statement: {'id': 1, 'statement': 'A TCP segment has a sequence number.'}
+2025-04-20 17:05:23,064 - INFO - Processing statement 2/5
+2025-04-20 17:05:23,064 - INFO - Processing statement: {'id': 2, 'statement': 'A SYN segment has a SYN flag.'}
+2025-04-20 17:05:23,064 - INFO - Sending prompt for statement: {'id': 2, 'statement': 'A SYN segment has a SYN flag.'}
+2025-04-20 17:05:26,434 - INFO - Processing statement 3/5
+2025-04-20 17:05:26,434 - INFO - Processing statement: {'id': 3, 'statement': 'An ACK segment has an ACK flag.'}
+2025-04-20 17:05:26,436 - INFO - Sending prompt for statement: {'id': 3, 'statement': 'An ACK segment has an ACK flag.'}
+2025-04-20 17:05:29,914 - INFO - Processing statement 4/5
+2025-04-20 17:05:29,914 - INFO - Processing statement: {'id': 4, 'statement': 'A TCP endpoint has a state.'}
+2025-04-20 17:05:29,914 - INFO - Sending prompt for statement: {'id': 4, 'statement': 'A TCP endpoint has a state.'}
+2025-04-20 17:05:32,244 - INFO - Processing statement 5/5
+2025-04-20 17:05:32,244 - INFO - Processing statement: {'id': 5, 'statement': 'A TCP endpoint has a window size.'}
+2025-04-20 17:05:32,244 - INFO - Sending prompt for statement: {'id': 5, 'statement': 'A TCP endpoint has a window size.'}
+2025-04-20 17:05:33,626 - INFO - Results saved to C:\Users\Simlo\Desktop\rfc-to-fol\rfc_analysis\tests\output\results_20250420_170533.json
+2025-04-20 17:08:20,918 - INFO - Current working directory: C:\Users\Simlo\Desktop\rfc-to-fol\rfc_analysis\tests
+2025-04-20 17:08:20,918 - INFO - Looking for statements file at: C:\Users\Simlo\Desktop\rfc-to-fol\rfc_analysis\tests\rfc_analysis\tests\rfc_statements.json
+2025-04-20 17:08:20,918 - WARNING - rfc_statements.json not found at C:\Users\Simlo\Desktop\rfc-to-fol\rfc_analysis\tests\rfc_analysis\tests\rfc_statements.json, using example statements
+2025-04-20 17:08:20,922 - INFO - Processing statement 1/8
+2025-04-20 17:08:20,922 - INFO - Processing statement: {'id': 1, 'statement': 'A TCP segment has a sequence number.'}
+2025-04-20 17:08:20,923 - INFO - Sending prompt for statement: {'id': 1, 'statement': 'A TCP segment has a sequence number.'}
+2025-04-20 17:08:22,121 - INFO - Processing statement 2/8
+2025-04-20 17:08:22,121 - INFO - Processing statement: {'id': 2, 'statement': 'A SYN segment has a SYN flag.'}
+2025-04-20 17:08:22,121 - INFO - Sending prompt for statement: {'id': 2, 'statement': 'A SYN segment has a SYN flag.'}
+2025-04-20 17:08:23,212 - INFO - Processing statement 3/8
+2025-04-20 17:08:23,212 - INFO - Processing statement: {'id': 3, 'statement': 'An ACK segment has an ACK flag.'}
+2025-04-20 17:08:23,212 - INFO - Sending prompt for statement: {'id': 3, 'statement': 'An ACK segment has an ACK flag.'}
+2025-04-20 17:08:24,359 - INFO - Processing statement 4/8
+2025-04-20 17:08:24,359 - INFO - Processing statement: {'id': 4, 'statement': 'A TCP endpoint has a state.'}
+2025-04-20 17:08:24,359 - INFO - Sending prompt for statement: {'id': 4, 'statement': 'A TCP endpoint has a state.'}
+2025-04-20 17:08:25,453 - INFO - Processing statement 5/8
+2025-04-20 17:08:25,453 - INFO - Processing statement: {'id': 5, 'statement': 'A TCP endpoint has a window size.'}
+2025-04-20 17:08:25,453 - INFO - Sending prompt for statement: {'id': 5, 'statement': 'A TCP endpoint has a window size.'}
+2025-04-20 17:08:26,561 - INFO - Processing statement 6/8
+2025-04-20 17:08:26,561 - INFO - Processing statement: {'id': 6, 'statement': 'A TCP segment has a source port.'}
+2025-04-20 17:08:26,561 - INFO - Sending prompt for statement: {'id': 6, 'statement': 'A TCP segment has a source port.'}
+2025-04-20 17:08:29,022 - INFO - Processing statement 7/8
+2025-04-20 17:08:29,022 - INFO - Processing statement: {'id': 7, 'statement': 'A TCP segment has a destination port.'}
+2025-04-20 17:08:29,022 - INFO - Sending prompt for statement: {'id': 7, 'statement': 'A TCP segment has a destination port.'}
+2025-04-20 17:08:31,315 - INFO - Processing statement 8/8
+2025-04-20 17:08:31,315 - INFO - Processing statement: {'id': 8, 'statement': 'A TCP endpoint has a socket.'}
+2025-04-20 17:08:31,315 - INFO - Sending prompt for statement: {'id': 8, 'statement': 'A TCP endpoint has a socket.'}
+2025-04-20 17:08:32,722 - INFO - Results saved to C:\Users\Simlo\Desktop\rfc-to-fol\rfc_analysis\tests\output\results_20250420_170832.json
+2025-04-28 12:15:02,233 - INFO - Current working directory: C:\Users\Simlo\Desktop\rfc-to-fol\rfc_analysis\tests
+2025-04-28 12:15:02,236 - INFO - Looking for statements file at: C:\Users\Simlo\Desktop\rfc-to-fol\rfc_analysis\tests\rfc_analysis\tests\rfc_statements.json
+2025-04-28 12:15:02,236 - WARNING - rfc_statements.json not found at C:\Users\Simlo\Desktop\rfc-to-fol\rfc_analysis\tests\rfc_analysis\tests\rfc_statements.json, using example statements
+2025-04-28 12:15:02,236 - INFO - Processing statement 1/8
+2025-04-28 12:15:02,236 - INFO - Processing statement: {'id': 1, 'statement': 'A TCP segment has a sequence number.'}
+2025-04-28 12:15:02,236 - INFO - Sending prompt for statement: {'id': 1, 'statement': 'A TCP segment has a sequence number.'}
+2025-04-28 12:15:02,418 - ERROR - HTTP Error on attempt 1: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:15:02,418 - ERROR - Response: {"error":"You have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits."}
+2025-04-28 12:15:07,423 - INFO - Sending prompt for statement: {'id': 1, 'statement': 'A TCP segment has a sequence number.'}
+2025-04-28 12:15:07,550 - ERROR - HTTP Error on attempt 2: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:15:07,550 - ERROR - Response: {"error":"You have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits."}
+2025-04-28 12:15:12,555 - INFO - Sending prompt for statement: {'id': 1, 'statement': 'A TCP segment has a sequence number.'}
+2025-04-28 12:15:12,677 - ERROR - HTTP Error on attempt 3: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:15:12,679 - ERROR - Response: {"error":"You have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits."}
+2025-04-28 12:15:13,682 - INFO - Processing statement 2/8
+2025-04-28 12:15:13,682 - INFO - Processing statement: {'id': 2, 'statement': 'A SYN segment has a SYN flag.'}
+2025-04-28 12:15:13,682 - INFO - Sending prompt for statement: {'id': 2, 'statement': 'A SYN segment has a SYN flag.'}
+2025-04-28 12:15:13,917 - ERROR - HTTP Error on attempt 1: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:15:13,917 - ERROR - Response: {"error":"You have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits."}
+2025-04-28 12:15:18,925 - INFO - Sending prompt for statement: {'id': 2, 'statement': 'A SYN segment has a SYN flag.'}
+2025-04-28 12:15:19,064 - ERROR - HTTP Error on attempt 2: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:15:19,064 - ERROR - Response: {"error":"You have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits."}
+2025-04-28 12:15:24,069 - INFO - Sending prompt for statement: {'id': 2, 'statement': 'A SYN segment has a SYN flag.'}
+2025-04-28 12:15:24,184 - ERROR - HTTP Error on attempt 3: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:15:24,184 - ERROR - Response: {"error":"You have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits."}
+2025-04-28 12:15:25,192 - INFO - Processing statement 3/8
+2025-04-28 12:15:25,192 - INFO - Processing statement: {'id': 3, 'statement': 'An ACK segment has an ACK flag.'}
+2025-04-28 12:15:25,192 - INFO - Sending prompt for statement: {'id': 3, 'statement': 'An ACK segment has an ACK flag.'}
+2025-04-28 12:15:25,307 - ERROR - HTTP Error on attempt 1: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:15:25,307 - ERROR - Response: {"error":"You have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits."}
+2025-04-28 12:15:30,311 - INFO - Sending prompt for statement: {'id': 3, 'statement': 'An ACK segment has an ACK flag.'}
+2025-04-28 12:15:30,490 - ERROR - HTTP Error on attempt 2: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:15:30,490 - ERROR - Response: {"error":"You have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits."}
+2025-04-28 12:15:35,498 - INFO - Sending prompt for statement: {'id': 3, 'statement': 'An ACK segment has an ACK flag.'}
+2025-04-28 12:15:35,636 - ERROR - HTTP Error on attempt 3: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:15:35,636 - ERROR - Response: {"error":"You have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits."}
+2025-04-28 12:15:36,646 - INFO - Processing statement 4/8
+2025-04-28 12:15:36,646 - INFO - Processing statement: {'id': 4, 'statement': 'A TCP endpoint has a state.'}
+2025-04-28 12:15:36,646 - INFO - Sending prompt for statement: {'id': 4, 'statement': 'A TCP endpoint has a state.'}
+2025-04-28 12:15:36,768 - ERROR - HTTP Error on attempt 1: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:15:36,768 - ERROR - Response: {"error":"You have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits."}
+2025-04-28 12:15:41,776 - INFO - Sending prompt for statement: {'id': 4, 'statement': 'A TCP endpoint has a state.'}
+2025-04-28 12:15:41,938 - ERROR - HTTP Error on attempt 2: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:15:41,938 - ERROR - Response: {"error":"You have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits."}
+2025-04-28 12:15:46,943 - INFO - Sending prompt for statement: {'id': 4, 'statement': 'A TCP endpoint has a state.'}
+2025-04-28 12:15:47,137 - ERROR - HTTP Error on attempt 3: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:15:47,137 - ERROR - Response: {"error":"You have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits."}
+2025-04-28 12:15:48,147 - INFO - Processing statement 5/8
+2025-04-28 12:15:48,147 - INFO - Processing statement: {'id': 5, 'statement': 'A TCP endpoint has a window size.'}
+2025-04-28 12:15:48,147 - INFO - Sending prompt for statement: {'id': 5, 'statement': 'A TCP endpoint has a window size.'}
+2025-04-28 12:15:48,267 - ERROR - HTTP Error on attempt 1: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:15:48,271 - ERROR - Response: {"error":"You have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits."}
+2025-04-28 12:15:53,274 - INFO - Sending prompt for statement: {'id': 5, 'statement': 'A TCP endpoint has a window size.'}
+2025-04-28 12:15:53,404 - ERROR - HTTP Error on attempt 2: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:15:53,404 - ERROR - Response: {"error":"You have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits."}
+2025-04-28 12:15:58,409 - INFO - Sending prompt for statement: {'id': 5, 'statement': 'A TCP endpoint has a window size.'}
+2025-04-28 12:15:58,513 - ERROR - HTTP Error on attempt 3: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:15:58,513 - ERROR - Response: {"error":"You have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits."}
+2025-04-28 12:15:59,533 - INFO - Processing statement 6/8
+2025-04-28 12:15:59,533 - INFO - Processing statement: {'id': 6, 'statement': 'A TCP segment has a source port.'}
+2025-04-28 12:15:59,533 - INFO - Sending prompt for statement: {'id': 6, 'statement': 'A TCP segment has a source port.'}
+2025-04-28 12:15:59,648 - ERROR - HTTP Error on attempt 1: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:15:59,648 - ERROR - Response: {"error":"You have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits."}
+2025-04-28 12:16:04,651 - INFO - Sending prompt for statement: {'id': 6, 'statement': 'A TCP segment has a source port.'}
+2025-04-28 12:16:04,904 - ERROR - HTTP Error on attempt 2: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:16:04,910 - ERROR - Response: {"error":"You have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits."}
+2025-04-28 12:16:09,911 - INFO - Sending prompt for statement: {'id': 6, 'statement': 'A TCP segment has a source port.'}
+2025-04-28 12:16:10,033 - ERROR - HTTP Error on attempt 3: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:16:10,033 - ERROR - Response: {"error":"You have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits."}
+2025-04-28 12:16:11,042 - INFO - Processing statement 7/8
+2025-04-28 12:16:11,042 - INFO - Processing statement: {'id': 7, 'statement': 'A TCP segment has a destination port.'}
+2025-04-28 12:16:11,044 - INFO - Sending prompt for statement: {'id': 7, 'statement': 'A TCP segment has a destination port.'}
+2025-04-28 12:16:11,166 - ERROR - HTTP Error on attempt 1: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:16:11,171 - ERROR - Response: {"error":"You have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits."}

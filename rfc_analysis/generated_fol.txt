@@ -1,0 +1,52 @@
+
+================================================================================
+RFC Statement 1:
+"The sequence number field is a 32-bit number that identifies the first data octet in this segment."
+================================================================================
+FOL Expression:
+∀m, n, x. (is_tcp_segment(m) ∧ has_sequence_number(m, n) → is_first_data_octet(n, x))
+
+Explanation:
+For every TCP segment m with a sequence number n, there exists an identification of the first data octet x in the segment. This means that if a TCP segment has a sequence number, then it uniquely identifies the first data octet in this segment.
+
+================================================================================
+
+
+================================================================================
+RFC Statement 2:
+"The urgent pointer is interpreted only if the URG control bit is set."
+================================================================================
+Failed to generate complete response after all retries.
+
+================================================================================
+
+
+================================================================================
+RFC Statement 3:
+"A TCP connection is established by the exchange of a SYN, a SYN-ACK, and an ACK."
+================================================================================
+Failed to generate complete response after all retries.
+
+================================================================================
+
+
+================================================================================
+RFC Statement 4:
+"If no acknowledgment is received before the timer expires, the segment is retransmitted."
+================================================================================
+Failed to generate complete response after all retries.
+
+================================================================================
+
+
+================================================================================
+RFC Statement 5:
+"The window field is a 16-bit field that specifies the size of the receive window."
+================================================================================
+FOL Expression:
+∀m,w. (is_valid_segment(m) ∧ has_window_size(m, w) → 0 ≤ w ∧ w ≤ 65535)
+
+Explanation:
+This FOL expression states that for every message m which is a valid TCP segment and has a window size value w, it holds true that the window size should be between 0 and 65535 inclusive. This represents the 16-bit field limitation as well as non-negativity of the window size.
+
+================================================================================

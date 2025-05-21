@@ -1,0 +1,56 @@
+{
+  "model": "mistralai/Mixtral-8x7B-Instruct-v0.1",
+  "format": "FOL",
+  "timestamp": "2025-04-06T16:13:46.442679",
+  "examples": [
+    {
+      "input": "The server MUST terminate the connection after 5 failed attempts.",
+      "output": "\u2200s (Server(s) \u2227 FailedAttempts(s) \u2265 5 \u2192 \u2203t (TerminateConnection(t) \u2227 Connection(s) \u2227 Perform(s,t)))",
+      "success": true,
+      "error": null,
+      "time_seconds": 1.5152649879455566
+    },
+    {
+      "input": "If a client sends more than 3 retransmissions without receiving an ACK, it MUST abort the connection.",
+      "output": "\u2200c\u2200r (Client(c) \u2227 Retransmissions(r) \u2227 Count(r) > 3 \u2227 \u00acReceivedACK(c,r) \u2192 \u2203a (Abort(a) \u2227 Connection(c) \u2227 Perform(c,a)))",
+      "success": true,
+      "error": null,
+      "time_seconds": 1.3330388069152832
+    },
+    {
+      "input": "When a server receives a SYN segment, it MUST increment the SYN-RECEIVED counter.",
+      "output": "\u2200s\u2200syn (Server(s) \u2227 SYN(syn) \u2227 Receive(s,syn) \u2192 \u2203counter (SYNRECEIVED(counter) \u2227 Increment(counter)))",
+      "success": true,
+      "error": null,
+      "time_seconds": 0.05356574058532715
+    },
+    {
+      "input": "Packets with the RST bit set SHOULD be silently discarded.",
+      "output": "\u2200p (Packet(p) \u2227 RSTBitSet(p) \u2192 \u2203d (Discard(d) \u2227 Packet(p)))",
+      "success": true,
+      "error": null,
+      "time_seconds": 0.7584481239318848
+    },
+    {
+      "input": "If the server receives an ACK with an invalid sequence number, it MUST respond with a RST packet.",
+      "output": "\u2200s\u2200ack (Server(s) \u2227 ACK(ack) \u2227 \u00acValidSequenceNumber(ack) \u2192 \u2203rst (RST(rst) \u2227 Send(s,rst)))",
+      "success": true,
+      "error": null,
+      "time_seconds": 1.037290096282959
+    },
+    {
+      "input": "A TCP receiver SHOULD NOT shrink its window, and MUST not shrink the right window edge.",
+      "output": "\u2200s\u2200c\u2200w (TCPReceiver(s) \u2227 Connected(s,c) \u2227 Window(w) \u2227 Receive(s,w) \u2192 \u00acShrink(w) \u2227 \u00acShrinkRightEdge(w))",
+      "success": true,
+      "error": null,
+      "time_seconds": 1.2211525440216064
+    },
+    {
+      "input": "A TCP implementation MUST be robust against wrapped sequence numbers.",
+      "output": null,
+      "success": false,
+      "error": "Failed to generate valid output after 3 attempts. Last error: Formula must use standard predicates",
+      "time_seconds": 1.743776798248291
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "model": "mistralai/Mixtral-8x7B-Instruct-v0.1",
+  "format": "FOL",
+  "timestamp": "2025-03-30T19:41:22.295002",
+  "examples": [
+    {
+      "input": "The server MUST terminate the connection after 5 failed attempts.",
+      "output": null,
+      "success": false,
+      "error": "Failed to generate valid output after 3 attempts. Last error: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1 (Request ID: Root=1-67e9d6a1-5d0a1f4d3284e7162383aa30;00951fd5-938e-48fa-9aea-40f2234dc74b)\n\nYou have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits.",
+      "time_seconds": 0.3046538829803467
+    },
+    {
+      "input": "If a client sends more than 3 retransmissions without receiving an ACK, it MUST abort the connection.",
+      "output": null,
+      "success": false,
+      "error": "Failed to generate valid output after 3 attempts. Last error: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1 (Request ID: Root=1-67e9d6a1-62fe11c70a98be026b49ac6a;9359f1c2-537e-41c3-9eda-39c522120e82)\n\nYou have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits.",
+      "time_seconds": 0.2190554141998291
+    },
+    {
+      "input": "When a server receives a SYN segment, it MUST increment the SYN-RECEIVED counter.",
+      "output": null,
+      "success": false,
+      "error": "Failed to generate valid output after 3 attempts. Last error: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1 (Request ID: Root=1-67e9d6a1-7b063039768942d22a7412e3;c288ccc0-26a9-4fe7-a5f3-280af5d9e6a5)\n\nYou have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits.",
+      "time_seconds": 0.19145727157592773
+    },
+    {
+      "input": "Packets with the RST bit set SHOULD be silently discarded.",
+      "output": null,
+      "success": false,
+      "error": "Failed to generate valid output after 3 attempts. Last error: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1 (Request ID: Root=1-67e9d6a1-389a01a956dd449a5e5369bb;0007a9bb-a6c9-4efa-9748-deb20eed2de9)\n\nYou have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits.",
+      "time_seconds": 0.1700277328491211
+    },
+    {
+      "input": "If the server receives an ACK with an invalid sequence number, it MUST respond with a RST packet.",
+      "output": null,
+      "success": false,
+      "error": "Failed to generate valid output after 3 attempts. Last error: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1 (Request ID: Root=1-67e9d6a1-1fc5199a2812a6b77046982c;8274b061-9423-4082-9491-ffbf6c11992e)\n\nYou have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits.",
+      "time_seconds": 0.18019843101501465
+    },
+    {
+      "input": "A TCP receiver SHOULD NOT shrink its window, and MUST not shrink the right window edge.",
+      "output": null,
+      "success": false,
+      "error": "Failed to generate valid output after 3 attempts. Last error: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1 (Request ID: Root=1-67e9d6a2-16add0845cf4d7e13ee5c418;5e78ed56-7f41-4d89-9050-57f6c0d1357a)\n\nYou have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits.",
+      "time_seconds": 0.17335820198059082
+    },
+    {
+      "input": "A TCP implementation MUST be robust against wrapped sequence numbers.",
+      "output": null,
+      "success": false,
+      "error": "Failed to generate valid output after 3 attempts. Last error: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1 (Request ID: Root=1-67e9d6a2-2c39cd9f00bf8e0f22cf5174;47463f9e-84fa-406c-838a-110787680d9a)\n\nYou have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits.",
+      "time_seconds": 0.182448148727417
+    }
+  ]
+}

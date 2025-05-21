@@ -1,0 +1,563 @@
+2025-04-20 17:16:19,402 - INFO - Current working directory: C:\Users\Simlo\Desktop\rfc-to-fol\rfc_analysis\tests
+2025-04-20 17:16:19,417 - INFO - Processing statement 1/8
+2025-04-20 17:16:19,417 - INFO - Processing statement: A TCP segment has a sequence number.
+2025-04-20 17:16:19,417 - INFO - Sending prompt for statement: A TCP segment has a sequence number.
+2025-04-20 17:16:20,082 - INFO - Raw response: SMT-LIB:
+2025-04-20 17:16:20,082 - WARNING - Response missing Explanation section on attempt 1
+2025-04-20 17:16:20,083 - INFO - Sending prompt for statement: A TCP segment has a sequence number.
+2025-04-20 17:16:20,172 - INFO - Raw response: SMT-LIB:
+2025-04-20 17:16:20,175 - WARNING - Response missing Explanation section on attempt 2
+2025-04-20 17:16:20,175 - INFO - Sending prompt for statement: A TCP segment has a sequence number.
+2025-04-20 17:16:20,251 - INFO - Raw response: SMT-LIB:
+2025-04-20 17:16:20,251 - WARNING - Response missing Explanation section on attempt 3
+2025-04-20 17:16:21,260 - INFO - Processing statement 2/8
+2025-04-20 17:16:21,260 - INFO - Processing statement: A SYN segment has a SYN flag.
+2025-04-20 17:16:21,260 - INFO - Sending prompt for statement: A SYN segment has a SYN flag.
+2025-04-20 17:16:21,519 - INFO - Raw response: SMT-LIB:
+2025-04-20 17:16:21,519 - WARNING - Response missing Explanation section on attempt 1
+2025-04-20 17:16:21,519 - INFO - Sending prompt for statement: A SYN segment has a SYN flag.
+2025-04-20 17:16:21,617 - INFO - Raw response: SMT-LIB:
+2025-04-20 17:16:21,617 - WARNING - Response missing Explanation section on attempt 2
+2025-04-20 17:16:21,617 - INFO - Sending prompt for statement: A SYN segment has a SYN flag.
+2025-04-20 17:16:21,694 - INFO - Raw response: SMT-LIB:
+2025-04-20 17:16:21,697 - WARNING - Response missing Explanation section on attempt 3
+2025-04-20 17:16:22,703 - INFO - Processing statement 3/8
+2025-04-20 17:16:22,703 - INFO - Processing statement: An ACK segment has an ACK flag.
+2025-04-20 17:16:22,703 - INFO - Sending prompt for statement: An ACK segment has an ACK flag.
+2025-04-20 17:16:22,954 - INFO - Raw response: SMT-LIB:
+2025-04-20 17:16:22,954 - WARNING - Response missing Explanation section on attempt 1
+2025-04-20 17:16:22,954 - INFO - Sending prompt for statement: An ACK segment has an ACK flag.
+2025-04-20 17:16:23,056 - INFO - Raw response: SMT-LIB:
+2025-04-20 17:16:23,063 - WARNING - Response missing Explanation section on attempt 2
+2025-04-20 17:16:23,063 - INFO - Sending prompt for statement: An ACK segment has an ACK flag.
+2025-04-20 17:16:23,153 - INFO - Raw response: SMT-LIB:
+2025-04-20 17:16:23,153 - WARNING - Response missing Explanation section on attempt 3
+2025-04-20 17:16:24,158 - INFO - Processing statement 4/8
+2025-04-20 17:16:24,158 - INFO - Processing statement: A TCP endpoint has a state.
+2025-04-20 17:16:24,158 - INFO - Sending prompt for statement: A TCP endpoint has a state.
+2025-04-20 17:16:24,402 - INFO - Raw response: SMT-LIB:
+2025-04-20 17:16:24,402 - WARNING - Response missing Explanation section on attempt 1
+2025-04-20 17:16:24,402 - INFO - Sending prompt for statement: A TCP endpoint has a state.
+2025-04-20 17:16:24,465 - INFO - Raw response: SMT-LIB:
+2025-04-20 17:16:24,465 - WARNING - Response missing Explanation section on attempt 2
+2025-04-20 17:16:24,465 - INFO - Sending prompt for statement: A TCP endpoint has a state.
+2025-04-20 17:16:24,544 - INFO - Raw response: SMT-LIB:
+2025-04-20 17:16:24,544 - WARNING - Response missing Explanation section on attempt 3
+2025-04-20 17:16:25,551 - INFO - Processing statement 5/8
+2025-04-20 17:16:25,551 - INFO - Processing statement: A TCP endpoint has a window size.
+2025-04-20 17:16:25,551 - INFO - Sending prompt for statement: A TCP endpoint has a window size.
+2025-04-20 17:16:26,015 - INFO - Raw response: SMT-LIB:
+2025-04-20 17:16:26,015 - WARNING - Response missing Explanation section on attempt 1
+2025-04-20 17:16:26,015 - INFO - Sending prompt for statement: A TCP endpoint has a window size.
+2025-04-20 17:16:26,188 - INFO - Raw response: SMT-LIB:
+2025-04-20 17:16:26,188 - WARNING - Response missing Explanation section on attempt 2
+2025-04-20 17:16:26,188 - INFO - Sending prompt for statement: A TCP endpoint has a window size.
+2025-04-20 17:16:26,282 - INFO - Raw response: SMT-LIB:
+2025-04-20 17:16:26,282 - WARNING - Response missing Explanation section on attempt 3
+2025-04-20 17:16:27,291 - INFO - Processing statement 6/8
+2025-04-20 17:16:27,291 - INFO - Processing statement: A TCP segment has a source port.
+2025-04-20 17:16:27,291 - INFO - Sending prompt for statement: A TCP segment has a source port.
+2025-04-20 17:16:27,547 - INFO - Raw response: SMT-LIB:
+2025-04-20 17:16:27,547 - WARNING - Response missing Explanation section on attempt 1
+2025-04-20 17:16:27,547 - INFO - Sending prompt for statement: A TCP segment has a source port.
+2025-04-20 17:16:27,635 - INFO - Raw response: SMT-LIB:
+2025-04-20 17:16:27,635 - WARNING - Response missing Explanation section on attempt 2
+2025-04-20 17:16:27,635 - INFO - Sending prompt for statement: A TCP segment has a source port.
+2025-04-20 17:16:27,718 - INFO - Raw response: SMT-LIB:
+2025-04-20 17:16:27,718 - WARNING - Response missing Explanation section on attempt 3
+2025-04-20 17:16:28,731 - INFO - Processing statement 7/8
+2025-04-20 17:16:28,731 - INFO - Processing statement: A TCP segment has a destination port.
+2025-04-20 17:16:28,731 - INFO - Sending prompt for statement: A TCP segment has a destination port.
+2025-04-20 17:16:29,084 - INFO - Raw response: SMT-LIB:
+2025-04-20 17:16:29,084 - WARNING - Response missing Explanation section on attempt 1
+2025-04-20 17:16:29,084 - INFO - Sending prompt for statement: A TCP segment has a destination port.
+2025-04-20 17:16:29,205 - INFO - Raw response: SMT-LIB:
+2025-04-20 17:16:29,205 - WARNING - Response missing Explanation section on attempt 2
+2025-04-20 17:16:29,205 - INFO - Sending prompt for statement: A TCP segment has a destination port.
+2025-04-20 17:16:29,288 - INFO - Raw response: SMT-LIB:
+2025-04-20 17:16:29,288 - WARNING - Response missing Explanation section on attempt 3
+2025-04-20 17:16:30,293 - INFO - Processing statement 8/8
+2025-04-20 17:16:30,293 - INFO - Processing statement: A TCP endpoint has a socket.
+2025-04-20 17:16:30,293 - INFO - Sending prompt for statement: A TCP endpoint has a socket.
+2025-04-20 17:16:30,525 - INFO - Raw response: SMT-LIB:
+2025-04-20 17:16:30,525 - WARNING - Response missing Explanation section on attempt 1
+2025-04-20 17:16:30,540 - INFO - Sending prompt for statement: A TCP endpoint has a socket.
+2025-04-20 17:16:30,632 - INFO - Raw response: SMT-LIB:
+2025-04-20 17:16:30,632 - WARNING - Response missing Explanation section on attempt 2
+2025-04-20 17:16:30,632 - INFO - Sending prompt for statement: A TCP endpoint has a socket.
+2025-04-20 17:16:30,704 - INFO - Raw response: SMT-LIB:
+2025-04-20 17:16:30,704 - WARNING - Response missing Explanation section on attempt 3
+2025-04-20 17:16:30,704 - INFO - Results saved to C:\Users\Simlo\Desktop\rfc-to-fol\rfc_analysis\tests\output\smtlib_results_20250420_171630.json
+2025-04-20 17:36:46,779 - INFO - Current working directory: C:\Users\Simlo\Desktop\rfc-to-fol\rfc_analysis\tests
+2025-04-20 17:36:46,779 - INFO - Processing statement 1/8
+2025-04-20 17:36:46,779 - INFO - Processing statement: A TCP segment has a sequence number.
+2025-04-20 17:36:46,779 - INFO - Sending prompt for statement: A TCP segment has a sequence number.
+2025-04-20 17:36:50,162 - INFO - Raw response: SMT-LIB:
+```less
+(declare-sort Message)
+(declare-fun has_sequence_number (Message Int) Bool)
+(assert (forall ((m Message))
+          (exists ((n Int))
+            (has_sequence_number m n))))
+```
+Explanation:
+
+We declare the `Message` sort and the `has_sequence_number` function that takes a message and an integer representing the sequence number. We use a universal quantifier to iterate over all messages, and for each message, we assert the existence of some integer as its sequence number using an existential quantifier. This ensures every TCP segment has a sequence number.
+2025-04-20 17:36:51,168 - INFO - Processing statement 2/8
+2025-04-20 17:36:51,169 - INFO - Processing statement: A SYN segment has a SYN flag.
+2025-04-20 17:36:51,169 - INFO - Sending prompt for statement: A SYN segment has a SYN flag.
+2025-04-20 17:36:58,538 - INFO - Raw response: SMT-LIB:
+```less
+(declare-sort Message)
+(declare-fun has_flag (Message Symbol) Bool)
+(assert (forall ((m Message))
+  (= (has_flag m SYN)
+     (or (and (has_flag m SYN) (not (has_flag m ACK)))
+         (and (not (has_flag m SYN)) (has_flag m ACK))
+         (and (has_flag m SYN) (has_flag m ACK))))))
+```
+
+Explanation:
+We declare the `Message` sort and the `has_flag` function that takes a message and a symbol as arguments. We use the `Symbol` sort to represent TCP flags such as SYN, ACK, etc.
+
+Our goal is to enforce that a SYN segment must have the SYN flag set. To achieve this, we write an assertion using a universally quantified variable `m` representing a message. We check whether the SYN flag is present in three different scenarios:
+
+1. When only the SYN flag is present (but not the ACK flag).
+2. When the ACK flag is present but not the SYN flag.
+3. When both SYN and ACK flags are present.
+
+In each scenario, we require that the `has_flag` function returns true for the SYN flag on message `m`. If none of these cases apply, it means there's no SYN flag associated with message `m`, so our condition would fail. This ensures that every SYN segment will indeed have its SYN flag set.
+2025-04-20 17:36:59,547 - INFO - Processing statement 3/8
+2025-04-20 17:36:59,547 - INFO - Processing statement: An ACK segment has an ACK flag.
+2025-04-20 17:36:59,547 - INFO - Sending prompt for statement: An ACK segment has an ACK flag.
+2025-04-20 17:36:59,870 - INFO - Raw response: SMT-LIB:
+2025-04-20 17:36:59,870 - WARNING - Response missing Explanation section on attempt 1
+2025-04-20 17:36:59,871 - INFO - Sending prompt for statement: An ACK segment has an ACK flag.
+2025-04-20 17:36:59,944 - INFO - Raw response: SMT-LIB:
+2025-04-20 17:36:59,944 - WARNING - Response missing Explanation section on attempt 2
+2025-04-20 17:36:59,944 - INFO - Sending prompt for statement: An ACK segment has an ACK flag.
+2025-04-20 17:37:00,048 - INFO - Raw response: SMT-LIB:
+2025-04-20 17:37:00,048 - WARNING - Response missing Explanation section on attempt 3
+2025-04-20 17:37:01,054 - INFO - Processing statement 4/8
+2025-04-20 17:37:01,054 - INFO - Processing statement: A TCP endpoint has a state.
+2025-04-20 17:37:01,054 - INFO - Sending prompt for statement: A TCP endpoint has a state.
+2025-04-20 17:37:01,404 - INFO - Raw response: SMT-LIB:
+2025-04-20 17:37:01,404 - WARNING - Response missing Explanation section on attempt 1
+2025-04-20 17:37:01,404 - INFO - Sending prompt for statement: A TCP endpoint has a state.
+2025-04-20 17:37:01,473 - INFO - Raw response: SMT-LIB:
+2025-04-20 17:37:01,473 - WARNING - Response missing Explanation section on attempt 2
+2025-04-20 17:37:01,473 - INFO - Sending prompt for statement: A TCP endpoint has a state.
+2025-04-20 17:37:01,588 - INFO - Raw response: SMT-LIB:
+2025-04-20 17:37:01,588 - WARNING - Response missing Explanation section on attempt 3
+2025-04-20 17:37:02,592 - INFO - Processing statement 5/8
+2025-04-20 17:37:02,592 - INFO - Processing statement: A TCP endpoint has a window size.
+2025-04-20 17:37:02,592 - INFO - Sending prompt for statement: A TCP endpoint has a window size.
+2025-04-20 17:37:02,942 - INFO - Raw response: SMT-LIB:
+2025-04-20 17:37:02,942 - WARNING - Response missing Explanation section on attempt 1
+2025-04-20 17:37:02,942 - INFO - Sending prompt for statement: A TCP endpoint has a window size.
+2025-04-20 17:37:03,020 - INFO - Raw response: SMT-LIB:
+2025-04-20 17:37:03,020 - WARNING - Response missing Explanation section on attempt 2
+2025-04-20 17:37:03,020 - INFO - Sending prompt for statement: A TCP endpoint has a window size.
+2025-04-20 17:37:03,096 - INFO - Raw response: SMT-LIB:
+2025-04-20 17:37:03,096 - WARNING - Response missing Explanation section on attempt 3
+2025-04-20 17:37:04,108 - INFO - Processing statement 6/8
+2025-04-20 17:37:04,109 - INFO - Processing statement: A TCP segment has a source port.
+2025-04-20 17:37:04,109 - INFO - Sending prompt for statement: A TCP segment has a source port.
+2025-04-20 17:37:04,477 - INFO - Raw response: SMT-LIB:
+2025-04-20 17:37:04,477 - WARNING - Response missing Explanation section on attempt 1
+2025-04-20 17:37:04,477 - INFO - Sending prompt for statement: A TCP segment has a source port.
+2025-04-20 17:37:04,612 - INFO - Raw response: SMT-LIB:
+2025-04-20 17:37:04,612 - WARNING - Response missing Explanation section on attempt 2
+2025-04-20 17:37:04,612 - INFO - Sending prompt for statement: A TCP segment has a source port.
+2025-04-20 17:37:04,693 - INFO - Raw response: SMT-LIB:
+2025-04-20 17:37:04,693 - WARNING - Response missing Explanation section on attempt 3
+2025-04-20 17:37:05,697 - INFO - Processing statement 7/8
+2025-04-20 17:37:05,697 - INFO - Processing statement: A TCP segment has a destination port.
+2025-04-20 17:37:05,697 - INFO - Sending prompt for statement: A TCP segment has a destination port.
+2025-04-20 17:37:06,016 - INFO - Raw response: SMT-LIB:
+2025-04-20 17:37:06,016 - WARNING - Response missing Explanation section on attempt 1
+2025-04-20 17:37:06,016 - INFO - Sending prompt for statement: A TCP segment has a destination port.
+2025-04-20 17:37:06,124 - INFO - Raw response: SMT-LIB:
+2025-04-20 17:37:06,124 - WARNING - Response missing Explanation section on attempt 2
+2025-04-20 17:37:06,124 - INFO - Sending prompt for statement: A TCP segment has a destination port.
+2025-04-20 17:37:06,242 - INFO - Raw response: SMT-LIB:
+2025-04-20 17:37:06,242 - WARNING - Response missing Explanation section on attempt 3
+2025-04-20 17:37:07,253 - INFO - Processing statement 8/8
+2025-04-20 17:37:07,253 - INFO - Processing statement: A TCP endpoint has a socket.
+2025-04-20 17:37:07,253 - INFO - Sending prompt for statement: A TCP endpoint has a socket.
+2025-04-20 17:37:07,648 - INFO - Raw response: SMT-LIB:
+2025-04-20 17:37:07,648 - WARNING - Response missing Explanation section on attempt 1
+2025-04-20 17:37:07,648 - INFO - Sending prompt for statement: A TCP endpoint has a socket.
+2025-04-20 17:37:07,742 - INFO - Raw response: SMT-LIB:
+2025-04-20 17:37:07,742 - WARNING - Response missing Explanation section on attempt 2
+2025-04-20 17:37:07,742 - INFO - Sending prompt for statement: A TCP endpoint has a socket.
+2025-04-20 17:37:07,885 - INFO - Raw response: SMT-LIB:
+2025-04-20 17:37:07,885 - WARNING - Response missing Explanation section on attempt 3
+2025-04-20 17:37:07,896 - INFO - Results saved to C:\Users\Simlo\Desktop\rfc-to-fol\rfc_analysis\tests\output\smtlib_results_20250420_173707.json
+2025-04-28 12:04:46,560 - INFO - Current working directory: C:\Users\Simlo\Desktop\rfc-to-fol\rfc_analysis\tests
+2025-04-28 12:04:46,561 - INFO - Processing statement 1/8
+2025-04-28 12:04:46,561 - INFO - Processing statement: A TCP segment has a sequence number. (attempt 1/5)
+2025-04-28 12:04:46,561 - INFO - Sending prompt for statement: A TCP segment has a sequence number.
+2025-04-28 12:04:46,743 - ERROR - HTTP Error on attempt 1: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:04:51,744 - INFO - Sending prompt for statement: A TCP segment has a sequence number.
+2025-04-28 12:04:51,862 - ERROR - HTTP Error on attempt 2: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:04:56,864 - INFO - Sending prompt for statement: A TCP segment has a sequence number.
+2025-04-28 12:04:56,979 - ERROR - HTTP Error on attempt 3: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:04:56,979 - WARNING - Incomplete response on attempt 1
+2025-04-28 12:04:56,980 - INFO - Processing statement: A TCP segment has a sequence number. (attempt 2/5)
+2025-04-28 12:04:56,980 - INFO - Sending prompt for statement: A TCP segment has a sequence number.
+2025-04-28 12:04:57,094 - ERROR - HTTP Error on attempt 1: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:05:02,095 - INFO - Sending prompt for statement: A TCP segment has a sequence number.
+2025-04-28 12:05:02,293 - ERROR - HTTP Error on attempt 2: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:05:07,293 - INFO - Sending prompt for statement: A TCP segment has a sequence number.
+2025-04-28 12:05:07,411 - ERROR - HTTP Error on attempt 3: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:05:07,412 - WARNING - Incomplete response on attempt 2
+2025-04-28 12:05:07,412 - INFO - Processing statement: A TCP segment has a sequence number. (attempt 3/5)
+2025-04-28 12:05:07,412 - INFO - Sending prompt for statement: A TCP segment has a sequence number.
+2025-04-28 12:05:07,537 - ERROR - HTTP Error on attempt 1: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:05:12,538 - INFO - Sending prompt for statement: A TCP segment has a sequence number.
+2025-04-28 12:05:12,672 - ERROR - HTTP Error on attempt 2: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:05:17,673 - INFO - Sending prompt for statement: A TCP segment has a sequence number.
+2025-04-28 12:05:17,792 - ERROR - HTTP Error on attempt 3: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:05:17,793 - WARNING - Incomplete response on attempt 3
+2025-04-28 12:05:17,793 - INFO - Processing statement: A TCP segment has a sequence number. (attempt 4/5)
+2025-04-28 12:05:17,793 - INFO - Sending prompt for statement: A TCP segment has a sequence number.
+2025-04-28 12:05:17,919 - ERROR - HTTP Error on attempt 1: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:05:22,920 - INFO - Sending prompt for statement: A TCP segment has a sequence number.
+2025-04-28 12:05:23,048 - ERROR - HTTP Error on attempt 2: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:05:28,049 - INFO - Sending prompt for statement: A TCP segment has a sequence number.
+2025-04-28 12:05:28,174 - ERROR - HTTP Error on attempt 3: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:05:28,175 - WARNING - Incomplete response on attempt 4
+2025-04-28 12:05:28,176 - INFO - Processing statement: A TCP segment has a sequence number. (attempt 5/5)
+2025-04-28 12:05:28,176 - INFO - Sending prompt for statement: A TCP segment has a sequence number.
+2025-04-28 12:05:28,293 - ERROR - HTTP Error on attempt 1: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:06:48,498 - INFO - Current working directory: C:\Users\Simlo\Desktop\rfc-to-fol\rfc_analysis\tests
+2025-04-28 12:06:48,498 - INFO - Processing statement 1/8
+2025-04-28 12:06:48,498 - INFO - Processing statement: A TCP segment has a sequence number. (attempt 1/5)
+2025-04-28 12:06:48,498 - INFO - Sending prompt for statement: A TCP segment has a sequence number.
+2025-04-28 12:06:48,733 - ERROR - HTTP Error on attempt 1: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:06:53,738 - INFO - Sending prompt for statement: A TCP segment has a sequence number.
+2025-04-28 12:06:53,855 - ERROR - HTTP Error on attempt 2: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:06:58,861 - INFO - Sending prompt for statement: A TCP segment has a sequence number.
+2025-04-28 12:06:58,977 - ERROR - HTTP Error on attempt 3: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:06:58,977 - WARNING - Incomplete response on attempt 1
+2025-04-28 12:06:58,977 - INFO - Processing statement: A TCP segment has a sequence number. (attempt 2/5)
+2025-04-28 12:06:58,977 - INFO - Sending prompt for statement: A TCP segment has a sequence number.
+2025-04-28 12:06:59,096 - ERROR - HTTP Error on attempt 1: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:07:04,100 - INFO - Sending prompt for statement: A TCP segment has a sequence number.
+2025-04-28 12:07:04,211 - ERROR - HTTP Error on attempt 2: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:07:09,220 - INFO - Sending prompt for statement: A TCP segment has a sequence number.
+2025-04-28 12:07:09,336 - ERROR - HTTP Error on attempt 3: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:07:09,336 - WARNING - Incomplete response on attempt 2
+2025-04-28 12:07:09,336 - INFO - Processing statement: A TCP segment has a sequence number. (attempt 3/5)
+2025-04-28 12:07:09,341 - INFO - Sending prompt for statement: A TCP segment has a sequence number.
+2025-04-28 12:07:09,517 - ERROR - HTTP Error on attempt 1: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:07:14,519 - INFO - Sending prompt for statement: A TCP segment has a sequence number.
+2025-04-28 12:07:14,630 - ERROR - HTTP Error on attempt 2: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:07:19,640 - INFO - Sending prompt for statement: A TCP segment has a sequence number.
+2025-04-28 12:07:19,774 - ERROR - HTTP Error on attempt 3: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:07:19,774 - WARNING - Incomplete response on attempt 3
+2025-04-28 12:07:19,774 - INFO - Processing statement: A TCP segment has a sequence number. (attempt 4/5)
+2025-04-28 12:07:19,774 - INFO - Sending prompt for statement: A TCP segment has a sequence number.
+2025-04-28 12:07:19,896 - ERROR - HTTP Error on attempt 1: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:07:24,902 - INFO - Sending prompt for statement: A TCP segment has a sequence number.
+2025-04-28 12:07:25,016 - ERROR - HTTP Error on attempt 2: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:07:30,020 - INFO - Sending prompt for statement: A TCP segment has a sequence number.
+2025-04-28 12:07:30,144 - ERROR - HTTP Error on attempt 3: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:07:30,144 - WARNING - Incomplete response on attempt 4
+2025-04-28 12:07:30,144 - INFO - Processing statement: A TCP segment has a sequence number. (attempt 5/5)
+2025-04-28 12:07:30,144 - INFO - Sending prompt for statement: A TCP segment has a sequence number.
+2025-04-28 12:07:30,260 - ERROR - HTTP Error on attempt 1: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:07:35,263 - INFO - Sending prompt for statement: A TCP segment has a sequence number.
+2025-04-28 12:07:35,381 - ERROR - HTTP Error on attempt 2: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:07:40,385 - INFO - Sending prompt for statement: A TCP segment has a sequence number.
+2025-04-28 12:07:40,541 - ERROR - HTTP Error on attempt 3: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:07:40,543 - WARNING - Incomplete response on attempt 5
+2025-04-28 12:07:41,544 - INFO - Processing statement 2/8
+2025-04-28 12:07:41,544 - INFO - Processing statement: A SYN segment has a SYN flag. (attempt 1/5)
+2025-04-28 12:07:41,544 - INFO - Sending prompt for statement: A SYN segment has a SYN flag.
+2025-04-28 12:07:41,664 - ERROR - HTTP Error on attempt 1: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:07:46,666 - INFO - Sending prompt for statement: A SYN segment has a SYN flag.
+2025-04-28 12:07:46,788 - ERROR - HTTP Error on attempt 2: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:07:51,792 - INFO - Sending prompt for statement: A SYN segment has a SYN flag.
+2025-04-28 12:07:51,963 - ERROR - HTTP Error on attempt 3: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:07:51,963 - WARNING - Incomplete response on attempt 1
+2025-04-28 12:07:51,963 - INFO - Processing statement: A SYN segment has a SYN flag. (attempt 2/5)
+2025-04-28 12:07:51,963 - INFO - Sending prompt for statement: A SYN segment has a SYN flag.
+2025-04-28 12:07:52,090 - ERROR - HTTP Error on attempt 1: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:07:57,095 - INFO - Sending prompt for statement: A SYN segment has a SYN flag.
+2025-04-28 12:07:57,206 - ERROR - HTTP Error on attempt 2: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:08:02,211 - INFO - Sending prompt for statement: A SYN segment has a SYN flag.
+2025-04-28 12:08:02,334 - ERROR - HTTP Error on attempt 3: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:08:02,335 - WARNING - Incomplete response on attempt 2
+2025-04-28 12:08:02,336 - INFO - Processing statement: A SYN segment has a SYN flag. (attempt 3/5)
+2025-04-28 12:08:02,336 - INFO - Sending prompt for statement: A SYN segment has a SYN flag.
+2025-04-28 12:08:02,448 - ERROR - HTTP Error on attempt 1: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:08:07,453 - INFO - Sending prompt for statement: A SYN segment has a SYN flag.
+2025-04-28 12:08:07,575 - ERROR - HTTP Error on attempt 2: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:08:12,579 - INFO - Sending prompt for statement: A SYN segment has a SYN flag.
+2025-04-28 12:08:12,698 - ERROR - HTTP Error on attempt 3: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:08:12,698 - WARNING - Incomplete response on attempt 3
+2025-04-28 12:08:12,698 - INFO - Processing statement: A SYN segment has a SYN flag. (attempt 4/5)
+2025-04-28 12:08:12,698 - INFO - Sending prompt for statement: A SYN segment has a SYN flag.
+2025-04-28 12:08:12,821 - ERROR - HTTP Error on attempt 1: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:08:17,823 - INFO - Sending prompt for statement: A SYN segment has a SYN flag.
+2025-04-28 12:08:17,948 - ERROR - HTTP Error on attempt 2: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:08:22,950 - INFO - Sending prompt for statement: A SYN segment has a SYN flag.
+2025-04-28 12:08:23,410 - ERROR - HTTP Error on attempt 3: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:08:23,414 - WARNING - Incomplete response on attempt 4
+2025-04-28 12:08:23,414 - INFO - Processing statement: A SYN segment has a SYN flag. (attempt 5/5)
+2025-04-28 12:08:23,414 - INFO - Sending prompt for statement: A SYN segment has a SYN flag.
+2025-04-28 12:08:23,525 - ERROR - HTTP Error on attempt 1: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:08:28,533 - INFO - Sending prompt for statement: A SYN segment has a SYN flag.
+2025-04-28 12:08:28,642 - ERROR - HTTP Error on attempt 2: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:08:33,649 - INFO - Sending prompt for statement: A SYN segment has a SYN flag.
+2025-04-28 12:08:33,767 - ERROR - HTTP Error on attempt 3: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:08:33,767 - WARNING - Incomplete response on attempt 5
+2025-04-28 12:08:34,773 - INFO - Processing statement 3/8
+2025-04-28 12:08:34,773 - INFO - Processing statement: An ACK segment has an ACK flag. (attempt 1/5)
+2025-04-28 12:08:34,775 - INFO - Sending prompt for statement: An ACK segment has an ACK flag.
+2025-04-28 12:08:34,887 - ERROR - HTTP Error on attempt 1: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:08:39,896 - INFO - Sending prompt for statement: An ACK segment has an ACK flag.
+2025-04-28 12:08:40,016 - ERROR - HTTP Error on attempt 2: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:08:45,018 - INFO - Sending prompt for statement: An ACK segment has an ACK flag.
+2025-04-28 12:08:45,339 - ERROR - HTTP Error on attempt 3: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:08:45,339 - WARNING - Incomplete response on attempt 1
+2025-04-28 12:08:45,339 - INFO - Processing statement: An ACK segment has an ACK flag. (attempt 2/5)
+2025-04-28 12:08:45,339 - INFO - Sending prompt for statement: An ACK segment has an ACK flag.
+2025-04-28 12:08:45,457 - ERROR - HTTP Error on attempt 1: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:08:50,463 - INFO - Sending prompt for statement: An ACK segment has an ACK flag.
+2025-04-28 12:08:50,606 - ERROR - HTTP Error on attempt 2: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:08:55,607 - INFO - Sending prompt for statement: An ACK segment has an ACK flag.
+2025-04-28 12:08:56,387 - ERROR - HTTP Error on attempt 3: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:08:56,387 - WARNING - Incomplete response on attempt 2
+2025-04-28 12:08:56,387 - INFO - Processing statement: An ACK segment has an ACK flag. (attempt 3/5)
+2025-04-28 12:08:56,387 - INFO - Sending prompt for statement: An ACK segment has an ACK flag.
+2025-04-28 12:08:56,795 - ERROR - HTTP Error on attempt 1: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:09:01,798 - INFO - Sending prompt for statement: An ACK segment has an ACK flag.
+2025-04-28 12:09:01,943 - ERROR - HTTP Error on attempt 2: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:09:06,949 - INFO - Sending prompt for statement: An ACK segment has an ACK flag.
+2025-04-28 12:09:07,072 - ERROR - HTTP Error on attempt 3: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:09:07,072 - WARNING - Incomplete response on attempt 3
+2025-04-28 12:09:07,079 - INFO - Processing statement: An ACK segment has an ACK flag. (attempt 4/5)
+2025-04-28 12:09:07,079 - INFO - Sending prompt for statement: An ACK segment has an ACK flag.
+2025-04-28 12:09:07,202 - ERROR - HTTP Error on attempt 1: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:09:12,205 - INFO - Sending prompt for statement: An ACK segment has an ACK flag.
+2025-04-28 12:09:12,343 - ERROR - HTTP Error on attempt 2: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:09:17,347 - INFO - Sending prompt for statement: An ACK segment has an ACK flag.
+2025-04-28 12:09:17,469 - ERROR - HTTP Error on attempt 3: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:09:17,477 - WARNING - Incomplete response on attempt 4
+2025-04-28 12:09:17,477 - INFO - Processing statement: An ACK segment has an ACK flag. (attempt 5/5)
+2025-04-28 12:09:17,477 - INFO - Sending prompt for statement: An ACK segment has an ACK flag.
+2025-04-28 12:09:17,891 - ERROR - HTTP Error on attempt 1: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:09:22,893 - INFO - Sending prompt for statement: An ACK segment has an ACK flag.
+2025-04-28 12:09:23,008 - ERROR - HTTP Error on attempt 2: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:09:28,013 - INFO - Sending prompt for statement: An ACK segment has an ACK flag.
+2025-04-28 12:09:28,146 - ERROR - HTTP Error on attempt 3: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:09:28,146 - WARNING - Incomplete response on attempt 5
+2025-04-28 12:09:29,150 - INFO - Processing statement 4/8
+2025-04-28 12:09:29,150 - INFO - Processing statement: A TCP endpoint has a state. (attempt 1/5)
+2025-04-28 12:09:29,151 - INFO - Sending prompt for statement: A TCP endpoint has a state.
+2025-04-28 12:09:29,457 - ERROR - HTTP Error on attempt 1: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:09:34,460 - INFO - Sending prompt for statement: A TCP endpoint has a state.
+2025-04-28 12:09:34,630 - ERROR - HTTP Error on attempt 2: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:09:39,645 - INFO - Sending prompt for statement: A TCP endpoint has a state.
+2025-04-28 12:09:39,762 - ERROR - HTTP Error on attempt 3: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:09:39,762 - WARNING - Incomplete response on attempt 1
+2025-04-28 12:09:39,762 - INFO - Processing statement: A TCP endpoint has a state. (attempt 2/5)
+2025-04-28 12:09:39,762 - INFO - Sending prompt for statement: A TCP endpoint has a state.
+2025-04-28 12:09:39,867 - ERROR - HTTP Error on attempt 1: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:09:44,880 - INFO - Sending prompt for statement: A TCP endpoint has a state.
+2025-04-28 12:09:45,004 - ERROR - HTTP Error on attempt 2: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:09:50,007 - INFO - Sending prompt for statement: A TCP endpoint has a state.
+2025-04-28 12:09:50,126 - ERROR - HTTP Error on attempt 3: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:09:50,126 - WARNING - Incomplete response on attempt 2
+2025-04-28 12:09:50,126 - INFO - Processing statement: A TCP endpoint has a state. (attempt 3/5)
+2025-04-28 12:09:50,126 - INFO - Sending prompt for statement: A TCP endpoint has a state.
+2025-04-28 12:09:50,243 - ERROR - HTTP Error on attempt 1: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:09:55,255 - INFO - Sending prompt for statement: A TCP endpoint has a state.
+2025-04-28 12:09:55,383 - ERROR - HTTP Error on attempt 2: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:10:00,386 - INFO - Sending prompt for statement: A TCP endpoint has a state.
+2025-04-28 12:10:00,519 - ERROR - HTTP Error on attempt 3: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:10:00,519 - WARNING - Incomplete response on attempt 3
+2025-04-28 12:10:00,524 - INFO - Processing statement: A TCP endpoint has a state. (attempt 4/5)
+2025-04-28 12:10:00,524 - INFO - Sending prompt for statement: A TCP endpoint has a state.
+2025-04-28 12:10:00,649 - ERROR - HTTP Error on attempt 1: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:10:05,652 - INFO - Sending prompt for statement: A TCP endpoint has a state.
+2025-04-28 12:10:05,797 - ERROR - HTTP Error on attempt 2: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:10:10,804 - INFO - Sending prompt for statement: A TCP endpoint has a state.
+2025-04-28 12:10:10,915 - ERROR - HTTP Error on attempt 3: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:10:10,920 - WARNING - Incomplete response on attempt 4
+2025-04-28 12:10:10,920 - INFO - Processing statement: A TCP endpoint has a state. (attempt 5/5)
+2025-04-28 12:10:10,920 - INFO - Sending prompt for statement: A TCP endpoint has a state.
+2025-04-28 12:10:11,039 - ERROR - HTTP Error on attempt 1: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:10:16,041 - INFO - Sending prompt for statement: A TCP endpoint has a state.
+2025-04-28 12:10:16,162 - ERROR - HTTP Error on attempt 2: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:10:21,167 - INFO - Sending prompt for statement: A TCP endpoint has a state.
+2025-04-28 12:10:21,476 - ERROR - HTTP Error on attempt 3: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:10:21,476 - WARNING - Incomplete response on attempt 5
+2025-04-28 12:10:22,480 - INFO - Processing statement 5/8
+2025-04-28 12:10:22,480 - INFO - Processing statement: A TCP endpoint has a window size. (attempt 1/5)
+2025-04-28 12:10:22,480 - INFO - Sending prompt for statement: A TCP endpoint has a window size.
+2025-04-28 12:10:22,585 - ERROR - HTTP Error on attempt 1: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:10:27,601 - INFO - Sending prompt for statement: A TCP endpoint has a window size.
+2025-04-28 12:10:28,842 - ERROR - HTTP Error on attempt 2: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:10:33,854 - INFO - Sending prompt for statement: A TCP endpoint has a window size.
+2025-04-28 12:10:33,979 - ERROR - HTTP Error on attempt 3: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:10:33,979 - WARNING - Incomplete response on attempt 1
+2025-04-28 12:10:33,979 - INFO - Processing statement: A TCP endpoint has a window size. (attempt 2/5)
+2025-04-28 12:10:33,985 - INFO - Sending prompt for statement: A TCP endpoint has a window size.
+2025-04-28 12:10:34,100 - ERROR - HTTP Error on attempt 1: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:10:39,103 - INFO - Sending prompt for statement: A TCP endpoint has a window size.
+2025-04-28 12:10:39,215 - ERROR - HTTP Error on attempt 2: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:10:44,225 - INFO - Sending prompt for statement: A TCP endpoint has a window size.
+2025-04-28 12:10:44,477 - ERROR - HTTP Error on attempt 3: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:10:44,477 - WARNING - Incomplete response on attempt 2
+2025-04-28 12:10:44,477 - INFO - Processing statement: A TCP endpoint has a window size. (attempt 3/5)
+2025-04-28 12:10:44,477 - INFO - Sending prompt for statement: A TCP endpoint has a window size.
+2025-04-28 12:10:44,689 - ERROR - HTTP Error on attempt 1: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:10:49,702 - INFO - Sending prompt for statement: A TCP endpoint has a window size.
+2025-04-28 12:10:49,830 - ERROR - HTTP Error on attempt 2: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:10:54,832 - INFO - Sending prompt for statement: A TCP endpoint has a window size.
+2025-04-28 12:10:54,955 - ERROR - HTTP Error on attempt 3: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:10:54,955 - WARNING - Incomplete response on attempt 3
+2025-04-28 12:10:54,955 - INFO - Processing statement: A TCP endpoint has a window size. (attempt 4/5)
+2025-04-28 12:10:54,961 - INFO - Sending prompt for statement: A TCP endpoint has a window size.
+2025-04-28 12:10:55,073 - ERROR - HTTP Error on attempt 1: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:11:00,080 - INFO - Sending prompt for statement: A TCP endpoint has a window size.
+2025-04-28 12:11:00,216 - ERROR - HTTP Error on attempt 2: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:11:05,222 - INFO - Sending prompt for statement: A TCP endpoint has a window size.
+2025-04-28 12:11:05,452 - ERROR - HTTP Error on attempt 3: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:11:05,452 - WARNING - Incomplete response on attempt 4
+2025-04-28 12:11:05,452 - INFO - Processing statement: A TCP endpoint has a window size. (attempt 5/5)
+2025-04-28 12:11:05,452 - INFO - Sending prompt for statement: A TCP endpoint has a window size.
+2025-04-28 12:11:05,578 - ERROR - HTTP Error on attempt 1: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:11:10,580 - INFO - Sending prompt for statement: A TCP endpoint has a window size.
+2025-04-28 12:11:10,761 - ERROR - HTTP Error on attempt 2: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:11:15,777 - INFO - Sending prompt for statement: A TCP endpoint has a window size.
+2025-04-28 12:11:15,897 - ERROR - HTTP Error on attempt 3: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:11:15,897 - WARNING - Incomplete response on attempt 5
+2025-04-28 12:11:16,911 - INFO - Processing statement 6/8
+2025-04-28 12:11:16,911 - INFO - Processing statement: A TCP segment has a source port. (attempt 1/5)
+2025-04-28 12:11:16,913 - INFO - Sending prompt for statement: A TCP segment has a source port.
+2025-04-28 12:11:17,035 - ERROR - HTTP Error on attempt 1: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:11:22,043 - INFO - Sending prompt for statement: A TCP segment has a source port.
+2025-04-28 12:11:22,196 - ERROR - HTTP Error on attempt 2: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:11:27,209 - INFO - Sending prompt for statement: A TCP segment has a source port.
+2025-04-28 12:11:27,345 - ERROR - HTTP Error on attempt 3: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:11:27,349 - WARNING - Incomplete response on attempt 1
+2025-04-28 12:11:27,349 - INFO - Processing statement: A TCP segment has a source port. (attempt 2/5)
+2025-04-28 12:11:27,349 - INFO - Sending prompt for statement: A TCP segment has a source port.
+2025-04-28 12:11:27,499 - ERROR - HTTP Error on attempt 1: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:11:32,501 - INFO - Sending prompt for statement: A TCP segment has a source port.
+2025-04-28 12:11:32,614 - ERROR - HTTP Error on attempt 2: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:11:37,626 - INFO - Sending prompt for statement: A TCP segment has a source port.
+2025-04-28 12:11:37,765 - ERROR - HTTP Error on attempt 3: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:11:37,765 - WARNING - Incomplete response on attempt 2
+2025-04-28 12:11:37,765 - INFO - Processing statement: A TCP segment has a source port. (attempt 3/5)
+2025-04-28 12:11:37,765 - INFO - Sending prompt for statement: A TCP segment has a source port.
+2025-04-28 12:11:37,876 - ERROR - HTTP Error on attempt 1: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:11:42,890 - INFO - Sending prompt for statement: A TCP segment has a source port.
+2025-04-28 12:11:43,040 - ERROR - HTTP Error on attempt 2: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:11:48,045 - INFO - Sending prompt for statement: A TCP segment has a source port.
+2025-04-28 12:11:48,171 - ERROR - HTTP Error on attempt 3: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:11:48,171 - WARNING - Incomplete response on attempt 3
+2025-04-28 12:11:48,171 - INFO - Processing statement: A TCP segment has a source port. (attempt 4/5)
+2025-04-28 12:11:48,171 - INFO - Sending prompt for statement: A TCP segment has a source port.
+2025-04-28 12:11:48,580 - ERROR - HTTP Error on attempt 1: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:11:53,583 - INFO - Sending prompt for statement: A TCP segment has a source port.
+2025-04-28 12:11:53,778 - ERROR - HTTP Error on attempt 2: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:11:58,781 - INFO - Sending prompt for statement: A TCP segment has a source port.
+2025-04-28 12:11:58,922 - ERROR - HTTP Error on attempt 3: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:11:58,922 - WARNING - Incomplete response on attempt 4
+2025-04-28 12:11:58,922 - INFO - Processing statement: A TCP segment has a source port. (attempt 5/5)
+2025-04-28 12:11:58,922 - INFO - Sending prompt for statement: A TCP segment has a source port.
+2025-04-28 12:11:59,048 - ERROR - HTTP Error on attempt 1: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:12:04,052 - INFO - Sending prompt for statement: A TCP segment has a source port.
+2025-04-28 12:12:04,390 - ERROR - HTTP Error on attempt 2: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:12:09,402 - INFO - Sending prompt for statement: A TCP segment has a source port.
+2025-04-28 12:12:09,556 - ERROR - HTTP Error on attempt 3: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:12:09,568 - WARNING - Incomplete response on attempt 5
+2025-04-28 12:12:10,569 - INFO - Processing statement 7/8
+2025-04-28 12:12:10,569 - INFO - Processing statement: A TCP segment has a destination port. (attempt 1/5)
+2025-04-28 12:12:10,570 - INFO - Sending prompt for statement: A TCP segment has a destination port.
+2025-04-28 12:12:10,707 - ERROR - HTTP Error on attempt 1: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:12:15,712 - INFO - Sending prompt for statement: A TCP segment has a destination port.
+2025-04-28 12:12:15,852 - ERROR - HTTP Error on attempt 2: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:12:20,855 - INFO - Sending prompt for statement: A TCP segment has a destination port.
+2025-04-28 12:12:20,973 - ERROR - HTTP Error on attempt 3: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:12:20,973 - WARNING - Incomplete response on attempt 1
+2025-04-28 12:12:20,973 - INFO - Processing statement: A TCP segment has a destination port. (attempt 2/5)
+2025-04-28 12:12:20,973 - INFO - Sending prompt for statement: A TCP segment has a destination port.
+2025-04-28 12:12:21,085 - ERROR - HTTP Error on attempt 1: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:12:26,095 - INFO - Sending prompt for statement: A TCP segment has a destination port.
+2025-04-28 12:12:26,230 - ERROR - HTTP Error on attempt 2: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:12:31,232 - INFO - Sending prompt for statement: A TCP segment has a destination port.
+2025-04-28 12:12:31,359 - ERROR - HTTP Error on attempt 3: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:12:31,359 - WARNING - Incomplete response on attempt 2
+2025-04-28 12:12:31,359 - INFO - Processing statement: A TCP segment has a destination port. (attempt 3/5)
+2025-04-28 12:12:31,359 - INFO - Sending prompt for statement: A TCP segment has a destination port.
+2025-04-28 12:12:31,479 - ERROR - HTTP Error on attempt 1: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:12:36,485 - INFO - Sending prompt for statement: A TCP segment has a destination port.
+2025-04-28 12:12:36,610 - ERROR - HTTP Error on attempt 2: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:12:41,625 - INFO - Sending prompt for statement: A TCP segment has a destination port.
+2025-04-28 12:12:41,751 - ERROR - HTTP Error on attempt 3: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:12:41,751 - WARNING - Incomplete response on attempt 3
+2025-04-28 12:12:41,751 - INFO - Processing statement: A TCP segment has a destination port. (attempt 4/5)
+2025-04-28 12:12:41,765 - INFO - Sending prompt for statement: A TCP segment has a destination port.
+2025-04-28 12:12:41,891 - ERROR - HTTP Error on attempt 1: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:12:46,902 - INFO - Sending prompt for statement: A TCP segment has a destination port.
+2025-04-28 12:12:47,021 - ERROR - HTTP Error on attempt 2: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:12:52,028 - INFO - Sending prompt for statement: A TCP segment has a destination port.
+2025-04-28 12:12:52,135 - ERROR - HTTP Error on attempt 3: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:12:52,135 - WARNING - Incomplete response on attempt 4
+2025-04-28 12:12:52,135 - INFO - Processing statement: A TCP segment has a destination port. (attempt 5/5)
+2025-04-28 12:12:52,135 - INFO - Sending prompt for statement: A TCP segment has a destination port.
+2025-04-28 12:12:52,278 - ERROR - HTTP Error on attempt 1: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:12:57,292 - INFO - Sending prompt for statement: A TCP segment has a destination port.
+2025-04-28 12:12:57,433 - ERROR - HTTP Error on attempt 2: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:13:02,437 - INFO - Sending prompt for statement: A TCP segment has a destination port.
+2025-04-28 12:13:02,561 - ERROR - HTTP Error on attempt 3: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:13:02,567 - WARNING - Incomplete response on attempt 5
+2025-04-28 12:13:03,568 - INFO - Processing statement 8/8
+2025-04-28 12:13:03,568 - INFO - Processing statement: A TCP endpoint has a socket. (attempt 1/5)
+2025-04-28 12:13:03,570 - INFO - Sending prompt for statement: A TCP endpoint has a socket.
+2025-04-28 12:13:03,702 - ERROR - HTTP Error on attempt 1: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:13:08,704 - INFO - Sending prompt for statement: A TCP endpoint has a socket.
+2025-04-28 12:13:08,823 - ERROR - HTTP Error on attempt 2: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:13:13,829 - INFO - Sending prompt for statement: A TCP endpoint has a socket.
+2025-04-28 12:13:13,972 - ERROR - HTTP Error on attempt 3: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:13:13,972 - WARNING - Incomplete response on attempt 1
+2025-04-28 12:13:13,972 - INFO - Processing statement: A TCP endpoint has a socket. (attempt 2/5)
+2025-04-28 12:13:13,972 - INFO - Sending prompt for statement: A TCP endpoint has a socket.
+2025-04-28 12:13:14,085 - ERROR - HTTP Error on attempt 1: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:13:19,097 - INFO - Sending prompt for statement: A TCP endpoint has a socket.
+2025-04-28 12:13:19,282 - ERROR - HTTP Error on attempt 2: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:13:24,291 - INFO - Sending prompt for statement: A TCP endpoint has a socket.
+2025-04-28 12:13:24,408 - ERROR - HTTP Error on attempt 3: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:13:24,417 - WARNING - Incomplete response on attempt 2
+2025-04-28 12:13:24,418 - INFO - Processing statement: A TCP endpoint has a socket. (attempt 3/5)
+2025-04-28 12:13:24,418 - INFO - Sending prompt for statement: A TCP endpoint has a socket.
+2025-04-28 12:13:24,534 - ERROR - HTTP Error on attempt 1: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:13:29,546 - INFO - Sending prompt for statement: A TCP endpoint has a socket.
+2025-04-28 12:13:29,661 - ERROR - HTTP Error on attempt 2: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:13:34,676 - INFO - Sending prompt for statement: A TCP endpoint has a socket.
+2025-04-28 12:13:34,821 - ERROR - HTTP Error on attempt 3: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:13:34,821 - WARNING - Incomplete response on attempt 3
+2025-04-28 12:13:34,821 - INFO - Processing statement: A TCP endpoint has a socket. (attempt 4/5)
+2025-04-28 12:13:34,821 - INFO - Sending prompt for statement: A TCP endpoint has a socket.
+2025-04-28 12:13:34,944 - ERROR - HTTP Error on attempt 1: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:13:39,946 - INFO - Sending prompt for statement: A TCP endpoint has a socket.
+2025-04-28 12:13:40,067 - ERROR - HTTP Error on attempt 2: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:13:45,069 - INFO - Sending prompt for statement: A TCP endpoint has a socket.
+2025-04-28 12:13:45,195 - ERROR - HTTP Error on attempt 3: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:13:45,195 - WARNING - Incomplete response on attempt 4
+2025-04-28 12:13:45,195 - INFO - Processing statement: A TCP endpoint has a socket. (attempt 5/5)
+2025-04-28 12:13:45,195 - INFO - Sending prompt for statement: A TCP endpoint has a socket.
+2025-04-28 12:13:45,324 - ERROR - HTTP Error on attempt 1: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:13:50,332 - INFO - Sending prompt for statement: A TCP endpoint has a socket.
+2025-04-28 12:13:50,456 - ERROR - HTTP Error on attempt 2: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:13:55,458 - INFO - Sending prompt for statement: A TCP endpoint has a socket.
+2025-04-28 12:13:55,588 - ERROR - HTTP Error on attempt 3: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-04-28 12:13:55,588 - WARNING - Incomplete response on attempt 5
+2025-04-28 12:13:55,588 - INFO - Results saved to C:\Users\Simlo\Desktop\rfc-to-fol\rfc_analysis\tests\output\smtlib_results_20250428_121355.json

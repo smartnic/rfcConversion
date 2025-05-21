@@ -1,0 +1,56 @@
+{
+  "model": "google/gemma-7b-it",
+  "format": "FOL",
+  "timestamp": "2025-03-25T00:28:19.870368",
+  "examples": [
+    {
+      "input": "The server MUST terminate the connection after 5 failed attempts.",
+      "output": null,
+      "success": false,
+      "error": "Failed to generate valid output after 3 attempts. Last error: (Request ID: Root=1-67e230e2-03ddb07d7a9273c3180bb397;4b598eff-930b-4278-b7e2-8a6c610840ec)\n\n403 Forbidden: None.\nCannot access content at: https://router.huggingface.co/hf-inference/models/google/gemma-7b-it.\nMake sure your token has the correct permissions.\nThe model google/gemma-7b-it is too large to be loaded automatically (17GB > 10GB).",
+      "time_seconds": 0.5189518928527832
+    },
+    {
+      "input": "If a client sends more than 3 retransmissions without receiving an ACK, it MUST abort the connection.",
+      "output": null,
+      "success": false,
+      "error": "Failed to generate valid output after 3 attempts. Last error: (Request ID: Root=1-67e230e2-138c8fc15c5a7ff10d090257;322bd8a3-bfc2-4acf-a33e-f073b6d66ae6)\n\n403 Forbidden: None.\nCannot access content at: https://router.huggingface.co/hf-inference/models/google/gemma-7b-it.\nMake sure your token has the correct permissions.\nThe model google/gemma-7b-it is too large to be loaded automatically (17GB > 10GB).",
+      "time_seconds": 0.19679784774780273
+    },
+    {
+      "input": "When a server receives a SYN segment, it MUST increment the SYN-RECEIVED counter.",
+      "output": null,
+      "success": false,
+      "error": "Failed to generate valid output after 3 attempts. Last error: (Request ID: Root=1-67e230e2-146748545c617c0c480f3a67;2eba56d1-ced9-4e10-bd05-6ca474a5a851)\n\n403 Forbidden: None.\nCannot access content at: https://router.huggingface.co/hf-inference/models/google/gemma-7b-it.\nMake sure your token has the correct permissions.\nThe model google/gemma-7b-it is too large to be loaded automatically (17GB > 10GB).",
+      "time_seconds": 0.16000628471374512
+    },
+    {
+      "input": "Packets with the RST bit set SHOULD be silently discarded.",
+      "output": null,
+      "success": false,
+      "error": "Failed to generate valid output after 3 attempts. Last error: (Request ID: Root=1-67e230e2-010c1b917e0dc7ac2894885f;b6ec75f2-2472-41fd-b39e-73358dab183b)\n\n403 Forbidden: None.\nCannot access content at: https://router.huggingface.co/hf-inference/models/google/gemma-7b-it.\nMake sure your token has the correct permissions.\nThe model google/gemma-7b-it is too large to be loaded automatically (17GB > 10GB).",
+      "time_seconds": 0.1858513355255127
+    },
+    {
+      "input": "If the server receives an ACK with an invalid sequence number, it MUST respond with a RST packet.",
+      "output": null,
+      "success": false,
+      "error": "Failed to generate valid output after 3 attempts. Last error: (Request ID: Root=1-67e230e3-5d10ac1557d57a16414b08cf;b777e270-836c-440e-8860-8217ef639c55)\n\n403 Forbidden: None.\nCannot access content at: https://router.huggingface.co/hf-inference/models/google/gemma-7b-it.\nMake sure your token has the correct permissions.\nThe model google/gemma-7b-it is too large to be loaded automatically (17GB > 10GB).",
+      "time_seconds": 0.18205881118774414
+    },
+    {
+      "input": "A TCP receiver SHOULD NOT shrink its window, and MUST not shrink the right window edge.",
+      "output": null,
+      "success": false,
+      "error": "Failed to generate valid output after 3 attempts. Last error: (Request ID: Root=1-67e230e3-552a14da0b8ca9271fd2a973;dd4c32c8-703b-4cb3-9d8c-8b333ee8bfe3)\n\n403 Forbidden: None.\nCannot access content at: https://router.huggingface.co/hf-inference/models/google/gemma-7b-it.\nMake sure your token has the correct permissions.\nThe model google/gemma-7b-it is too large to be loaded automatically (17GB > 10GB).",
+      "time_seconds": 0.16189002990722656
+    },
+    {
+      "input": "A TCP implementation MUST be robust against wrapped sequence numbers.",
+      "output": null,
+      "success": false,
+      "error": "Failed to generate valid output after 3 attempts. Last error: (Request ID: Root=1-67e230e3-6121d50479d7f38c599ba573;ba0c37f8-95d2-4ec9-a27d-d45415e4b8c0)\n\n403 Forbidden: None.\nCannot access content at: https://router.huggingface.co/hf-inference/models/google/gemma-7b-it.\nMake sure your token has the correct permissions.\nThe model google/gemma-7b-it is too large to be loaded automatically (17GB > 10GB).",
+      "time_seconds": 0.1803264617919922
+    }
+  ]
+}

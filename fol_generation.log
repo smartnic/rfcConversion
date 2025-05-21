@@ -1,0 +1,189 @@
+2025-04-13 18:24:49,035 - WARNING - rfc_statements.json not found, using example statements
+2025-04-13 18:24:49,035 - INFO - Processing statement 1/5
+2025-04-13 18:24:49,035 - INFO - Processing statement: The sequence number field is a 32-bit number that identifies the first data octet in this segment.
+2025-04-13 18:24:51,141 - INFO - Processing statement 2/5
+2025-04-13 18:24:51,141 - INFO - Processing statement: The urgent pointer is interpreted only if the URG control bit is set.
+2025-04-13 18:24:54,205 - INFO - Processing statement 3/5
+2025-04-13 18:24:54,205 - INFO - Processing statement: A TCP connection is established by the exchange of a SYN, a SYN-ACK, and an ACK.
+2025-04-13 18:24:56,689 - INFO - Processing statement 4/5
+2025-04-13 18:24:56,690 - INFO - Processing statement: If no acknowledgment is received before the timer expires, the segment is retransmitted.
+2025-04-13 18:25:00,343 - INFO - Processing statement 5/5
+2025-04-13 18:25:00,343 - INFO - Processing statement: The window field is a 16-bit field that specifies the size of the receive window.
+2025-04-13 18:25:03,958 - INFO - Results saved to results_20250413_182503.json
+2025-04-20 16:48:56,281 - INFO - Current working directory: C:\Users\Simlo\Desktop\rfc-to-fol
+2025-04-20 16:48:56,283 - INFO - Looking for statements file at: C:\Users\Simlo\Desktop\rfc-to-fol\rfc_analysis\tests\rfc_statements.json
+2025-04-20 16:48:56,285 - INFO - Loaded 8 statements from rfc_statements.json
+2025-04-20 16:48:56,285 - INFO - Processing statement 1/8
+2025-04-20 16:48:56,285 - INFO - Processing statement: The sequence number field is a 32-bit number that identifies the first data octet in this segment.
+2025-04-20 16:48:56,287 - INFO - Sending prompt for statement: The sequence number field is a 32-bit number that identifies the first data octet in this segment.
+2025-04-20 16:49:00,207 - INFO - Processing statement 2/8
+2025-04-20 16:49:00,207 - INFO - Processing statement: The urgent pointer is interpreted only if the URG control bit is set.
+2025-04-20 16:49:00,207 - INFO - Sending prompt for statement: The urgent pointer is interpreted only if the URG control bit is set.
+2025-04-20 16:49:03,215 - INFO - Processing statement 3/8
+2025-04-20 16:49:03,216 - INFO - Processing statement: A TCP connection is established by the exchange of a SYN, a SYN-ACK, and an ACK.
+2025-04-20 16:49:03,216 - INFO - Sending prompt for statement: A TCP connection is established by the exchange of a SYN, a SYN-ACK, and an ACK.
+2025-04-20 16:49:04,105 - WARNING - Response missing Explanation section on attempt 1
+2025-04-20 16:49:04,105 - INFO - Sending prompt for statement: A TCP connection is established by the exchange of a SYN, a SYN-ACK, and an ACK.
+2025-04-20 16:49:04,194 - WARNING - Response missing Explanation section on attempt 2
+2025-04-20 16:49:04,194 - INFO - Sending prompt for statement: A TCP connection is established by the exchange of a SYN, a SYN-ACK, and an ACK.
+2025-04-20 16:49:04,277 - WARNING - Response missing Explanation section on attempt 3
+2025-04-20 16:49:05,281 - INFO - Processing statement 4/8
+2025-04-20 16:49:05,281 - INFO - Processing statement: If no acknowledgment is received before the timer expires, the segment is retransmitted.
+2025-04-20 16:49:05,281 - INFO - Sending prompt for statement: If no acknowledgment is received before the timer expires, the segment is retransmitted.
+2025-04-20 16:49:05,699 - INFO - Raw response: FOL:
+2025-04-20 16:49:05,699 - WARNING - Response missing Explanation section on attempt 1
+2025-04-20 16:49:05,699 - INFO - Sending prompt for statement: If no acknowledgment is received before the timer expires, the segment is retransmitted.
+2025-04-20 16:49:05,861 - INFO - Raw response: FOL:
+2025-04-20 16:49:05,861 - WARNING - Response missing Explanation section on attempt 2
+2025-04-20 16:49:05,861 - INFO - Sending prompt for statement: If no acknowledgment is received before the timer expires, the segment is retransmitted.
+2025-04-20 16:49:05,940 - INFO - Raw response: FOL:
+2025-04-20 16:49:05,940 - WARNING - Response missing Explanation section on attempt 3
+2025-04-20 16:49:06,947 - INFO - Processing statement 5/8
+2025-04-20 16:49:06,947 - INFO - Processing statement: The window field is a 16-bit field that specifies the size of the receive window.
+2025-04-20 16:49:06,947 - INFO - Sending prompt for statement: The window field is a 16-bit field that specifies the size of the receive window.
+2025-04-20 16:49:07,164 - INFO - Raw response: FOL:
+2025-04-20 16:49:07,164 - WARNING - Response missing Explanation section on attempt 1
+2025-04-20 16:49:07,164 - INFO - Sending prompt for statement: The window field is a 16-bit field that specifies the size of the receive window.
+2025-04-20 16:49:07,295 - INFO - Raw response: FOL:
+2025-04-20 16:49:07,295 - WARNING - Response missing Explanation section on attempt 2
+2025-04-20 16:49:07,295 - INFO - Sending prompt for statement: The window field is a 16-bit field that specifies the size of the receive window.
+2025-04-20 16:49:07,428 - INFO - Raw response: FOL:
+2025-04-20 16:49:07,428 - WARNING - Response missing Explanation section on attempt 3
+2025-04-20 16:49:08,440 - INFO - Processing statement 6/8
+2025-04-20 16:49:08,440 - INFO - Processing statement: A TCP endpoint in LISTEN state must ignore RST segments.
+2025-04-20 16:49:08,442 - INFO - Sending prompt for statement: A TCP endpoint in LISTEN state must ignore RST segments.
+2025-04-20 16:49:08,642 - INFO - Raw response: FOL:
+2025-04-20 16:49:08,642 - WARNING - Response missing Explanation section on attempt 1
+2025-04-20 16:49:08,647 - INFO - Sending prompt for statement: A TCP endpoint in LISTEN state must ignore RST segments.
+2025-04-20 16:49:08,730 - INFO - Raw response: FOL:
+2025-04-20 16:49:08,730 - WARNING - Response missing Explanation section on attempt 2
+2025-04-20 16:49:08,730 - INFO - Sending prompt for statement: A TCP endpoint in LISTEN state must ignore RST segments.
+2025-04-20 16:49:08,813 - INFO - Raw response: FOL:
+2025-04-20 16:49:08,813 - WARNING - Response missing Explanation section on attempt 3
+2025-04-20 16:49:09,821 - INFO - Processing statement 7/8
+2025-04-20 16:49:09,821 - INFO - Processing statement: When a SYN segment arrives with a valid sequence number, the receiving TCP must return an acknowledgment.
+2025-04-20 16:49:09,821 - INFO - Sending prompt for statement: When a SYN segment arrives with a valid sequence number, the receiving TCP must return an acknowledgment.
+2025-04-20 16:49:10,142 - INFO - Raw response: FOL:
+2025-04-20 16:49:10,142 - WARNING - Response missing Explanation section on attempt 1
+2025-04-20 16:49:10,145 - INFO - Sending prompt for statement: When a SYN segment arrives with a valid sequence number, the receiving TCP must return an acknowledgment.
+2025-04-20 16:49:10,239 - INFO - Raw response: FOL:
+2025-04-20 16:49:10,239 - WARNING - Response missing Explanation section on attempt 2
+2025-04-20 16:49:10,239 - INFO - Sending prompt for statement: When a SYN segment arrives with a valid sequence number, the receiving TCP must return an acknowledgment.
+2025-04-20 16:49:10,310 - INFO - Raw response: FOL:
+2025-04-20 16:49:10,310 - WARNING - Response missing Explanation section on attempt 3
+2025-04-20 16:49:11,318 - INFO - Processing statement 8/8
+2025-04-20 16:49:11,319 - INFO - Processing statement: A FIN segment must contain the sequence number of the last data octet being sent.
+2025-04-20 16:49:11,319 - INFO - Sending prompt for statement: A FIN segment must contain the sequence number of the last data octet being sent.
+2025-04-20 16:49:13,839 - INFO - Results saved to C:\Users\Simlo\Desktop\rfc-to-fol\output\results_20250420_164913.json
+2025-04-20 16:50:00,457 - INFO - Current working directory: C:\Users\Simlo\Desktop\rfc-to-fol
+2025-04-20 16:50:00,457 - INFO - Looking for statements file at: C:\Users\Simlo\Desktop\rfc-to-fol\rfc_analysis\tests\rfc_statements.json
+2025-04-20 16:50:00,457 - INFO - Loaded 8 statements from rfc_statements.json
+2025-04-20 16:50:00,457 - INFO - Processing statement 1/8
+2025-04-20 16:50:00,457 - INFO - Processing statement: The sequence number field is a 32-bit number that identifies the first data octet in this segment.
+2025-04-20 16:50:00,457 - INFO - Sending prompt for statement: The sequence number field is a 32-bit number that identifies the first data octet in this segment.
+2025-04-20 16:50:01,731 - INFO - Processing statement 2/8
+2025-04-20 16:50:01,731 - INFO - Processing statement: The urgent pointer is interpreted only if the URG control bit is set.
+2025-04-20 16:50:01,739 - INFO - Sending prompt for statement: The urgent pointer is interpreted only if the URG control bit is set.
+2025-04-20 16:50:02,880 - INFO - Processing statement 3/8
+2025-04-20 16:50:02,880 - INFO - Processing statement: A TCP connection is established by the exchange of a SYN, a SYN-ACK, and an ACK.
+2025-04-20 16:50:02,880 - INFO - Sending prompt for statement: A TCP connection is established by the exchange of a SYN, a SYN-ACK, and an ACK.
+2025-04-20 16:50:02,960 - WARNING - Response missing Explanation section on attempt 1
+2025-04-20 16:50:02,960 - INFO - Sending prompt for statement: A TCP connection is established by the exchange of a SYN, a SYN-ACK, and an ACK.
+2025-04-20 16:50:03,043 - WARNING - Response missing Explanation section on attempt 2
+2025-04-20 16:50:03,043 - INFO - Sending prompt for statement: A TCP connection is established by the exchange of a SYN, a SYN-ACK, and an ACK.
+2025-04-20 16:50:03,138 - WARNING - Response missing Explanation section on attempt 3
+2025-04-20 16:50:04,145 - INFO - Processing statement 4/8
+2025-04-20 16:50:04,145 - INFO - Processing statement: If no acknowledgment is received before the timer expires, the segment is retransmitted.
+2025-04-20 16:50:04,146 - INFO - Sending prompt for statement: If no acknowledgment is received before the timer expires, the segment is retransmitted.
+2025-04-20 16:50:04,226 - INFO - Raw response: FOL:
+2025-04-20 16:50:04,228 - WARNING - Response missing Explanation section on attempt 1
+2025-04-20 16:50:04,228 - INFO - Sending prompt for statement: If no acknowledgment is received before the timer expires, the segment is retransmitted.
+2025-04-20 16:50:04,311 - INFO - Raw response: FOL:
+2025-04-20 16:50:04,311 - WARNING - Response missing Explanation section on attempt 2
+2025-04-20 16:50:04,311 - INFO - Sending prompt for statement: If no acknowledgment is received before the timer expires, the segment is retransmitted.
+2025-04-20 16:50:04,389 - INFO - Raw response: FOL:
+2025-04-20 16:50:04,389 - WARNING - Response missing Explanation section on attempt 3
+2025-04-20 16:50:05,398 - INFO - Processing statement 5/8
+2025-04-20 16:50:05,398 - INFO - Processing statement: The window field is a 16-bit field that specifies the size of the receive window.
+2025-04-20 16:50:05,398 - INFO - Sending prompt for statement: The window field is a 16-bit field that specifies the size of the receive window.
+2025-04-20 16:50:05,488 - INFO - Raw response: FOL:
+2025-04-20 16:50:05,489 - WARNING - Response missing Explanation section on attempt 1
+2025-04-20 16:50:05,490 - INFO - Sending prompt for statement: The window field is a 16-bit field that specifies the size of the receive window.
+2025-04-20 16:50:05,582 - INFO - Raw response: FOL:
+2025-04-20 16:50:05,582 - WARNING - Response missing Explanation section on attempt 2
+2025-04-20 16:50:05,583 - INFO - Sending prompt for statement: The window field is a 16-bit field that specifies the size of the receive window.
+2025-04-20 16:50:05,662 - INFO - Raw response: FOL:
+2025-04-20 16:50:05,662 - WARNING - Response missing Explanation section on attempt 3
+2025-04-20 16:50:06,668 - INFO - Processing statement 6/8
+2025-04-20 16:50:06,668 - INFO - Processing statement: A TCP endpoint in LISTEN state must ignore RST segments.
+2025-04-20 16:50:06,668 - INFO - Sending prompt for statement: A TCP endpoint in LISTEN state must ignore RST segments.
+2025-04-20 16:50:06,741 - INFO - Raw response: FOL:
+2025-04-20 16:50:06,741 - WARNING - Response missing Explanation section on attempt 1
+2025-04-20 16:50:06,749 - INFO - Sending prompt for statement: A TCP endpoint in LISTEN state must ignore RST segments.
+2025-04-20 16:50:06,841 - INFO - Raw response: FOL:
+2025-04-20 16:50:06,841 - WARNING - Response missing Explanation section on attempt 2
+2025-04-20 16:50:06,841 - INFO - Sending prompt for statement: A TCP endpoint in LISTEN state must ignore RST segments.
+2025-04-20 16:50:06,941 - INFO - Raw response: FOL:
+2025-04-20 16:50:06,941 - WARNING - Response missing Explanation section on attempt 3
+2025-04-20 16:50:07,949 - INFO - Processing statement 7/8
+2025-04-20 16:50:07,949 - INFO - Processing statement: When a SYN segment arrives with a valid sequence number, the receiving TCP must return an acknowledgment.
+2025-04-20 16:50:07,949 - INFO - Sending prompt for statement: When a SYN segment arrives with a valid sequence number, the receiving TCP must return an acknowledgment.
+2025-04-20 16:50:08,082 - INFO - Raw response: FOL:
+2025-04-20 16:50:08,085 - WARNING - Response missing Explanation section on attempt 1
+2025-04-20 16:50:08,085 - INFO - Sending prompt for statement: When a SYN segment arrives with a valid sequence number, the receiving TCP must return an acknowledgment.
+2025-04-20 16:50:08,240 - INFO - Raw response: FOL:
+2025-04-20 16:50:08,242 - WARNING - Response missing Explanation section on attempt 2
+2025-04-20 16:50:08,243 - INFO - Sending prompt for statement: When a SYN segment arrives with a valid sequence number, the receiving TCP must return an acknowledgment.
+2025-04-20 16:50:08,373 - INFO - Raw response: FOL:
+2025-04-20 16:50:08,373 - WARNING - Response missing Explanation section on attempt 3
+2025-04-20 16:50:09,379 - INFO - Processing statement 8/8
+2025-04-20 16:50:09,379 - INFO - Processing statement: A FIN segment must contain the sequence number of the last data octet being sent.
+2025-04-20 16:50:09,379 - INFO - Sending prompt for statement: A FIN segment must contain the sequence number of the last data octet being sent.
+2025-04-20 16:50:09,464 - INFO - Results saved to C:\Users\Simlo\Desktop\rfc-to-fol\output\results_20250420_165009.json
+2025-04-20 16:52:07,305 - INFO - Current working directory: C:\Users\Simlo\Desktop\rfc-to-fol
+2025-04-20 16:52:07,305 - INFO - Looking for statements file at: C:\Users\Simlo\Desktop\rfc-to-fol\rfc_analysis\tests\rfc_statements.json
+2025-04-20 16:52:07,313 - INFO - Loaded 8 statements from rfc_statements.json
+2025-04-20 16:52:07,313 - INFO - Processing statement 1/8
+2025-04-20 16:52:07,315 - INFO - Processing statement: A TCP segment must have a sequence number.
+2025-04-20 16:52:07,316 - INFO - Sending prompt for statement: A TCP segment must have a sequence number.
+2025-04-20 16:52:10,672 - INFO - Processing statement 2/8
+2025-04-20 16:52:10,672 - INFO - Processing statement: A SYN segment must have the SYN flag set.
+2025-04-20 16:52:10,672 - INFO - Sending prompt for statement: A SYN segment must have the SYN flag set.
+2025-04-20 16:52:14,051 - INFO - Processing statement 3/8
+2025-04-20 16:52:14,051 - INFO - Processing statement: An ACK segment must have the ACK flag set.
+2025-04-20 16:52:14,052 - INFO - Sending prompt for statement: An ACK segment must have the ACK flag set.
+2025-04-20 16:52:16,710 - INFO - Processing statement 4/8
+2025-04-20 16:52:16,710 - INFO - Processing statement: A TCP endpoint in CLOSED state must ignore all segments.
+2025-04-20 16:52:16,710 - INFO - Sending prompt for statement: A TCP endpoint in CLOSED state must ignore all segments.
+2025-04-20 16:52:20,063 - INFO - Processing statement 5/8
+2025-04-20 16:52:20,063 - INFO - Processing statement: A TCP endpoint must send an ACK for every received segment.
+2025-04-20 16:52:20,063 - INFO - Sending prompt for statement: A TCP endpoint must send an ACK for every received segment.
+2025-04-20 16:52:23,938 - INFO - Processing statement 6/8
+2025-04-20 16:52:23,938 - INFO - Processing statement: A TCP endpoint must maintain a sequence number for each connection.
+2025-04-20 16:52:23,938 - INFO - Sending prompt for statement: A TCP endpoint must maintain a sequence number for each connection.
+2025-04-20 16:52:27,223 - INFO - Processing statement 7/8
+2025-04-20 16:52:27,223 - INFO - Processing statement: A TCP endpoint must maintain a window size for each connection.
+2025-04-20 16:52:27,223 - INFO - Sending prompt for statement: A TCP endpoint must maintain a window size for each connection.
+2025-04-20 16:52:30,740 - INFO - Processing statement 8/8
+2025-04-20 16:52:30,740 - INFO - Processing statement: A TCP endpoint must maintain a state for each connection.
+2025-04-20 16:52:30,740 - INFO - Sending prompt for statement: A TCP endpoint must maintain a state for each connection.
+2025-04-20 16:52:33,654 - INFO - Results saved to C:\Users\Simlo\Desktop\rfc-to-fol\output\results_20250420_165233.json
+2025-04-20 17:20:30,786 - INFO - Current working directory: C:\Users\Simlo\Desktop\rfc-to-fol
+2025-04-20 17:20:30,786 - INFO - Looking for statements file at: C:\Users\Simlo\Desktop\rfc-to-fol\rfc_analysis\tests\rfc_statements.json
+2025-04-20 17:20:30,786 - INFO - Loaded 5 statements from rfc_statements.json
+2025-04-20 17:20:30,796 - INFO - Processing statement 1/5
+2025-04-20 17:20:30,796 - INFO - Processing statement: A TCP segment has a sequence number.
+2025-04-20 17:20:30,796 - INFO - Sending prompt for statement: A TCP segment has a sequence number.
+2025-04-20 17:20:34,029 - INFO - Processing statement 2/5
+2025-04-20 17:20:34,029 - INFO - Processing statement: A SYN segment has a SYN flag.
+2025-04-20 17:20:34,029 - INFO - Sending prompt for statement: A SYN segment has a SYN flag.
+2025-04-20 17:20:36,886 - INFO - Processing statement 3/5
+2025-04-20 17:20:36,886 - INFO - Processing statement: An ACK segment has an ACK flag.
+2025-04-20 17:20:36,888 - INFO - Sending prompt for statement: An ACK segment has an ACK flag.
+2025-04-20 17:20:39,320 - INFO - Processing statement 4/5
+2025-04-20 17:20:39,320 - INFO - Processing statement: A TCP endpoint has a state.
+2025-04-20 17:20:39,330 - INFO - Sending prompt for statement: A TCP endpoint has a state.
+2025-04-20 17:20:41,780 - INFO - Processing statement 5/5
+2025-04-20 17:20:41,780 - INFO - Processing statement: A TCP endpoint has a window size.
+2025-04-20 17:20:41,781 - INFO - Sending prompt for statement: A TCP endpoint has a window size.
+2025-04-20 17:20:43,371 - INFO - Results saved to C:\Users\Simlo\Desktop\rfc-to-fol\output\results_20250420_172043.json

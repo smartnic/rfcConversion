@@ -1,0 +1,83 @@
+{
+  "timestamp": "2025-04-20T16:50:09.464854",
+  "total_statements": 8,
+  "successful": 8,
+  "results": [
+    {
+      "statement": "The sequence number field is a 32-bit number that identifies the first data octet in this segment.",
+      "timestamp": "2025-04-20T16:50:00.719727",
+      "success": true,
+      "fol_conversion": "\u2200m, n. (has_sequence_number(m, n) \u2192 is_integer(n) \u2227 0 <= n < 2^32)",
+      "predicates_used": [
+        "has_sequence_number(m, n)",
+        "is_integer(n)"
+      ],
+      "explanation": "This formula states that for every message m and integer n, if message m has sequence number n then it implies that n is an integer within the range of 0 to 2^32 (exclusive). This captures the property that the sequence number field is a 32-bit number identifying the first data octet in the segment."
+    },
+    {
+      "statement": "The urgent pointer is interpreted only if the URG control bit is set.",
+      "timestamp": "2025-04-20T16:50:01.877505",
+      "success": true,
+      "fol_conversion": "\u2200x, m. (has_flag(m, URG) \u2192 (has_urgent_pointer(m) \u2192 interpret_urgent_pointer(x, m)))",
+      "predicates_used": [
+        "has_flag(m, URG)",
+        "has_urgent_pointer(m)",
+        "interpret_urgent_pointer(x, m)"
+      ],
+      "explanation": "This formula states that for all nodes x and messages m, if the URG flag is set in message m, then interpretation of the urgent pointer in message m occurs if there exists an urgent pointer in message m. The implication symbol (\"->\") captures the conditionality that the urgent pointer should be interpreted only when the URG bit is set."
+    },
+    {
+      "statement": "A TCP connection is established by the exchange of a SYN, a SYN-ACK, and an ACK.",
+      "timestamp": "2025-04-20T16:50:03.144931",
+      "success": true,
+      "fol_conversion": "",
+      "predicates_used": [],
+      "explanation": ""
+    },
+    {
+      "statement": "If no acknowledgment is received before the timer expires, the segment is retransmitted.",
+      "timestamp": "2025-04-20T16:50:04.396650",
+      "success": true,
+      "fol_conversion": "",
+      "predicates_used": [],
+      "explanation": ""
+    },
+    {
+      "statement": "The window field is a 16-bit field that specifies the size of the receive window.",
+      "timestamp": "2025-04-20T16:50:05.662733",
+      "success": true,
+      "fol_conversion": "",
+      "predicates_used": [],
+      "explanation": ""
+    },
+    {
+      "statement": "A TCP endpoint in LISTEN state must ignore RST segments.",
+      "timestamp": "2025-04-20T16:50:06.948119",
+      "success": true,
+      "fol_conversion": "",
+      "predicates_used": [],
+      "explanation": ""
+    },
+    {
+      "statement": "When a SYN segment arrives with a valid sequence number, the receiving TCP must return an acknowledgment.",
+      "timestamp": "2025-04-20T16:50:08.376140",
+      "success": true,
+      "fol_conversion": "",
+      "predicates_used": [],
+      "explanation": ""
+    },
+    {
+      "statement": "A FIN segment must contain the sequence number of the last data octet being sent.",
+      "timestamp": "2025-04-20T16:50:09.464854",
+      "success": true,
+      "fol_conversion": "\u2200m, n, x, y. (has_flag(m, FIN) \u2192 (\u2203d. has_sequence_number(m, d) \u2227 \u2203p. precedes(m, p) \u2227 has_sequence_number(p, n) \u2192 n = d)))",
+      "predicates_used": [
+        "has_flag(m, FIN)",
+        "has_sequence_number(m, d)",
+        "precedes(m, p)",
+        "has_sequence_number(p, n)"
+      ],
+      "explanation": "This formula states that for every message m which has the FIN flag set, there exists a data value d such that if there is another message p that precedes m and contains sequence number n, then the value of n equals d (the last data octet being sent). This ensures that the FIN segment carries the correct information about the last data octet transmitted before closing the connection."
+    }
+  ]
+}

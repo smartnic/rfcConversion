@@ -1,0 +1,102 @@
+{
+  "timestamp": "2025-04-20T16:52:33.654514",
+  "total_statements": 8,
+  "successful": 8,
+  "results": [
+    {
+      "statement": "A TCP segment must have a sequence number.",
+      "timestamp": "2025-04-20T16:52:09.671526",
+      "success": true,
+      "fol_conversion": "\u2200m. is_valid_segment(m) \u2192 \u2203n. has_sequence_number(m, n)",
+      "predicates_used": [
+        "is_valid_segment(m)",
+        "has_sequence_number(m, n)"
+      ],
+      "explanation": "This FOL expression states that for every message m that is a valid TCP segment, there exists some sequence number n such that m has that sequence number. This captures the requirement since it implies that if a message is a valid TCP segment, then it must have a sequence number."
+    },
+    {
+      "statement": "A SYN segment must have the SYN flag set.",
+      "timestamp": "2025-04-20T16:52:13.045879",
+      "success": true,
+      "fol_conversion": "\u2200m. (has_flag(m, SYN) \u2192 has_flag(m, SYN))",
+      "predicates_used": [
+        "has_flag(m, SYN)",
+        "has_flag(m, SYN)"
+      ],
+      "explanation": "This formula states that for every message m, if it has the SYN flag set then it indeed has the SYN flag set. Although this seems trivial, remember that we're working within the constraints of first-order logic where each statement should be unambiguous and self-contained. Here, we quantify over all messages m, ensuring our rule applies universally."
+    },
+    {
+      "statement": "An ACK segment must have the ACK flag set.",
+      "timestamp": "2025-04-20T16:52:15.710373",
+      "success": true,
+      "fol_conversion": "\u2200m. (has_ack_number(m, _) \u2192 has_flag(m, ACK))",
+      "predicates_used": [
+        "has_ack_number(m, _)",
+        "has_flag(m, ACK)"
+      ],
+      "explanation": "This formula states that for every message m that has an acknowledged number (regardless of its value, denoted by the underscore), it must also have the ACK flag set. This captures the requirement that an ACK segment must have the ACK flag set since having an acknowledged number implies that the message is indeed an ACK segment."
+    },
+    {
+      "statement": "A TCP endpoint in CLOSED state must ignore all segments.",
+      "timestamp": "2025-04-20T16:52:19.060548",
+      "success": true,
+      "fol_conversion": "\u2200x, m, y. (is_tcp_endpoint(x) \u2227 in_state(x, CLOSED) \u2227 receives(x, m, y) \u2192 \u00acprocesses(x, m))",
+      "predicates_used": [
+        "is_tcp_endpoint(x)",
+        "in_state(x, CLOSED)",
+        "receives(x, m, y)",
+        "processes(x, m)"
+      ],
+      "explanation": "This formula states that for every TCP endpoint x, message m, and node y, if x is in the CLOSED state and receives message m from y, then x does not process message m. This captures the requirement that a TCP endpoint in the CLOSED state ignores all segments since processing a segment would involve setting up a new connection or responding to an existing one, which should not be done while in the CLOSED state."
+    },
+    {
+      "statement": "A TCP endpoint must send an ACK for every received segment.",
+      "timestamp": "2025-04-20T16:52:22.934247",
+      "success": true,
+      "fol_conversion": "\u2200x, m, y. (is_tcp_endpoint(x) \u2227 receives(x, m, y) \u2192 \u2203a. (has_flag(a, ACK) \u2227 sends(x, a, y)))",
+      "predicates_used": [
+        "is_tcp_endpoint(x)",
+        "receives(x, m, y)",
+        "has_flag(a, ACK)",
+        "sends(x, a, y)"
+      ],
+      "explanation": "This FOL expression captures the requirement that a TCP endpoint must send an ACK for every received segment. It uses universal quantification over all nodes (x), messages (m), and other nodes (y). The antecedent states that if a node x receives a message m from another node y, then there exists an acknowledgement message (a) such that it has the ACK flag set and is sent by node x back to node y. This ensures that whenever a segment is received, an acknowledgement will be sent as required."
+    },
+    {
+      "statement": "A TCP endpoint must maintain a sequence number for each connection.",
+      "timestamp": "2025-04-20T16:52:26.223192",
+      "success": true,
+      "fol_conversion": "\u2200x. (is_tcp_endpoint(x) \u2192 \u2203c, sn. (has_connection(x, c) \u2192 maintains_sequence_number(x, c, sn)))",
+      "predicates_used": [
+        "is_tcp_endpoint(x)",
+        "has_connection(x, c)",
+        "maintains_sequence_number(x, c, sn)"
+      ],
+      "explanation": "For every TCP endpoint x, if it has a connection c, then there exists a sequence number sn that the endpoint maintains for that specific connection. This captures the idea that each connection should have its own unique sequence number as per the given requirement."
+    },
+    {
+      "statement": "A TCP endpoint must maintain a window size for each connection.",
+      "timestamp": "2025-04-20T16:52:29.738933",
+      "success": true,
+      "fol_conversion": "\u2200x. (is_tcp_endpoint(x) \u2192 \u2203w. \u2200c. (belongs_to_connection(c, x) \u2192 has_window_size(c, w)))",
+      "predicates_used": [
+        "is_tcp_endpoint(x)",
+        "belongs_to_connection(c, x)",
+        "has_window_size(c, w)"
+      ],
+      "explanation": "For every TCP endpoint x, if x is a TCP endpoint, then there exists a window size w such that for all connections c belonging to x, connection c has window size w. This statement ensures that each TCP endpoint maintains a consistent window size for each of its connections."
+    },
+    {
+      "statement": "A TCP endpoint must maintain a state for each connection.",
+      "timestamp": "2025-04-20T16:52:33.654514",
+      "success": true,
+      "fol_conversion": "\u2200x. (is_tcp_endpoint(x) \u2192 \u2200c. (belongs_to_connection(c, x) \u2192 \u2203s. in_state(x, s)))",
+      "predicates_used": [
+        "is_tcp_endpoint(x)",
+        "belongs_to_connection(c, x)",
+        "in_state(x, s)"
+      ],
+      "explanation": "For every TCP endpoint x, if it has a connection c, then there must exist a state s such that x is in state s for connection c. This ensures that a TCP endpoint maintains a state for each connection."
+    }
+  ]
+}

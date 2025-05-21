@@ -1,0 +1,56 @@
+{
+  "model": "google/gemma-7b-it",
+  "format": "FOL",
+  "timestamp": "2025-03-30T19:41:23.721936",
+  "examples": [
+    {
+      "input": "The server MUST terminate the connection after 5 failed attempts.",
+      "output": null,
+      "success": false,
+      "error": "Failed to generate valid output after 3 attempts. Last error: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/google/gemma-7b-it (Request ID: Root=1-67e9d6a2-7891ddb34582f4a9694cbd1d;aa4efede-8cc4-4753-b232-7b06f4b20fef)\n\nYou have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits.",
+      "time_seconds": 0.18275928497314453
+    },
+    {
+      "input": "If a client sends more than 3 retransmissions without receiving an ACK, it MUST abort the connection.",
+      "output": null,
+      "success": false,
+      "error": "Failed to generate valid output after 3 attempts. Last error: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/google/gemma-7b-it (Request ID: Root=1-67e9d6a2-11ccb7fe3bea9ec44456fd70;9cffe79e-9bb0-4876-be7b-0df6ec2f6a06)\n\nYou have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits.",
+      "time_seconds": 0.243180513381958
+    },
+    {
+      "input": "When a server receives a SYN segment, it MUST increment the SYN-RECEIVED counter.",
+      "output": null,
+      "success": false,
+      "error": "Failed to generate valid output after 3 attempts. Last error: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/google/gemma-7b-it (Request ID: Root=1-67e9d6a2-4f40b5010b10b415394a15ec;f76f7c9d-97ca-4d0e-9ffd-e43de37d0f54)\n\nYou have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits.",
+      "time_seconds": 0.17609262466430664
+    },
+    {
+      "input": "Packets with the RST bit set SHOULD be silently discarded.",
+      "output": null,
+      "success": false,
+      "error": "Failed to generate valid output after 3 attempts. Last error: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/google/gemma-7b-it (Request ID: Root=1-67e9d6a3-2f262f6f613182911df2672e;3eab8430-114d-40a0-a57a-0ee80472cab6)\n\nYou have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits.",
+      "time_seconds": 0.18629097938537598
+    },
+    {
+      "input": "If the server receives an ACK with an invalid sequence number, it MUST respond with a RST packet.",
+      "output": null,
+      "success": false,
+      "error": "Failed to generate valid output after 3 attempts. Last error: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/google/gemma-7b-it (Request ID: Root=1-67e9d6a3-4a7607d909460b7e595ebcc7;2b7c5ce1-877a-409d-895b-9cc31cc7b9f9)\n\nYou have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits.",
+      "time_seconds": 0.16572356224060059
+    },
+    {
+      "input": "A TCP receiver SHOULD NOT shrink its window, and MUST not shrink the right window edge.",
+      "output": null,
+      "success": false,
+      "error": "Failed to generate valid output after 3 attempts. Last error: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/google/gemma-7b-it (Request ID: Root=1-67e9d6a3-1a191b6545e6937f7a78ef1c;4b03a881-f41d-4731-a606-fc41cce1d43d)\n\nYou have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits.",
+      "time_seconds": 0.1736764907836914
+    },
+    {
+      "input": "A TCP implementation MUST be robust against wrapped sequence numbers.",
+      "output": null,
+      "success": false,
+      "error": "Failed to generate valid output after 3 attempts. Last error: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/google/gemma-7b-it (Request ID: Root=1-67e9d6a3-26046d2b106cf33d0a5e008d;996f282c-7a57-4ed8-bb6f-a2e11bc2ce8f)\n\nYou have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits.",
+      "time_seconds": 0.2473130226135254
+    }
+  ]
+}

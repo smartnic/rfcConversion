@@ -1,0 +1,266 @@
+2025-05-04 22:18:36,878 - INFO - Current working directory: C:\Users\Simlo\Desktop\rfc-to-fol
+2025-05-04 22:18:36,878 - INFO - Testing statement: A TCP segment has a sequence number.
+2025-05-04 22:18:36,891 - INFO - Testing statement: A SYN segment has a SYN flag.
+2025-05-04 22:18:36,891 - INFO - Testing statement: An ACK segment has an ACK flag.
+2025-05-04 22:18:36,892 - INFO - Testing statement: A TCP endpoint has a state.
+2025-05-04 22:18:36,892 - INFO - Testing statement: A TCP endpoint has a window size.
+2025-05-04 22:18:36,893 - INFO - Testing statement: A TCP segment has a source port.
+2025-05-04 22:18:36,894 - INFO - Testing statement: A TCP segment has a destination port.
+2025-05-04 22:18:36,894 - INFO - Testing statement: A TCP endpoint has a socket.
+2025-05-04 22:18:36,895 - ERROR - Fatal error: name 'json' is not defined
+2025-05-04 22:18:56,944 - INFO - Current working directory: C:\Users\Simlo\Desktop\rfc-to-fol
+2025-05-04 22:18:56,944 - INFO - Testing statement: A TCP segment has a sequence number.
+2025-05-04 22:18:56,961 - INFO - Testing statement: A SYN segment has a SYN flag.
+2025-05-04 22:18:56,961 - INFO - Testing statement: An ACK segment has an ACK flag.
+2025-05-04 22:18:56,961 - INFO - Testing statement: A TCP endpoint has a state.
+2025-05-04 22:18:56,961 - INFO - Testing statement: A TCP endpoint has a window size.
+2025-05-04 22:18:56,961 - INFO - Testing statement: A TCP segment has a source port.
+2025-05-04 22:18:56,963 - INFO - Testing statement: A TCP segment has a destination port.
+2025-05-04 22:18:56,963 - INFO - Testing statement: A TCP endpoint has a socket.
+2025-05-04 22:18:56,967 - INFO - Results saved to C:\Users\Simlo\Desktop\rfc-to-fol\output\z3_verification_results_20250504_221856.json
+2025-05-04 22:19:56,251 - INFO - Current working directory: C:\Users\Simlo\Desktop\rfc-to-fol
+2025-05-04 22:19:56,251 - INFO - Testing statement: A TCP segment has a sequence number.
+2025-05-04 22:19:56,251 - INFO - Generated SMT-LIB conversion
+2025-05-04 22:19:56,267 - INFO - Created Z3 verifier
+2025-05-04 22:19:56,267 - INFO - Parsing SMT-LIB:
+(declare-sort Message)
+(declare-fun has_sequence_number (Message Int) Bool)
+
+(assert (forall ((x Message))
+  (exists ((y Int))
+    (has_sequence_number x y))))
+2025-05-04 22:19:56,267 - INFO - Parse result: False, Error parsing SMT-LIB: Z3 declaration or constant expected
+2025-05-04 22:19:56,267 - ERROR - Failed to parse SMT-LIB: Error parsing SMT-LIB: Z3 declaration or constant expected
+2025-05-04 22:19:56,267 - INFO - Testing statement: A SYN segment has a SYN flag.
+2025-05-04 22:19:56,267 - INFO - Generated SMT-LIB conversion
+2025-05-04 22:19:56,267 - ERROR - Error in SMT-LIB generation: 'Int'
+2025-05-04 22:19:56,267 - INFO - Testing statement: An ACK segment has an ACK flag.
+2025-05-04 22:19:56,267 - INFO - Generated SMT-LIB conversion
+2025-05-04 22:19:56,267 - ERROR - Error in SMT-LIB generation: 'Int'
+2025-05-04 22:19:56,267 - INFO - Testing statement: A TCP endpoint has a state.
+2025-05-04 22:19:56,267 - INFO - Generated SMT-LIB conversion
+2025-05-04 22:19:56,267 - INFO - Created Z3 verifier
+2025-05-04 22:19:56,267 - INFO - Parsing SMT-LIB:
+(declare-sort Node)
+(declare-fun in_state (Node State) Bool)
+
+(assert (forall ((x Node))
+  (exists ((y State))
+    (in_state x y))))
+2025-05-04 22:19:56,267 - INFO - Parse result: False, Error parsing SMT-LIB: Z3 declaration or constant expected
+2025-05-04 22:19:56,267 - ERROR - Failed to parse SMT-LIB: Error parsing SMT-LIB: Z3 declaration or constant expected
+2025-05-04 22:19:56,267 - INFO - Testing statement: A TCP endpoint has a window size.
+2025-05-04 22:19:56,267 - INFO - Generated SMT-LIB conversion
+2025-05-04 22:19:56,267 - INFO - Created Z3 verifier
+2025-05-04 22:19:56,267 - INFO - Parsing SMT-LIB:
+(declare-sort Node)
+(declare-fun has_window_size (Node Int) Bool)
+
+(assert (forall ((x Node))
+  (exists ((y Int))
+    (has_window_size x y))))
+2025-05-04 22:19:56,267 - INFO - Parse result: False, Error parsing SMT-LIB: Z3 declaration or constant expected
+2025-05-04 22:19:56,267 - ERROR - Failed to parse SMT-LIB: Error parsing SMT-LIB: Z3 declaration or constant expected
+2025-05-04 22:19:56,267 - INFO - Testing statement: A TCP segment has a source port.
+2025-05-04 22:19:56,267 - INFO - Generated SMT-LIB conversion
+2025-05-04 22:19:56,267 - INFO - Created Z3 verifier
+2025-05-04 22:19:56,267 - INFO - Parsing SMT-LIB:
+(declare-sort Message)
+(declare-fun has_source_port (Message Port) Bool)
+
+(assert (forall ((x Message))
+  (exists ((y Port))
+    (has_source_port x y))))
+2025-05-04 22:19:56,267 - INFO - Parse result: False, Error parsing SMT-LIB: Z3 declaration or constant expected
+2025-05-04 22:19:56,282 - ERROR - Failed to parse SMT-LIB: Error parsing SMT-LIB: Z3 declaration or constant expected
+2025-05-04 22:19:56,282 - INFO - Testing statement: A TCP segment has a destination port.
+2025-05-04 22:19:56,282 - INFO - Generated SMT-LIB conversion
+2025-05-04 22:19:56,282 - INFO - Created Z3 verifier
+2025-05-04 22:19:56,282 - INFO - Parsing SMT-LIB:
+(declare-sort Message)
+(declare-fun has_destination_port (Message Port) Bool)
+
+(assert (forall ((x Message))
+  (exists ((y Port))
+    (has_destination_port x y))))
+2025-05-04 22:19:56,282 - INFO - Parse result: False, Error parsing SMT-LIB: Z3 declaration or constant expected
+2025-05-04 22:19:56,282 - ERROR - Failed to parse SMT-LIB: Error parsing SMT-LIB: Z3 declaration or constant expected
+2025-05-04 22:19:56,282 - INFO - Testing statement: A TCP endpoint has a socket.
+2025-05-04 22:19:56,282 - INFO - Generated SMT-LIB conversion
+2025-05-04 22:19:56,282 - INFO - Created Z3 verifier
+2025-05-04 22:19:56,286 - INFO - Parsing SMT-LIB:
+(declare-sort Node)
+(declare-fun has_socket (Node Socket) Bool)
+
+(assert (forall ((x Node))
+  (exists ((y Socket))
+    (has_socket x y))))
+2025-05-04 22:19:56,286 - INFO - Parse result: False, Error parsing SMT-LIB: Z3 declaration or constant expected
+2025-05-04 22:19:56,286 - ERROR - Failed to parse SMT-LIB: Error parsing SMT-LIB: Z3 declaration or constant expected
+2025-05-04 22:19:56,286 - INFO - Results saved to C:\Users\Simlo\Desktop\rfc-to-fol\output\z3_verification_results_20250504_221956.json
+2025-05-04 22:20:29,141 - INFO - Current working directory: C:\Users\Simlo\Desktop\rfc-to-fol
+2025-05-04 22:20:29,142 - INFO - Testing statement: A TCP segment has a sequence number.
+2025-05-04 22:20:29,142 - INFO - Generated SMT-LIB conversion
+2025-05-04 22:20:29,150 - INFO - Created Z3 verifier
+2025-05-04 22:20:29,151 - INFO - Parsing SMT-LIB:
+(declare-sort Message)
+(declare-fun has_sequence_number (Message Int) Bool)
+
+(assert (forall ((x Message))
+  (exists ((y Int))
+    (has_sequence_number x y))))
+2025-05-04 22:20:29,153 - INFO - Parse result: False, Error parsing assertion: Z3 declaration or constant expected
+2025-05-04 22:20:29,154 - ERROR - Failed to parse SMT-LIB: Error parsing assertion: Z3 declaration or constant expected
+2025-05-04 22:20:29,154 - INFO - Testing statement: A SYN segment has a SYN flag.
+2025-05-04 22:20:29,155 - INFO - Generated SMT-LIB conversion
+2025-05-04 22:20:29,155 - ERROR - Error in SMT-LIB generation: 'Int'
+2025-05-04 22:20:29,156 - INFO - Testing statement: An ACK segment has an ACK flag.
+2025-05-04 22:20:29,156 - INFO - Generated SMT-LIB conversion
+2025-05-04 22:20:29,156 - ERROR - Error in SMT-LIB generation: 'Int'
+2025-05-04 22:20:29,157 - INFO - Testing statement: A TCP endpoint has a state.
+2025-05-04 22:20:29,157 - INFO - Generated SMT-LIB conversion
+2025-05-04 22:20:29,157 - INFO - Created Z3 verifier
+2025-05-04 22:20:29,158 - INFO - Parsing SMT-LIB:
+(declare-sort Node)
+(declare-fun in_state (Node State) Bool)
+
+(assert (forall ((x Node))
+  (exists ((y State))
+    (in_state x y))))
+2025-05-04 22:20:29,159 - INFO - Parse result: False, Error parsing assertion: Z3 declaration or constant expected
+2025-05-04 22:20:29,160 - ERROR - Failed to parse SMT-LIB: Error parsing assertion: Z3 declaration or constant expected
+2025-05-04 22:20:29,160 - INFO - Testing statement: A TCP endpoint has a window size.
+2025-05-04 22:20:29,161 - INFO - Generated SMT-LIB conversion
+2025-05-04 22:20:29,161 - INFO - Created Z3 verifier
+2025-05-04 22:20:29,161 - INFO - Parsing SMT-LIB:
+(declare-sort Node)
+(declare-fun has_window_size (Node Int) Bool)
+
+(assert (forall ((x Node))
+  (exists ((y Int))
+    (has_window_size x y))))
+2025-05-04 22:20:29,162 - INFO - Parse result: False, Error parsing assertion: Z3 declaration or constant expected
+2025-05-04 22:20:29,163 - ERROR - Failed to parse SMT-LIB: Error parsing assertion: Z3 declaration or constant expected
+2025-05-04 22:20:29,163 - INFO - Testing statement: A TCP segment has a source port.
+2025-05-04 22:20:29,163 - INFO - Generated SMT-LIB conversion
+2025-05-04 22:20:29,163 - INFO - Created Z3 verifier
+2025-05-04 22:20:29,163 - INFO - Parsing SMT-LIB:
+(declare-sort Message)
+(declare-fun has_source_port (Message Port) Bool)
+
+(assert (forall ((x Message))
+  (exists ((y Port))
+    (has_source_port x y))))
+2025-05-04 22:20:29,165 - INFO - Parse result: False, Error parsing assertion: Z3 declaration or constant expected
+2025-05-04 22:20:29,166 - ERROR - Failed to parse SMT-LIB: Error parsing assertion: Z3 declaration or constant expected
+2025-05-04 22:20:29,166 - INFO - Testing statement: A TCP segment has a destination port.
+2025-05-04 22:20:29,167 - INFO - Generated SMT-LIB conversion
+2025-05-04 22:20:29,167 - INFO - Created Z3 verifier
+2025-05-04 22:20:29,169 - INFO - Parsing SMT-LIB:
+(declare-sort Message)
+(declare-fun has_destination_port (Message Port) Bool)
+
+(assert (forall ((x Message))
+  (exists ((y Port))
+    (has_destination_port x y))))
+2025-05-04 22:20:29,170 - INFO - Parse result: False, Error parsing assertion: Z3 declaration or constant expected
+2025-05-04 22:20:29,171 - ERROR - Failed to parse SMT-LIB: Error parsing assertion: Z3 declaration or constant expected
+2025-05-04 22:20:29,171 - INFO - Testing statement: A TCP endpoint has a socket.
+2025-05-04 22:20:29,171 - INFO - Generated SMT-LIB conversion
+2025-05-04 22:20:29,171 - INFO - Created Z3 verifier
+2025-05-04 22:20:29,171 - INFO - Parsing SMT-LIB:
+(declare-sort Node)
+(declare-fun has_socket (Node Socket) Bool)
+
+(assert (forall ((x Node))
+  (exists ((y Socket))
+    (has_socket x y))))
+2025-05-04 22:20:29,172 - INFO - Parse result: False, Error parsing assertion: Z3 declaration or constant expected
+2025-05-04 22:20:29,173 - ERROR - Failed to parse SMT-LIB: Error parsing assertion: Z3 declaration or constant expected
+2025-05-04 22:20:29,175 - INFO - Results saved to C:\Users\Simlo\Desktop\rfc-to-fol\output\z3_verification_results_20250504_222029.json
+2025-05-04 22:21:28,875 - INFO - Current working directory: C:\Users\Simlo\Desktop\rfc-to-fol
+2025-05-04 22:21:28,876 - INFO - Testing statement: A TCP segment has a sequence number.
+2025-05-04 22:21:28,876 - INFO - Generated SMT-LIB conversion
+2025-05-04 22:21:28,887 - INFO - Created Z3 verifier
+2025-05-04 22:21:28,888 - INFO - Parsing SMT-LIB:
+(declare-sort Message)
+(declare-fun has_sequence_number (Message Int) Bool)
+
+(assert (forall ((x Message))
+  (exists ((y Int))
+    (has_sequence_number x y))))
+2025-05-04 22:21:28,889 - INFO - Parse result: True, Successfully parsed SMT-LIB
+2025-05-04 22:21:28,889 - INFO - Checking satisfiability
+2025-05-04 22:21:28,893 - INFO - Satisfiability result: True, Expression is satisfiable
+2025-05-04 22:21:28,900 - INFO - Testing statement: A SYN segment has a SYN flag.
+2025-05-04 22:21:28,900 - INFO - Generated SMT-LIB conversion
+2025-05-04 22:21:28,900 - ERROR - Error in SMT-LIB generation: 'Int'
+2025-05-04 22:21:28,900 - INFO - Testing statement: An ACK segment has an ACK flag.
+2025-05-04 22:21:28,905 - INFO - Generated SMT-LIB conversion
+2025-05-04 22:21:28,905 - ERROR - Error in SMT-LIB generation: 'Int'
+2025-05-04 22:21:28,906 - INFO - Testing statement: A TCP endpoint has a state.
+2025-05-04 22:21:28,906 - INFO - Generated SMT-LIB conversion
+2025-05-04 22:21:28,906 - INFO - Created Z3 verifier
+2025-05-04 22:21:28,906 - INFO - Parsing SMT-LIB:
+(declare-sort Node)
+(declare-fun in_state (Node State) Bool)
+
+(assert (forall ((x Node))
+  (exists ((y State))
+    (in_state x y))))
+2025-05-04 22:21:28,908 - INFO - Parse result: True, Successfully parsed SMT-LIB
+2025-05-04 22:21:28,908 - INFO - Checking satisfiability
+2025-05-04 22:21:28,908 - INFO - Satisfiability result: True, Expression is satisfiable
+2025-05-04 22:21:28,921 - INFO - Testing statement: A TCP endpoint has a window size.
+2025-05-04 22:21:28,922 - INFO - Generated SMT-LIB conversion
+2025-05-04 22:21:28,923 - INFO - Created Z3 verifier
+2025-05-04 22:21:28,923 - INFO - Parsing SMT-LIB:
+(declare-sort Node)
+(declare-fun has_window_size (Node Int) Bool)
+
+(assert (forall ((x Node))
+  (exists ((y Int))
+    (has_window_size x y))))
+2025-05-04 22:21:28,926 - INFO - Parse result: True, Successfully parsed SMT-LIB
+2025-05-04 22:21:28,926 - INFO - Checking satisfiability
+2025-05-04 22:21:28,929 - INFO - Satisfiability result: True, Expression is satisfiable
+2025-05-04 22:21:28,936 - INFO - Testing statement: A TCP segment has a source port.
+2025-05-04 22:21:28,936 - INFO - Generated SMT-LIB conversion
+2025-05-04 22:21:28,936 - INFO - Created Z3 verifier
+2025-05-04 22:21:28,936 - INFO - Parsing SMT-LIB:
+(declare-sort Message)
+(declare-fun has_source_port (Message Port) Bool)
+
+(assert (forall ((x Message))
+  (exists ((y Port))
+    (has_source_port x y))))
+2025-05-04 22:21:28,936 - INFO - Parse result: True, Successfully parsed SMT-LIB
+2025-05-04 22:21:28,936 - INFO - Checking satisfiability
+2025-05-04 22:21:28,936 - INFO - Satisfiability result: True, Expression is satisfiable
+2025-05-04 22:21:28,950 - INFO - Testing statement: A TCP segment has a destination port.
+2025-05-04 22:21:28,951 - INFO - Generated SMT-LIB conversion
+2025-05-04 22:21:28,952 - INFO - Created Z3 verifier
+2025-05-04 22:21:28,953 - INFO - Parsing SMT-LIB:
+(declare-sort Message)
+(declare-fun has_destination_port (Message Port) Bool)
+
+(assert (forall ((x Message))
+  (exists ((y Port))
+    (has_destination_port x y))))
+2025-05-04 22:21:28,954 - INFO - Parse result: True, Successfully parsed SMT-LIB
+2025-05-04 22:21:28,955 - INFO - Checking satisfiability
+2025-05-04 22:21:28,957 - INFO - Satisfiability result: True, Expression is satisfiable
+2025-05-04 22:21:28,965 - INFO - Testing statement: A TCP endpoint has a socket.
+2025-05-04 22:21:28,968 - INFO - Generated SMT-LIB conversion
+2025-05-04 22:21:28,969 - INFO - Created Z3 verifier
+2025-05-04 22:21:28,971 - INFO - Parsing SMT-LIB:
+(declare-sort Node)
+(declare-fun has_socket (Node Socket) Bool)
+
+(assert (forall ((x Node))
+  (exists ((y Socket))
+    (has_socket x y))))
+2025-05-04 22:21:28,973 - INFO - Parse result: True, Successfully parsed SMT-LIB
+2025-05-04 22:21:28,973 - INFO - Checking satisfiability
+2025-05-04 22:21:28,975 - INFO - Satisfiability result: True, Expression is satisfiable
+2025-05-04 22:21:28,984 - INFO - Results saved to C:\Users\Simlo\Desktop\rfc-to-fol\output\z3_verification_results_20250504_222128.json

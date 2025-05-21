@@ -1,0 +1,63 @@
+{
+  "timestamp": "2025-04-20T17:20:43.371724",
+  "total_statements": 5,
+  "successful": 5,
+  "results": [
+    {
+      "statement": "A TCP segment has a sequence number.",
+      "timestamp": "2025-04-20T17:20:33.027406",
+      "success": true,
+      "fol_conversion": "\u2200m. has_sequence_number(m) \u2192 \u2203n. has_sequence_number(m, n)",
+      "predicates_used": [
+        "has_sequence_number(m)",
+        "has_sequence_number(m, n)"
+      ],
+      "explanation": "This FOL expression states that for every message m, if it has a sequence number (has_sequence_number(m)), then there exists some value n such that message m has sequence number n (has_sequence_number(m, n)). This captures the requirement that a TCP segment should have a sequence number since we've assumed that having a sequence number means associating a specific value with the message."
+    },
+    {
+      "statement": "A SYN segment has a SYN flag.",
+      "timestamp": "2025-04-20T17:20:35.884362",
+      "success": true,
+      "fol_conversion": "\u2200m. (is_valid_segment(m) \u2192 (has_flag(m, SYN) \u2192 has_flag(m, SYN)))",
+      "predicates_used": [
+        "is_valid_segment(m)",
+        "has_flag(m, SYN)",
+        "has_flag(m, SYN)"
+      ],
+      "explanation": "This FOL expression states that for every message m, if it is a valid TCP segment then having the SYN flag implies that the message indeed has the SYN flag set. This captures the requirement since a SYN segment should definitely have a SYN flag according to the definition of a SYN segment in the TCP protocol."
+    },
+    {
+      "statement": "An ACK segment has an ACK flag.",
+      "timestamp": "2025-04-20T17:20:38.296946",
+      "success": true,
+      "fol_conversion": "\u2200m. (has_flag(m, ACK) \u2192 is_valid_segment(m))",
+      "predicates_used": [
+        "has_flag(m, ACK)",
+        "is_valid_segment(m)"
+      ],
+      "explanation": "This FOL expression states that for every message m, if it has the ACK flag set, then it is a valid TCP segment. This captures the requirement that an ACK segment should indeed be a valid TCP segment with its corresponding ACK flag being set."
+    },
+    {
+      "statement": "A TCP endpoint has a state.",
+      "timestamp": "2025-04-20T17:20:40.776117",
+      "success": true,
+      "fol_conversion": "\u2200x. (is_tcp_endpoint(x) \u2192 \u2203s. in_state(x, s))",
+      "predicates_used": [
+        "is_tcp_endpoint(x)",
+        "in_state(x, s)"
+      ],
+      "explanation": "This FOL expression states that for every object x which is a TCP endpoint, there exists some state s such that x is in state s. This captures the idea that each TCP endpoint has a single current state at any given time."
+    },
+    {
+      "statement": "A TCP endpoint has a window size.",
+      "timestamp": "2025-04-20T17:20:43.369296",
+      "success": true,
+      "fol_conversion": "\u2200x. (is_tcp_endpoint(x) \u2192 \u2203w. has_window_size(x, w))",
+      "predicates_used": [
+        "is_tcp_endpoint(x)",
+        "has_window_size(x, w)"
+      ],
+      "explanation": "This FOL expression states that for every object x, if x is a TCP endpoint, then there exists a window size w associated with x through the has_window_size predicate. This captures the idea that each TCP endpoint should have a defined window size as per the given requirement."
+    }
+  ]
+}

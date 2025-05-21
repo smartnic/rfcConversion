@@ -1,0 +1,9 @@
+README.md
+setup.py
+rfc_analysis.egg-info/PKG-INFO
+rfc_analysis.egg-info/SOURCES.txt
+rfc_analysis.egg-info/dependency_links.txt
+rfc_analysis.egg-info/requires.txt
+rfc_analysis.egg-info/top_level.txt
+tests/test_converter.py
+tests/test_llm.py

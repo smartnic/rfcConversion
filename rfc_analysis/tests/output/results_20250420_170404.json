@@ -1,0 +1,113 @@
+{
+  "timestamp": "2025-04-20T17:04:04.983114",
+  "total_statements": 8,
+  "successful": 8,
+  "results": [
+    {
+      "statement": {
+        "id": 1,
+        "statement": "The sequence number field is a 32-bit number that identifies the first data octet in this segment."
+      },
+      "timestamp": "2025-04-20T17:03:56.421547",
+      "success": true,
+      "fol_conversion": "",
+      "predicates_used": [],
+      "explanation": ""
+    },
+    {
+      "statement": {
+        "id": 2,
+        "statement": "The urgent pointer is interpreted only if the URG control bit is set."
+      },
+      "timestamp": "2025-04-20T17:03:57.596669",
+      "success": true,
+      "fol_conversion": "\u2200m, up. (has_flag(m, URG) \u2192 (interprets_urgent_pointer(m, up) \u2192 is_valid_segment(m)))",
+      "predicates_used": [
+        "has_flag(m, URG)",
+        "interprets_urgent_pointer(m, up)",
+        "is_valid_segment(m)"
+      ],
+      "explanation": "This FOL expression states that for any message m and urgent pointer value up, if the URG flag is set in message m, then interpreting an urgent pointer in message m results in a valid segment. In other words, the urgent pointer is only meaningful or interpreted when the URG flag is set in the TCP segment."
+    },
+    {
+      "statement": {
+        "id": 3,
+        "statement": "A TCP connection is established by the exchange of a SYN, a SYN-ACK, and an ACK."
+      },
+      "timestamp": "2025-04-20T17:03:58.891612",
+      "success": true,
+      "fol_conversion": "",
+      "predicates_used": [],
+      "explanation": ""
+    },
+    {
+      "statement": {
+        "id": 4,
+        "statement": "If no acknowledgment is received before the timer expires, the segment is retransmitted."
+      },
+      "timestamp": "2025-04-20T17:04:00.195867",
+      "success": true,
+      "fol_conversion": "",
+      "predicates_used": [],
+      "explanation": ""
+    },
+    {
+      "statement": {
+        "id": 5,
+        "statement": "The window field is a 16-bit field that specifies the size of the receive window."
+      },
+      "timestamp": "2025-04-20T17:04:01.291605",
+      "success": true,
+      "fol_conversion": "\u2200m,w. (has_window_size(m, w) \u2192 \u2203win_field. (has_field(m, win_field) \u2227 is_16bit_field(win_field) \u2227 has_value(win_field, w)))",
+      "predicates_used": [
+        "has_window_size(m, w)",
+        "has_field(m, win_field)",
+        "bit_field(win_field)",
+        "has_value(win_field, w)"
+      ],
+      "explanation": "For every message m that has a window size value w, there must be a 16-bit field within the message (let's call it win_field) which contains this window size value as its content. This ensures that the window field is indeed a 16-bit field storing the specified size of the receive window."
+    },
+    {
+      "statement": {
+        "id": 6,
+        "statement": "A TCP endpoint in LISTEN state must ignore RST segments."
+      },
+      "timestamp": "2025-04-20T17:04:02.585895",
+      "success": true,
+      "fol_conversion": "",
+      "predicates_used": [],
+      "explanation": ""
+    },
+    {
+      "statement": {
+        "id": 7,
+        "statement": "When a SYN segment arrives with a valid sequence number, the receiving TCP must return an acknowledgment."
+      },
+      "timestamp": "2025-04-20T17:04:03.890139",
+      "success": true,
+      "fol_conversion": "",
+      "predicates_used": [],
+      "explanation": ""
+    },
+    {
+      "statement": {
+        "id": 8,
+        "statement": "A FIN segment must contain the sequence number of the last data octet being sent."
+      },
+      "timestamp": "2025-04-20T17:04:04.983114",
+      "success": true,
+      "fol_conversion": "\u2200x, m, y, s. (is_tcp_endpoint(x) land in_state(x, ESTABLISHED) \u2227 has_flag(m, FIN) \u2227 sends(x, m, y) \u2192 \u2203n. (has_sequence_number(m, n) \u2227 \u2203d. (precedes(m, d) \u2227 has_data(d) \u2227 has_sequence_number(d, n))))",
+      "predicates_used": [
+        "is_tcp_endpoint(x)",
+        "in_state(x, ESTABLISHED)",
+        "has_flag(m, FIN)",
+        "sends(x, m, y)",
+        "has_sequence_number(m, n)",
+        "precedes(m, d)",
+        "has_data(d)",
+        "has_sequence_number(d, n)"
+      ],
+      "explanation": "This FOL statement captures the requirement that if a TCP endpoint (x) in the ESTABLISHED state sends a FIN segment (m) to another node (y), then there must exist a sequence number (n) on the FIN segment such that it corresponds to the sequence number of the last data octet (d) that was previously sent before closing the connection. This ensures proper handover during connection teardown."
+    }
+  ]
+}

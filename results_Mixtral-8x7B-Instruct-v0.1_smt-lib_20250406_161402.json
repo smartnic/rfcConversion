@@ -1,0 +1,28 @@
+{
+  "model": "mistralai/Mixtral-8x7B-Instruct-v0.1",
+  "format": "SMT-LIB",
+  "timestamp": "2025-04-06T16:13:56.154852",
+  "examples": [
+    {
+      "input": "The server MUST terminate the connection after 5 failed attempts.",
+      "output": "(declare-sort Server)\n(declare-fun FailedAttempts (Server Int) Bool)\n(declare-fun Terminate (Server) Bool)\n\n(assert\n  (forall ((s Server))\n    (=>\n      (exists ((i Int))\n        (and\n          (FailedAttempts s i)\n          (> i 5)\n        )\n      )\n      (Terminate s)\n    )\n  )\n)",
+      "success": true,
+      "error": null,
+      "time_seconds": 1.744178295135498
+    },
+    {
+      "input": "If a client sends more than 3 retransmissions without receiving an ACK, it MUST abort the connection.",
+      "output": "(declare-sort Client)\n(declare-sort Server)\n(declare-sort Message)\n(declare-fun Send (Server Message) Bool)\n(declare-fun Retransmit (Client Message) Bool)\n(declare-fun ReceivedACK (Client Message) Bool)\n(declare-fun Abort (Client) Bool)\n\n(assert\n  (forall ((c Client) (m Message))\n    (=>\n      (and\n        (Retransmit c m)\n        (not (ReceivedACK c m))\n        (> (Count (Retransmit c m)) 3)\n      )\n      (Abort c)\n    )\n  )\n)",
+      "success": true,
+      "error": null,
+      "time_seconds": 2.4529452323913574
+    },
+    {
+      "input": "When a server receives a SYN segment, it MUST increment the SYN-RECEIVED counter.",
+      "output": "(declare-sort Server)\n(declare-fun SYN-RECEIVED (Server) Int)\n(declare-fun Receive (Server TCPSegment) Bool)\n\n(assert\n  (forall ((s Server) (t TCPSegment))\n    (=>\n      (and\n        (SYN t)\n        (Receive s t)\n      )\n      (> (SYN-RECEIVED s) (SYN-RECEIVED s))\n    )\n  )\n)",
+      "success": true,
+      "error": null,
+      "time_seconds": 1.839146614074707
+    }
+  ]
+}

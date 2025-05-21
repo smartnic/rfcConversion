@@ -1,0 +1,55 @@
+{
+  "timestamp": "2025-04-20T17:47:32.147139",
+  "total_statements": 8,
+  "successful": 0,
+  "results": [
+    {
+      "statement": "A TCP segment has a sequence number.",
+      "timestamp": "2025-04-20T17:43:57.548773",
+      "success": false,
+      "error": "Failed to generate valid response after all retries"
+    },
+    {
+      "statement": "A SYN segment has a SYN flag.",
+      "timestamp": "2025-04-20T17:43:59.312406",
+      "success": false,
+      "error": "Failed to generate valid response after all retries"
+    },
+    {
+      "statement": "An ACK segment has an ACK flag.",
+      "timestamp": "2025-04-20T17:44:00.914289",
+      "success": false,
+      "error": "Failed to generate valid response after all retries"
+    },
+    {
+      "statement": "A TCP endpoint has a state.",
+      "timestamp": "2025-04-20T17:44:02.588451",
+      "success": false,
+      "error": "Failed to generate valid response after all retries"
+    },
+    {
+      "statement": "A TCP endpoint has a window size.",
+      "timestamp": "2025-04-20T17:44:55.231130",
+      "success": false,
+      "error": "Failed to generate valid response after all retries"
+    },
+    {
+      "statement": "A TCP segment has a source port.",
+      "timestamp": "2025-04-20T17:45:47.551961",
+      "success": false,
+      "error": "Failed to generate valid response after all retries"
+    },
+    {
+      "statement": "A TCP segment has a destination port.",
+      "timestamp": "2025-04-20T17:46:39.778174",
+      "success": false,
+      "error": "Failed to generate valid response after all retries"
+    },
+    {
+      "statement": "A TCP endpoint has a socket.",
+      "timestamp": "2025-04-20T17:47:32.147139",
+      "success": false,
+      "error": "Failed to generate valid response after all retries"
+    }
+  ]
+}

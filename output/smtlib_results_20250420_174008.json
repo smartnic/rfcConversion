@@ -1,0 +1,80 @@
+{
+  "timestamp": "2025-04-20T17:40:08.344212",
+  "total_statements": 8,
+  "successful": 8,
+  "results": [
+    {
+      "statement": "A TCP segment has a sequence number.",
+      "timestamp": "2025-04-20T17:39:50.540138",
+      "success": true,
+      "smtlib_conversion": "```less\n(declare-sort Message)\n(declare-fun has_sequence_number (Message Int) Bool)\n(assert (forall ((m Message)) (exists ((n Int)) (has_sequence_number m n))))\n```\n",
+      "predicates_used": [
+        "has_sequence_number"
+      ],
+      "explanation": "We declare the `Message` sort and the `has_sequence_number` function that takes a message and an integer representing the sequence number. We use a universally quantified variable `m` ranging over messages and existentially quantified variable `n` ranging over integers to express that for every message there exists some integer as its sequence number. This captures the requirement that each TCP segment should have a sequence number."
+    },
+    {
+      "statement": "A SYN segment has a SYN flag.",
+      "timestamp": "2025-04-20T17:39:52.073587",
+      "success": true,
+      "smtlib_conversion": "",
+      "predicates_used": [],
+      "explanation": ""
+    },
+    {
+      "statement": "An ACK segment has an ACK flag.",
+      "timestamp": "2025-04-20T17:39:53.748235",
+      "success": true,
+      "smtlib_conversion": "",
+      "predicates_used": [],
+      "explanation": ""
+    },
+    {
+      "statement": "A TCP endpoint has a state.",
+      "timestamp": "2025-04-20T17:39:55.241608",
+      "success": true,
+      "smtlib_conversion": "",
+      "predicates_used": [],
+      "explanation": ""
+    },
+    {
+      "statement": "A TCP endpoint has a window size.",
+      "timestamp": "2025-04-20T17:39:58.877968",
+      "success": true,
+      "smtlib_conversion": "```less\n(declare-sort Node)\n(declare-sort Message)\n(declare-fun has_window_size (Message Real) Bool)\n(assert (exists ((x Node) (m Message) (w Real)) (has_window_size m w)))\n```\n",
+      "predicates_used": [
+        "has_window_size"
+      ],
+      "explanation": "This SMT-LIB expression declares the necessary sorts `Node` and `Message`, as well as the predicate `has_window_size`. It then asserts that there exists a message `m` with a real value `w` representing its window size, which means that some message has a window size. This captures the idea that a TCP endpoint has a window size since messages exchanged between endpoints contain window sizes."
+    },
+    {
+      "statement": "A TCP segment has a source port.",
+      "timestamp": "2025-04-20T17:40:00.613416",
+      "success": true,
+      "smtlib_conversion": "",
+      "predicates_used": [],
+      "explanation": ""
+    },
+    {
+      "statement": "A TCP segment has a destination port.",
+      "timestamp": "2025-04-20T17:40:04.615132",
+      "success": true,
+      "smtlib_conversion": "```less\n(declare-sort Message)\n(declare-sort Port)\n(declare-fun has_destination_port (Message Port) Bool)\n(assert (forall ((m Message) (p Port))\n(implies (is_valid_segment m)\n(has_destination_port m p))))\n```\n",
+      "predicates_used": [
+        "has_destination_port"
+      ],
+      "explanation": "We start by declaring the necessary sorts `Message` and `Port`. We also declare a new binary predicate `has_destination_port`, which states that a given message has a specific destination port. Then we use an implication within our universal quantifier to say that for every message `m` of sort `Message`, if `m` is a valid TCP segment (as per the `is_valid_segment` predicate), then there should be a destination port associated with it through the `has_destination_port` predicate."
+    },
+    {
+      "statement": "A TCP endpoint has a socket.",
+      "timestamp": "2025-04-20T17:40:08.344212",
+      "success": true,
+      "smtlib_conversion": "(declare-sort Node)\n(declare-fun is_tcp_endpoint (Node) Bool)\n(declare-fun has_socket (Node) Bool)\n(assert (forall ((x Node))\n(=> (is_tcp_endpoint x)\n(has_socket x))))\n",
+      "predicates_used": [
+        "is_tcp_endpoint",
+        "has_socket"
+      ],
+      "explanation": "We declare two sorts, Node and Bool. We also declare three uninterpreted functions: is_tcp_endpoint, has_socket, and the implication operator =>. The function is_tcp_endpoint represents whether a node is a TCP endpoint or not. The function has_socket determines if a given node (TCP endpoint) has a socket. Using the forall quantifier, we create an implication stating that for every node x, if x is a TCP endpoint then it must have a socket."
+    }
+  ]
+}

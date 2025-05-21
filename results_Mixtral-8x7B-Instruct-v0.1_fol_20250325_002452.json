@@ -1,0 +1,56 @@
+{
+  "model": "mistralai/Mixtral-8x7B-Instruct-v0.1",
+  "format": "FOL",
+  "timestamp": "2025-03-25T00:24:43.115216",
+  "examples": [
+    {
+      "input": "The server MUST terminate the connection after 5 failed attempts.",
+      "output": "\u2200s (Server(s) \u2227 Count(FailedAttempts(s), 5) \u2192 Terminate(s, Connection))",
+      "success": true,
+      "error": null,
+      "time_seconds": 0.8544671535491943
+    },
+    {
+      "input": "If a client sends more than 3 retransmissions without receiving an ACK, it MUST abort the connection.",
+      "output": "\u2200c (Client(c) \u2227 Count(Retries(c), n) > 3 \u2227 \u00ac\u2203p (Receive(c,p) \u2227 Type(p,ACK)) \u2192 Abort(c, Connection))",
+      "success": true,
+      "error": null,
+      "time_seconds": 1.3608810901641846
+    },
+    {
+      "input": "When a server receives a SYN segment, it MUST increment the SYN-RECEIVED counter.",
+      "output": "\u2200s\u2200p (Server(s) \u2227 Receive(s,p) \u2227 Type(p,SYN) \u2192 Count(SYN-RECEIVED(s), n+1))",
+      "success": true,
+      "error": null,
+      "time_seconds": 1.1597263813018799
+    },
+    {
+      "input": "Packets with the RST bit set SHOULD be silently discarded.",
+      "output": null,
+      "success": false,
+      "error": "Failed to generate valid output after 3 attempts. Last error: Formula must use standard predicates",
+      "time_seconds": 1.4890210628509521
+    },
+    {
+      "input": "If the server receives an ACK with an invalid sequence number, it MUST respond with a RST packet.",
+      "output": "\u2200s\u2200p (Server(s) \u2227 Receive(s,p) \u2227 Type(p,ACK) \u2227 \u00acValidSequenceNumber(p) \u2192 Send(s,p2) \u2227 Type(p2,RST))",
+      "success": true,
+      "error": null,
+      "time_seconds": 1.2619853019714355
+    },
+    {
+      "input": "A TCP receiver SHOULD NOT shrink its window, and MUST not shrink the right window edge.",
+      "output": "\u2200s (Server(s) \u2192 \u00acShrinkWindow(s)) \u2227 \u2200s (Server(s) \u2192 \u00acShrinkRightWindowEdge(s))",
+      "success": true,
+      "error": null,
+      "time_seconds": 1.0126657485961914
+    },
+    {
+      "input": "A TCP implementation MUST be robust against wrapped sequence numbers.",
+      "output": "\u2200s\u2200p1\u2200p2 (Server(s) \u2227 Receive(s,p1) \u2227 Receive(s,p2) \u2227 Type(p1,ACK) \u2227 Type(p2,ACK) \u2227 WrapsSequenceNumber(p1,p2) \u2192 (\u2203n (Count(SequenceNumber(p1), n) = Count(SequenceNumber(p2), n))))",
+      "success": true,
+      "error": null,
+      "time_seconds": 1.99284029006958
+    }
+  ]
+}

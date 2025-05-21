@@ -1,0 +1,634 @@
+
+================================================================================
+PROMPT FOR STATEMENT 1:
+================================================================================
+
+Statement:
+----------------------------------------
+"The sequence number field is a 32-bit number that identifies the first data octet in this segment."
+----------------------------------------
+
+Prompt Sections:
+
+Section 1: Introduction
+----------------------------------------
+You are tasked with converting TCP protocol requirements from RFC 793 into First-Order Logic (FOL). The requirement to convert is:
+
+"The sequence number field is a 32-bit number that identifies the first data octet in this segment."
+----------------------------------------
+
+Section 2: Protocol Elements
+----------------------------------------
+The TCP protocol involves the following key elements:
+- Nodes: TCPEndpoint (base type), Initiator, Responder
+- Messages: TCPSegment with fields (sequence_number, acknowledgment_number, window, urgent_pointer)
+- Flags: SYN, ACK, RST, FIN, URG, PSH
+- States: CLOSED, LISTEN, SYN_SENT, SYN_RECEIVED, ESTABLISHED, FIN_WAIT_1, FIN_WAIT_2, CLOSE_WAIT, CLOSING, LAST_ACK, TIME_WAIT
+----------------------------------------
+
+Section 3: Predicate Categories
+----------------------------------------
+1. Node Predicates:
+   - is_tcp_endpoint(x): x is a TCP endpoint
+   - is_initiator(x): x is the connection initiator
+   - is_responder(x): x is the connection responder
+
+2. Message Predicates:
+   - has_sequence_number(m, n): message m has sequence number n
+   - has_ack_number(m, n): message m has acknowledgment number n
+   - has_window_size(m, w): message m has window size w
+   - has_flag(m, f): message m has flag f set
+   - is_valid_segment(m): m is a valid TCP segment
+
+3. Action Predicates:
+   - sends(x, m, y): node x sends message m to node y
+   - receives(x, m, y): node x receives message m from y
+   - processes(x, m): node x processes message m
+   - retransmits(x, m): node x retransmits message m
+
+4. State Predicates:
+   - in_state(x, s): node x is in state s
+   - can_transition(s1, s2): state transition from s1 to s2 is valid
+   - transitions_to(x, s1, s2): node x transitions from state s1 to s2
+
+5. Relation Predicates:
+   - precedes(m1, m2): message m1 precedes message m2
+   - acknowledges(m1, m2): message m1 acknowledges message m2
+   - belongs_to_connection(m, c): message m belongs to connection c
+----------------------------------------
+
+Section 4: State Definitions
+----------------------------------------
+- CLOSED: Default state when no connection exists
+- LISTEN: Waiting for connection request
+- SYN_SENT: Sent connection request, waiting for acknowledgment
+- SYN_RECEIVED: Received connection request, sent acknowledgment
+- ESTABLISHED: Connection established, data transfer possible
+- FIN_WAIT_1: Initiated connection termination
+- FIN_WAIT_2: Received ACK of FIN, waiting for FIN from remote
+- CLOSE_WAIT: Received FIN, waiting for application to close
+- CLOSING: Both sides initiated close simultaneously
+- LAST_ACK: Waiting for final ACK after sending FIN
+- TIME_WAIT: Waiting to ensure remote TCP received final ACK
+----------------------------------------
+
+Section 5: Message Types
+----------------------------------------
+1. Connection Establishment:
+   - SYN: Initial connection request
+   - SYN-ACK: Connection request acknowledgment
+   - ACK: Final connection establishment acknowledgment
+
+2. Data Transfer:
+   - DATA: Regular data segment
+   - ACK: Data acknowledgment
+
+3. Connection Termination:
+   - FIN: Connection termination request
+   - FIN-ACK: Termination acknowledgment
+----------------------------------------
+
+Section 6: Conversion Rules
+----------------------------------------
+1. Use universal quantifiers (∀) for general rules
+2. Use existential quantifiers (∃) for existence claims
+3. Use implications (→) for conditional statements
+4. Use conjunctions (∧) for multiple conditions
+5. Use predicates to express properties and relations
+6. Include temporal ordering when relevant
+7. Specify state transitions explicitly
+----------------------------------------
+
+Section 7: Example Conversions
+----------------------------------------
+1. "A SYN segment must have a sequence number."
+   ∀m. (has_flag(m, SYN) → ∃n. has_sequence_number(m, n))
+
+2. "When in CLOSED state, a TCP endpoint must respond to any incoming segment with a RST."
+   ∀x,m,y. (is_tcp_endpoint(x) ∧ in_state(x, CLOSED) ∧ receives(x, m, y) →
+   ∃r. (has_flag(r, RST) ∧ sends(x, r, y)))
+
+3. "A TCP endpoint in LISTEN state must ignore RST segments."
+   ∀x,m,y. (is_tcp_endpoint(x) ∧ in_state(x, LISTEN) ∧ receives(x, m, y) ∧ has_flag(m, RST) →
+   ¬processes(x, m))
+----------------------------------------
+
+Section 8: Task
+----------------------------------------
+Convert the given TCP requirement into First-Order Logic using the predicates and conventions defined above. Ensure your conversion:
+1. Uses appropriate quantifiers
+2. Includes all relevant conditions
+3. Maintains logical consistency
+4. Reflects the temporal nature of the protocol (if applicable)
+5. Preserves the original meaning of the requirement
+----------------------------------------
+
+================================================================================
+
+
+================================================================================
+PROMPT FOR STATEMENT 2:
+================================================================================
+
+Statement:
+----------------------------------------
+"The urgent pointer is interpreted only if the URG control bit is set."
+----------------------------------------
+
+Prompt Sections:
+
+Section 1: Introduction
+----------------------------------------
+You are tasked with converting TCP protocol requirements from RFC 793 into First-Order Logic (FOL). The requirement to convert is:
+
+"The urgent pointer is interpreted only if the URG control bit is set."
+----------------------------------------
+
+Section 2: Protocol Elements
+----------------------------------------
+The TCP protocol involves the following key elements:
+- Nodes: TCPEndpoint (base type), Initiator, Responder
+- Messages: TCPSegment with fields (sequence_number, acknowledgment_number, window, urgent_pointer)
+- Flags: SYN, ACK, RST, FIN, URG, PSH
+- States: CLOSED, LISTEN, SYN_SENT, SYN_RECEIVED, ESTABLISHED, FIN_WAIT_1, FIN_WAIT_2, CLOSE_WAIT, CLOSING, LAST_ACK, TIME_WAIT
+----------------------------------------
+
+Section 3: Predicate Categories
+----------------------------------------
+1. Node Predicates:
+   - is_tcp_endpoint(x): x is a TCP endpoint
+   - is_initiator(x): x is the connection initiator
+   - is_responder(x): x is the connection responder
+
+2. Message Predicates:
+   - has_sequence_number(m, n): message m has sequence number n
+   - has_ack_number(m, n): message m has acknowledgment number n
+   - has_window_size(m, w): message m has window size w
+   - has_flag(m, f): message m has flag f set
+   - is_valid_segment(m): m is a valid TCP segment
+
+3. Action Predicates:
+   - sends(x, m, y): node x sends message m to node y
+   - receives(x, m, y): node x receives message m from y
+   - processes(x, m): node x processes message m
+   - retransmits(x, m): node x retransmits message m
+
+4. State Predicates:
+   - in_state(x, s): node x is in state s
+   - can_transition(s1, s2): state transition from s1 to s2 is valid
+   - transitions_to(x, s1, s2): node x transitions from state s1 to s2
+
+5. Relation Predicates:
+   - precedes(m1, m2): message m1 precedes message m2
+   - acknowledges(m1, m2): message m1 acknowledges message m2
+   - belongs_to_connection(m, c): message m belongs to connection c
+----------------------------------------
+
+Section 4: State Definitions
+----------------------------------------
+- CLOSED: Default state when no connection exists
+- LISTEN: Waiting for connection request
+- SYN_SENT: Sent connection request, waiting for acknowledgment
+- SYN_RECEIVED: Received connection request, sent acknowledgment
+- ESTABLISHED: Connection established, data transfer possible
+- FIN_WAIT_1: Initiated connection termination
+- FIN_WAIT_2: Received ACK of FIN, waiting for FIN from remote
+- CLOSE_WAIT: Received FIN, waiting for application to close
+- CLOSING: Both sides initiated close simultaneously
+- LAST_ACK: Waiting for final ACK after sending FIN
+- TIME_WAIT: Waiting to ensure remote TCP received final ACK
+----------------------------------------
+
+Section 5: Message Types
+----------------------------------------
+1. Connection Establishment:
+   - SYN: Initial connection request
+   - SYN-ACK: Connection request acknowledgment
+   - ACK: Final connection establishment acknowledgment
+
+2. Data Transfer:
+   - DATA: Regular data segment
+   - ACK: Data acknowledgment
+
+3. Connection Termination:
+   - FIN: Connection termination request
+   - FIN-ACK: Termination acknowledgment
+----------------------------------------
+
+Section 6: Conversion Rules
+----------------------------------------
+1. Use universal quantifiers (∀) for general rules
+2. Use existential quantifiers (∃) for existence claims
+3. Use implications (→) for conditional statements
+4. Use conjunctions (∧) for multiple conditions
+5. Use predicates to express properties and relations
+6. Include temporal ordering when relevant
+7. Specify state transitions explicitly
+----------------------------------------
+
+Section 7: Example Conversions
+----------------------------------------
+1. "A SYN segment must have a sequence number."
+   ∀m. (has_flag(m, SYN) → ∃n. has_sequence_number(m, n))
+
+2. "When in CLOSED state, a TCP endpoint must respond to any incoming segment with a RST."
+   ∀x,m,y. (is_tcp_endpoint(x) ∧ in_state(x, CLOSED) ∧ receives(x, m, y) →
+   ∃r. (has_flag(r, RST) ∧ sends(x, r, y)))
+
+3. "A TCP endpoint in LISTEN state must ignore RST segments."
+   ∀x,m,y. (is_tcp_endpoint(x) ∧ in_state(x, LISTEN) ∧ receives(x, m, y) ∧ has_flag(m, RST) →
+   ¬processes(x, m))
+----------------------------------------
+
+Section 8: Task
+----------------------------------------
+Convert the given TCP requirement into First-Order Logic using the predicates and conventions defined above. Ensure your conversion:
+1. Uses appropriate quantifiers
+2. Includes all relevant conditions
+3. Maintains logical consistency
+4. Reflects the temporal nature of the protocol (if applicable)
+5. Preserves the original meaning of the requirement
+----------------------------------------
+
+================================================================================
+
+
+================================================================================
+PROMPT FOR STATEMENT 3:
+================================================================================
+
+Statement:
+----------------------------------------
+"A TCP connection is established by the exchange of a SYN, a SYN-ACK, and an ACK."
+----------------------------------------
+
+Prompt Sections:
+
+Section 1: Introduction
+----------------------------------------
+You are tasked with converting TCP protocol requirements from RFC 793 into First-Order Logic (FOL). The requirement to convert is:
+
+"A TCP connection is established by the exchange of a SYN, a SYN-ACK, and an ACK."
+----------------------------------------
+
+Section 2: Protocol Elements
+----------------------------------------
+The TCP protocol involves the following key elements:
+- Nodes: TCPEndpoint (base type), Initiator, Responder
+- Messages: TCPSegment with fields (sequence_number, acknowledgment_number, window, urgent_pointer)
+- Flags: SYN, ACK, RST, FIN, URG, PSH
+- States: CLOSED, LISTEN, SYN_SENT, SYN_RECEIVED, ESTABLISHED, FIN_WAIT_1, FIN_WAIT_2, CLOSE_WAIT, CLOSING, LAST_ACK, TIME_WAIT
+----------------------------------------
+
+Section 3: Predicate Categories
+----------------------------------------
+1. Node Predicates:
+   - is_tcp_endpoint(x): x is a TCP endpoint
+   - is_initiator(x): x is the connection initiator
+   - is_responder(x): x is the connection responder
+
+2. Message Predicates:
+   - has_sequence_number(m, n): message m has sequence number n
+   - has_ack_number(m, n): message m has acknowledgment number n
+   - has_window_size(m, w): message m has window size w
+   - has_flag(m, f): message m has flag f set
+   - is_valid_segment(m): m is a valid TCP segment
+
+3. Action Predicates:
+   - sends(x, m, y): node x sends message m to node y
+   - receives(x, m, y): node x receives message m from y
+   - processes(x, m): node x processes message m
+   - retransmits(x, m): node x retransmits message m
+
+4. State Predicates:
+   - in_state(x, s): node x is in state s
+   - can_transition(s1, s2): state transition from s1 to s2 is valid
+   - transitions_to(x, s1, s2): node x transitions from state s1 to s2
+
+5. Relation Predicates:
+   - precedes(m1, m2): message m1 precedes message m2
+   - acknowledges(m1, m2): message m1 acknowledges message m2
+   - belongs_to_connection(m, c): message m belongs to connection c
+----------------------------------------
+
+Section 4: State Definitions
+----------------------------------------
+- CLOSED: Default state when no connection exists
+- LISTEN: Waiting for connection request
+- SYN_SENT: Sent connection request, waiting for acknowledgment
+- SYN_RECEIVED: Received connection request, sent acknowledgment
+- ESTABLISHED: Connection established, data transfer possible
+- FIN_WAIT_1: Initiated connection termination
+- FIN_WAIT_2: Received ACK of FIN, waiting for FIN from remote
+- CLOSE_WAIT: Received FIN, waiting for application to close
+- CLOSING: Both sides initiated close simultaneously
+- LAST_ACK: Waiting for final ACK after sending FIN
+- TIME_WAIT: Waiting to ensure remote TCP received final ACK
+----------------------------------------
+
+Section 5: Message Types
+----------------------------------------
+1. Connection Establishment:
+   - SYN: Initial connection request
+   - SYN-ACK: Connection request acknowledgment
+   - ACK: Final connection establishment acknowledgment
+
+2. Data Transfer:
+   - DATA: Regular data segment
+   - ACK: Data acknowledgment
+
+3. Connection Termination:
+   - FIN: Connection termination request
+   - FIN-ACK: Termination acknowledgment
+----------------------------------------
+
+Section 6: Conversion Rules
+----------------------------------------
+1. Use universal quantifiers (∀) for general rules
+2. Use existential quantifiers (∃) for existence claims
+3. Use implications (→) for conditional statements
+4. Use conjunctions (∧) for multiple conditions
+5. Use predicates to express properties and relations
+6. Include temporal ordering when relevant
+7. Specify state transitions explicitly
+----------------------------------------
+
+Section 7: Example Conversions
+----------------------------------------
+1. "A SYN segment must have a sequence number."
+   ∀m. (has_flag(m, SYN) → ∃n. has_sequence_number(m, n))
+
+2. "When in CLOSED state, a TCP endpoint must respond to any incoming segment with a RST."
+   ∀x,m,y. (is_tcp_endpoint(x) ∧ in_state(x, CLOSED) ∧ receives(x, m, y) →
+   ∃r. (has_flag(r, RST) ∧ sends(x, r, y)))
+
+3. "A TCP endpoint in LISTEN state must ignore RST segments."
+   ∀x,m,y. (is_tcp_endpoint(x) ∧ in_state(x, LISTEN) ∧ receives(x, m, y) ∧ has_flag(m, RST) →
+   ¬processes(x, m))
+----------------------------------------
+
+Section 8: Task
+----------------------------------------
+Convert the given TCP requirement into First-Order Logic using the predicates and conventions defined above. Ensure your conversion:
+1. Uses appropriate quantifiers
+2. Includes all relevant conditions
+3. Maintains logical consistency
+4. Reflects the temporal nature of the protocol (if applicable)
+5. Preserves the original meaning of the requirement
+----------------------------------------
+
+================================================================================
+
+
+================================================================================
+PROMPT FOR STATEMENT 4:
+================================================================================
+
+Statement:
+----------------------------------------
+"If no acknowledgment is received before the timer expires, the segment is retransmitted."
+----------------------------------------
+
+Prompt Sections:
+
+Section 1: Introduction
+----------------------------------------
+You are tasked with converting TCP protocol requirements from RFC 793 into First-Order Logic (FOL). The requirement to convert is:
+
+"If no acknowledgment is received before the timer expires, the segment is retransmitted."
+----------------------------------------
+
+Section 2: Protocol Elements
+----------------------------------------
+The TCP protocol involves the following key elements:
+- Nodes: TCPEndpoint (base type), Initiator, Responder
+- Messages: TCPSegment with fields (sequence_number, acknowledgment_number, window, urgent_pointer)
+- Flags: SYN, ACK, RST, FIN, URG, PSH
+- States: CLOSED, LISTEN, SYN_SENT, SYN_RECEIVED, ESTABLISHED, FIN_WAIT_1, FIN_WAIT_2, CLOSE_WAIT, CLOSING, LAST_ACK, TIME_WAIT
+----------------------------------------
+
+Section 3: Predicate Categories
+----------------------------------------
+1. Node Predicates:
+   - is_tcp_endpoint(x): x is a TCP endpoint
+   - is_initiator(x): x is the connection initiator
+   - is_responder(x): x is the connection responder
+
+2. Message Predicates:
+   - has_sequence_number(m, n): message m has sequence number n
+   - has_ack_number(m, n): message m has acknowledgment number n
+   - has_window_size(m, w): message m has window size w
+   - has_flag(m, f): message m has flag f set
+   - is_valid_segment(m): m is a valid TCP segment
+
+3. Action Predicates:
+   - sends(x, m, y): node x sends message m to node y
+   - receives(x, m, y): node x receives message m from y
+   - processes(x, m): node x processes message m
+   - retransmits(x, m): node x retransmits message m
+
+4. State Predicates:
+   - in_state(x, s): node x is in state s
+   - can_transition(s1, s2): state transition from s1 to s2 is valid
+   - transitions_to(x, s1, s2): node x transitions from state s1 to s2
+
+5. Relation Predicates:
+   - precedes(m1, m2): message m1 precedes message m2
+   - acknowledges(m1, m2): message m1 acknowledges message m2
+   - belongs_to_connection(m, c): message m belongs to connection c
+----------------------------------------
+
+Section 4: State Definitions
+----------------------------------------
+- CLOSED: Default state when no connection exists
+- LISTEN: Waiting for connection request
+- SYN_SENT: Sent connection request, waiting for acknowledgment
+- SYN_RECEIVED: Received connection request, sent acknowledgment
+- ESTABLISHED: Connection established, data transfer possible
+- FIN_WAIT_1: Initiated connection termination
+- FIN_WAIT_2: Received ACK of FIN, waiting for FIN from remote
+- CLOSE_WAIT: Received FIN, waiting for application to close
+- CLOSING: Both sides initiated close simultaneously
+- LAST_ACK: Waiting for final ACK after sending FIN
+- TIME_WAIT: Waiting to ensure remote TCP received final ACK
+----------------------------------------
+
+Section 5: Message Types
+----------------------------------------
+1. Connection Establishment:
+   - SYN: Initial connection request
+   - SYN-ACK: Connection request acknowledgment
+   - ACK: Final connection establishment acknowledgment
+
+2. Data Transfer:
+   - DATA: Regular data segment
+   - ACK: Data acknowledgment
+
+3. Connection Termination:
+   - FIN: Connection termination request
+   - FIN-ACK: Termination acknowledgment
+----------------------------------------
+
+Section 6: Conversion Rules
+----------------------------------------
+1. Use universal quantifiers (∀) for general rules
+2. Use existential quantifiers (∃) for existence claims
+3. Use implications (→) for conditional statements
+4. Use conjunctions (∧) for multiple conditions
+5. Use predicates to express properties and relations
+6. Include temporal ordering when relevant
+7. Specify state transitions explicitly
+----------------------------------------
+
+Section 7: Example Conversions
+----------------------------------------
+1. "A SYN segment must have a sequence number."
+   ∀m. (has_flag(m, SYN) → ∃n. has_sequence_number(m, n))
+
+2. "When in CLOSED state, a TCP endpoint must respond to any incoming segment with a RST."
+   ∀x,m,y. (is_tcp_endpoint(x) ∧ in_state(x, CLOSED) ∧ receives(x, m, y) →
+   ∃r. (has_flag(r, RST) ∧ sends(x, r, y)))
+
+3. "A TCP endpoint in LISTEN state must ignore RST segments."
+   ∀x,m,y. (is_tcp_endpoint(x) ∧ in_state(x, LISTEN) ∧ receives(x, m, y) ∧ has_flag(m, RST) →
+   ¬processes(x, m))
+----------------------------------------
+
+Section 8: Task
+----------------------------------------
+Convert the given TCP requirement into First-Order Logic using the predicates and conventions defined above. Ensure your conversion:
+1. Uses appropriate quantifiers
+2. Includes all relevant conditions
+3. Maintains logical consistency
+4. Reflects the temporal nature of the protocol (if applicable)
+5. Preserves the original meaning of the requirement
+----------------------------------------
+
+================================================================================
+
+
+================================================================================
+PROMPT FOR STATEMENT 5:
+================================================================================
+
+Statement:
+----------------------------------------
+"The window field is a 16-bit field that specifies the size of the receive window."
+----------------------------------------
+
+Prompt Sections:
+
+Section 1: Introduction
+----------------------------------------
+You are tasked with converting TCP protocol requirements from RFC 793 into First-Order Logic (FOL). The requirement to convert is:
+
+"The window field is a 16-bit field that specifies the size of the receive window."
+----------------------------------------
+
+Section 2: Protocol Elements
+----------------------------------------
+The TCP protocol involves the following key elements:
+- Nodes: TCPEndpoint (base type), Initiator, Responder
+- Messages: TCPSegment with fields (sequence_number, acknowledgment_number, window, urgent_pointer)
+- Flags: SYN, ACK, RST, FIN, URG, PSH
+- States: CLOSED, LISTEN, SYN_SENT, SYN_RECEIVED, ESTABLISHED, FIN_WAIT_1, FIN_WAIT_2, CLOSE_WAIT, CLOSING, LAST_ACK, TIME_WAIT
+----------------------------------------
+
+Section 3: Predicate Categories
+----------------------------------------
+1. Node Predicates:
+   - is_tcp_endpoint(x): x is a TCP endpoint
+   - is_initiator(x): x is the connection initiator
+   - is_responder(x): x is the connection responder
+
+2. Message Predicates:
+   - has_sequence_number(m, n): message m has sequence number n
+   - has_ack_number(m, n): message m has acknowledgment number n
+   - has_window_size(m, w): message m has window size w
+   - has_flag(m, f): message m has flag f set
+   - is_valid_segment(m): m is a valid TCP segment
+
+3. Action Predicates:
+   - sends(x, m, y): node x sends message m to node y
+   - receives(x, m, y): node x receives message m from y
+   - processes(x, m): node x processes message m
+   - retransmits(x, m): node x retransmits message m
+
+4. State Predicates:
+   - in_state(x, s): node x is in state s
+   - can_transition(s1, s2): state transition from s1 to s2 is valid
+   - transitions_to(x, s1, s2): node x transitions from state s1 to s2
+
+5. Relation Predicates:
+   - precedes(m1, m2): message m1 precedes message m2
+   - acknowledges(m1, m2): message m1 acknowledges message m2
+   - belongs_to_connection(m, c): message m belongs to connection c
+----------------------------------------
+
+Section 4: State Definitions
+----------------------------------------
+- CLOSED: Default state when no connection exists
+- LISTEN: Waiting for connection request
+- SYN_SENT: Sent connection request, waiting for acknowledgment
+- SYN_RECEIVED: Received connection request, sent acknowledgment
+- ESTABLISHED: Connection established, data transfer possible
+- FIN_WAIT_1: Initiated connection termination
+- FIN_WAIT_2: Received ACK of FIN, waiting for FIN from remote
+- CLOSE_WAIT: Received FIN, waiting for application to close
+- CLOSING: Both sides initiated close simultaneously
+- LAST_ACK: Waiting for final ACK after sending FIN
+- TIME_WAIT: Waiting to ensure remote TCP received final ACK
+----------------------------------------
+
+Section 5: Message Types
+----------------------------------------
+1. Connection Establishment:
+   - SYN: Initial connection request
+   - SYN-ACK: Connection request acknowledgment
+   - ACK: Final connection establishment acknowledgment
+
+2. Data Transfer:
+   - DATA: Regular data segment
+   - ACK: Data acknowledgment
+
+3. Connection Termination:
+   - FIN: Connection termination request
+   - FIN-ACK: Termination acknowledgment
+----------------------------------------
+
+Section 6: Conversion Rules
+----------------------------------------
+1. Use universal quantifiers (∀) for general rules
+2. Use existential quantifiers (∃) for existence claims
+3. Use implications (→) for conditional statements
+4. Use conjunctions (∧) for multiple conditions
+5. Use predicates to express properties and relations
+6. Include temporal ordering when relevant
+7. Specify state transitions explicitly
+----------------------------------------
+
+Section 7: Example Conversions
+----------------------------------------
+1. "A SYN segment must have a sequence number."
+   ∀m. (has_flag(m, SYN) → ∃n. has_sequence_number(m, n))
+
+2. "When in CLOSED state, a TCP endpoint must respond to any incoming segment with a RST."
+   ∀x,m,y. (is_tcp_endpoint(x) ∧ in_state(x, CLOSED) ∧ receives(x, m, y) →
+   ∃r. (has_flag(r, RST) ∧ sends(x, r, y)))
+
+3. "A TCP endpoint in LISTEN state must ignore RST segments."
+   ∀x,m,y. (is_tcp_endpoint(x) ∧ in_state(x, LISTEN) ∧ receives(x, m, y) ∧ has_flag(m, RST) →
+   ¬processes(x, m))
+----------------------------------------
+
+Section 8: Task
+----------------------------------------
+Convert the given TCP requirement into First-Order Logic using the predicates and conventions defined above. Ensure your conversion:
+1. Uses appropriate quantifiers
+2. Includes all relevant conditions
+3. Maintains logical consistency
+4. Reflects the temporal nature of the protocol (if applicable)
+5. Preserves the original meaning of the requirement
+----------------------------------------
+
+================================================================================

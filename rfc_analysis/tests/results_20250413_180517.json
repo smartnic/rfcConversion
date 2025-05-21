@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-04-13T18:05:17.515329",
+  "total_statements": 3,
+  "successful": 3,
+  "results": [
+    {
+      "statement": "A SYN segment must have a sequence number.",
+      "timestamp": "2025-04-13T18:05:09.330492",
+      "success": true,
+      "fol_conversion": "\u2200 s (is_syn_segment(s) \u2192 \u2203 sn (is_sequence_number(sn) \u2227 has_sequence_number(s, sn)))",
+      "predicates_used": [
+        "is_syn_segment(s)",
+        "is_sequence_number(sn)",
+        "has_sequence_number(s, sn)"
+      ],
+      "explanation": "This FOL expression states that for every object `s` that is a SYN segment, there exists an object `sn` which is a sequence number, such that the SYN segment `s` has the sequence number `sn`. In other words, it expresses the requirement that all SYN segments must have a sequence number."
+    },
+    {
+      "statement": "When in CLOSED state, a TCP endpoint must respond to any incoming segment with a RST.",
+      "timestamp": "2025-04-13T18:05:14.551478",
+      "success": true,
+      "fol_conversion": "`\u2200 e (is_tcp_endpoint(e) land is_in_state_closed(e) ->  (\u2200 s (receives_segment(e, s) -> sends_rst(e)))`",
+      "predicates_used": [
+        "is_tcp_endpoint(e)",
+        "is_in_state_closed(e)",
+        "receives_segment(e, s)",
+        "sends_rst(e)"
+      ],
+      "explanation": "This FOL expression can be read as \"For every entity 'e', if 'e' is a TCP endpoint and it is in the closed state, then for every segment 's' that 'e' receives, 'e' will send a RST.\"\n   \n   - `is_tcp_endpoint(e)` checks if the entity 'e' is a TCP endpoint.\n   - `is_in_state_closed(e)` checks if the TCP endpoint 'e' is in the closed state.\n   - `receives_segment(e, s)` states that the TCP endpoint 'e' receives the segment 's'.\n   - `sends_rst(e)` indicates that the TCP endpoint 'e' sends a RST (reset) packet.\n\nThe universal quantifiers (\u2200) at the beginning of the formula ensure that all possible entities, segments, and their combinations are considered when evaluating the truth value of the statement."
+    },
+    {
+      "statement": "A TCP endpoint in LISTEN state must ignore RST segments.",
+      "timestamp": "2025-04-13T18:05:17.515329",
+      "success": true,
+      "fol_conversion": "\u2200 x ((is_TCP_endpoint(x) \u2227 is_in_listen_state(x)) \u2192 ignores_RST_segments(x))",
+      "predicates_used": [
+        "_endpoint(x)",
+        "is_in_listen_state(x)",
+        "_segments(x)"
+      ],
+      "explanation": "This FOL expression states that for all entities x, if x is a TCP endpoint and it is in the listen state, then x ignores RST segments. In other words, any TCP endpoint in the listen state should have a behavior of ignoring RST segments according to the given requirement."
+    }
+  ]
+}

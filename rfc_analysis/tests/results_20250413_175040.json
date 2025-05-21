@@ -1,0 +1,25 @@
+{
+  "timestamp": "2025-04-13T17:50:40.653336",
+  "total_statements": 3,
+  "successful": 0,
+  "results": [
+    {
+      "statement": "A SYN segment must have a sequence number.",
+      "timestamp": "2025-04-13T17:50:38.647846",
+      "success": false,
+      "error": "name 'get_prompt_sections' is not defined"
+    },
+    {
+      "statement": "When in CLOSED state, a TCP endpoint must respond to any incoming segment with a RST.",
+      "timestamp": "2025-04-13T17:50:39.648255",
+      "success": false,
+      "error": "name 'get_prompt_sections' is not defined"
+    },
+    {
+      "statement": "A TCP endpoint in LISTEN state must ignore RST segments.",
+      "timestamp": "2025-04-13T17:50:40.653336",
+      "success": false,
+      "error": "name 'get_prompt_sections' is not defined"
+    }
+  ]
+}

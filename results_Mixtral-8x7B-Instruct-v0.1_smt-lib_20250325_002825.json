@@ -1,0 +1,28 @@
+{
+  "model": "mistralai/Mixtral-8x7B-Instruct-v0.1",
+  "format": "SMT-LIB",
+  "timestamp": "2025-03-25T00:28:21.480119",
+  "examples": [
+    {
+      "input": "The server MUST terminate the connection after 5 failed attempts.",
+      "output": "(declare-sort Device)\n(declare-sort Packet)\n(declare-sort State)\n(declare-sort Counter)\n(declare-sort Connection)\n(declare-fun Server (Device) Bool)\n(declare-fun FailedAttempts (Device) Int)\n(declare-fun Terminate (Device Connection) Bool)\n(declare-const connection Connection)\n\n(assert \n  (forall ((s Device))\n    (=> \n      (and \n        (Server s)\n        (= (FailedAttempts s) 5)\n      )\n      (Terminate s connection)\n    )\n  )\n)",
+      "success": true,
+      "error": null,
+      "time_seconds": 0.05862784385681152
+    },
+    {
+      "input": "If a client sends more than 3 retransmissions without receiving an ACK, it MUST abort the connection.",
+      "output": "(declare-sort Device)\n(declare-sort Packet)\n(declare-sort State)\n(declare-sort Counter)\n(declare-sort Connection)\n(declare-fun Client (Device) Bool)\n(declare-fun Send (Device Packet) Bool)\n(declare-fun Receive (Device Packet) Bool)\n(declare-fun ACK (Packet) Bool)\n(declare-fun Retransmit (Device Packet) Bool)\n(declare-fun Abort (Device Connection) Bool)\n(declare-fun CounterValue (Counter) Int)\n(declare-const connection Connection)\n\n(assert \n  (forall ((c Device))\n    (=> \n      (and \n        (Client c)\n        (> (CounterValue (Counter (c connection))) 3)\n        (not (exists ((p Packet))\n          (and\n            (Receive c p)\n            (ACK p)\n          )\n        ))\n      )\n      (Abort c connection)\n    )\n  )\n)",
+      "success": true,
+      "error": null,
+      "time_seconds": 0.04996895790100098
+    },
+    {
+      "input": "When a server receives a SYN segment, it MUST increment the SYN-RECEIVED counter.",
+      "output": "(declare-sort Device)\n(declare-sort Packet)\n(declare-sort State)\n(declare-sort Counter)\n(declare-fun Server (Device) Bool)\n(declare-fun Receive (Device Packet) Bool)\n(declare-fun IsSYN (Packet) Bool)\n(declare-fun Increment (Counter) Counter)\n(declare-fun GetCounter (State Counter) Int)\n(declare-fun SetCounter (State Counter Int) State)\n(declare-const state State)\n(declare-const syn-received Counter)\n\n(assert \n  (forall ((s Device) (p Packet))\n    (=> \n      (and \n        (Server s)\n        (Receive s p)\n        (IsSYN p)\n      )\n      (let ((new-value (+ (GetCounter state syn-received) 1)))\n        (assert (= (GetCounter (SetCounter state syn-received new-value) syn-received) new-value))\n      )\n    )\n  )\n)",
+      "success": true,
+      "error": null,
+      "time_seconds": 3.753321886062622
+    }
+  ]
+}

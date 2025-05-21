@@ -1,0 +1,9 @@
+{
+    "statements": [
+        "A TCP segment has a sequence number.",
+        "A SYN segment has a SYN flag.",
+        "An ACK segment has an ACK flag.",
+        "A TCP endpoint has a state.",
+        "A TCP endpoint has a window size."
+    ]
+} 

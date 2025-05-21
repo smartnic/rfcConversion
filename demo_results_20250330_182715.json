@@ -1,0 +1,41 @@
+[
+  {
+    "protocol": "TCP",
+    "source": "RFC 9293",
+    "rule": "When a server receives a SYN segment, it MUST increment the SYN-RECEIVED counter and respond with a SYN-ACK within 30 seconds.",
+    "fol": {
+      "success": true,
+      "result": "\u2200s\u2200p (Server(s) \u2227 Receive(s,p) \u2227 HasType(p,SYN) \u2192 (\u2203p2 (Send(s,p2) \u2227 HasType(p2,SYN_ACK) \u2227 Count(Timer(t), 30)) \u2227 Increment(Count(SYN_RECEIVED(s), n))))"
+    },
+    "smt_lib": {
+      "success": true,
+      "result": "(declare-sort Device)\n(declare-sort Packet)\n(declare-sort Counter)\n(declare-fun Server (Device) Bool)\n(declare-fun Receive (Device Packet) Bool)\n(declare-fun IsSYN (Packet) Bool)\n(declare-fun Send (Device Packet) Bool)\n(declare-fun IsSYNACK (Packet) Bool)\n(declare-fun Increment (Counter) Void)\n(declare-const synReceivedCounter Counter)\n(declare-const timer Timer)\n\n(assert \n  (forall ((s Device) (p Packet))\n    (=> \n      (and \n        (Server s)\n        (Receive s p)\n        (IsSYN p)\n      )\n      (and\n        (Increment synReceivedCounter)\n        (exists ((p2 Packet))\n          (and\n            (Send s p2)\n            (IsSYNACK p2)\n            (<= (TimerValue timer) 30)\n          )\n        )\n      )\n    )\n  )\n)"
+    }
+  },
+  {
+    "protocol": "TLS",
+    "source": "RFC 8446",
+    "rule": "When a TLS server receives a ClientHello message with an unsupported protocol version, it MUST respond with a ProtocolVersion alert and close the connection.",
+    "fol": {
+      "success": true,
+      "result": "\u2200s\u2200p (Server(s) \u2227 TLS(s) \u2227 Receive(s,p) \u2227 Message(p) \u2227 HasType(p,ClientHello) \u2227 \u00acSupportedProtocolVersion(p) \u2192 \u2203r (Response(r) \u2227 HasType(r,ProtocolVersionAlert) \u2227 Send(s,r) \u2227 Close(s,Connection)))"
+    },
+    "smt_lib": {
+      "success": true,
+      "result": "(declare-sort Device)\n(declare-sort Connection)\n(declare-fun Server (Device) Bool)\n(declare-fun Receive (Device Message) Bool)\n(declare-fun IsClientHello (Message) Bool)\n(declare-fun IsSupportedProtocolVersion (Message) Bool)\n(declare-fun Send (Device Message) Bool)\n(declare-fun CreateProtocolVersionAlert (Message) Message)\n(declare-fun Close (Device Connection) Bool)\n\n(assert\n  (forall ((s Device) (m Message))\n    (=>\n      (and\n        (Server s)\n        (Receive s m)\n        (IsClientHello m)\n        (not (IsSupportedProtocolVersion m))\n      )\n      (exists ((m2 Message) (c Connection))\n        (and\n          (= m2 (CreateProtocolVersionAlert m))\n          (Send s m2)\n          (Close s c)\n        )\n      )\n    )\n  )\n)"
+    }
+  },
+  {
+    "protocol": "HTTP",
+    "source": "RFC 7230",
+    "rule": "An HTTP/1.1 server MUST respond with a 400 (Bad Request) status code to any HTTP/1.1 request that lacks a Host header field.",
+    "fol": {
+      "success": false,
+      "result": "Failed to generate valid output after 3 attempts. Last error: Unbalanced parentheses in formula"
+    },
+    "smt_lib": {
+      "success": true,
+      "result": "(declare-sort Device)\n(declare-sort Request)\n(declare-sort Response)\n(declare-fun Server (Device) Bool)\n(declare-fun HTTPVersion (Device String) Bool)\n(declare-fun HasField (Request String) Bool)\n(declare-fun ResponseStatus (Response Int) Bool)\n(declare-fun Send (Device Response) Bool)\n(declare-fun CreateResponse (Int) Response)\n\n(assert\n  (forall ((s Device) (r Request))\n    (=>\n      (and\n        (Server s)\n        (HTTPVersion s \"1.1\")\n        (not (HasField r \"Host\"))\n      )\n      (exists ((resp Response))\n        (and\n          (= resp (CreateResponse 400))\n          (ResponseStatus resp 400)\n          (Send s resp)\n        )\n      )\n    )\n  )\n)"
+    }
+  }
+]

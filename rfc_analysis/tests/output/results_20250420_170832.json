@@ -1,0 +1,120 @@
+{
+  "timestamp": "2025-04-20T17:08:32.722414",
+  "total_statements": 8,
+  "successful": 8,
+  "results": [
+    {
+      "statement": {
+        "id": 1,
+        "statement": "A TCP segment has a sequence number."
+      },
+      "timestamp": "2025-04-20T17:08:21.120692",
+      "success": true,
+      "fol_conversion": "\u2200m. is_valid_segment(m) \u2192 \u2203n. has_sequence_number(m, n)",
+      "predicates_used": [
+        "is_valid_segment(m)",
+        "has_sequence_number(m, n)"
+      ],
+      "explanation": "This statement says that for every message m that is a valid TCP segment, there exists some sequence number n such that message m has sequence number n. In other words, if a message is a valid TCP segment, it must have a sequence number."
+    },
+    {
+      "statement": {
+        "id": 2,
+        "statement": "A SYN segment has a SYN flag."
+      },
+      "timestamp": "2025-04-20T17:08:22.212349",
+      "success": true,
+      "fol_conversion": "\u2200m. (is_valid_segment(m) \u2227 has_flag(m, SYN) \u2192 is_tcp_segment(m))",
+      "predicates_used": [
+        "is_valid_segment(m)",
+        "has_flag(m, SYN)",
+        "is_tcp_segment(m)"
+      ],
+      "explanation": "This statement says that for all messages m, if m is a valid TCP segment and it has the SYN flag set, then we can conclude that m is a SYN segment specifically. This captures the idea that having the SYN flag set is what makes a segment a SYN segment."
+    },
+    {
+      "statement": {
+        "id": 3,
+        "statement": "An ACK segment has an ACK flag."
+      },
+      "timestamp": "2025-04-20T17:08:23.358658",
+      "success": true,
+      "fol_conversion": "\u2200m. (has_flag(m, ACK) \u2192 has_ack_number(m, _))",
+      "predicates_used": [
+        "has_flag(m, ACK)",
+        "has_ack_number(m, _)"
+      ],
+      "explanation": "This FOL expression states that for every message m, if it has the ACK flag set, then it must also have an acknowledgement number. This captures the requirement that an ACK segment should indeed contain an acknowledgement number as indicated by its ACK flag being set. The underscore (_) indicates that we don't care about the specific value of the acknowledgement number; only its presence matters in this context."
+    },
+    {
+      "statement": {
+        "id": 4,
+        "statement": "A TCP endpoint has a state."
+      },
+      "timestamp": "2025-04-20T17:08:24.452520",
+      "success": true,
+      "fol_conversion": "\u2200x. (is_tcp_endpoint(x) \u2192 \u2203s. in_state(x, s))",
+      "predicates_used": [
+        "is_tcp_endpoint(x)",
+        "in_state(x, s)"
+      ],
+      "explanation": "This FOL expression states that for every object x that is a TCP endpoint, there exists some state s such that x is in state s. In other words, every TCP endpoint has a state."
+    },
+    {
+      "statement": {
+        "id": 5,
+        "statement": "A TCP endpoint has a window size."
+      },
+      "timestamp": "2025-04-20T17:08:25.561682",
+      "success": true,
+      "fol_conversion": "\u2200x. (is_tcp_endpoint(x) \u2192 \u2203w. has_window_size(x, w))",
+      "predicates_used": [
+        "is_tcp_endpoint(x)",
+        "has_window_size(x, w)"
+      ],
+      "explanation": "This FOL statement says that for all nodes x, if x is a TCP endpoint, then there exists a window size w associated with x. In other words, every TCP endpoint has a window size."
+    },
+    {
+      "statement": {
+        "id": 6,
+        "statement": "A TCP segment has a source port."
+      },
+      "timestamp": "2025-04-20T17:08:28.022163",
+      "success": true,
+      "fol_conversion": "\u2200m, p. (is_valid_segment(m) \u2192 \u2203src. has_source_port(m, src))",
+      "predicates_used": [
+        "is_valid_segment(m)",
+        "has_source_port(m, src)"
+      ],
+      "explanation": "This FOL statement says that for every message m that is a valid TCP segment, there exists some source port src associated with it. This captures the requirement that a TCP segment has a source port."
+    },
+    {
+      "statement": {
+        "id": 7,
+        "statement": "A TCP segment has a destination port."
+      },
+      "timestamp": "2025-04-20T17:08:30.314586",
+      "success": true,
+      "fol_conversion": "\u2200m. is_valid_segment(m) \u2192 \u2203p. has_destination_port(m, p)",
+      "predicates_used": [
+        "is_valid_segment(m)",
+        "has_destination_port(m, p)"
+      ],
+      "explanation": "This statement says that for every message m that is a valid TCP segment, there exists some destination port p associated with it. In other words, all valid TCP messages must have an assigned destination port number."
+    },
+    {
+      "statement": {
+        "id": 8,
+        "statement": "A TCP endpoint has a socket."
+      },
+      "timestamp": "2025-04-20T17:08:32.722414",
+      "success": true,
+      "fol_conversion": "\u2200x. (is_tcp_endpoint(x) \u2192 \u2203s. has_socket(x, s))",
+      "predicates_used": [
+        "is_tcp_endpoint(x)",
+        "has_socket(x, s)"
+      ],
+      "explanation": "This FOL statement says that for all nodes x which are TCP endpoints, there exists a socket s such that x has socket s. In other words, every TCP endpoint has at least one socket associated with it."
+    }
+  ]
+}

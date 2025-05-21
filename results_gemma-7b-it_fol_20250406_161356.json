@@ -1,0 +1,56 @@
+{
+  "model": "google/gemma-7b-it",
+  "format": "FOL",
+  "timestamp": "2025-04-06T16:13:54.112241",
+  "examples": [
+    {
+      "input": "The server MUST terminate the connection after 5 failed attempts.",
+      "output": null,
+      "success": false,
+      "error": "Failed to generate valid output after 3 attempts. Last error: 403 Client Error: Forbidden for url: https://api-inference.huggingface.co/models/google/gemma-7b-it (Request ID: Root=1-67f2e080-402890d3113dd87a24f554a9;ff141533-4ce5-4d6d-a12a-1bcdf50f96c7)\n\nThe model google/gemma-7b-it is too large to be loaded automatically (17GB > 10GB).",
+      "time_seconds": 0.4463205337524414
+    },
+    {
+      "input": "If a client sends more than 3 retransmissions without receiving an ACK, it MUST abort the connection.",
+      "output": null,
+      "success": false,
+      "error": "Failed to generate valid output after 3 attempts. Last error: 403 Client Error: Forbidden for url: https://api-inference.huggingface.co/models/google/gemma-7b-it (Request ID: Root=1-67f2e080-1897db473ed8965312bf7a48;bb2c7124-1c1d-486e-a786-ab64d3b96f5b)\n\nThe model google/gemma-7b-it is too large to be loaded automatically (17GB > 10GB).",
+      "time_seconds": 0.4395887851715088
+    },
+    {
+      "input": "When a server receives a SYN segment, it MUST increment the SYN-RECEIVED counter.",
+      "output": null,
+      "success": false,
+      "error": "Failed to generate valid output after 3 attempts. Last error: 403 Client Error: Forbidden for url: https://api-inference.huggingface.co/models/google/gemma-7b-it (Request ID: Root=1-67f2e081-14dfee6e4238c7be44409521;8fa334f8-e4b9-4f27-98dc-7acb68c62b37)\n\nThe model google/gemma-7b-it is too large to be loaded automatically (17GB > 10GB).",
+      "time_seconds": 0.20955729484558105
+    },
+    {
+      "input": "Packets with the RST bit set SHOULD be silently discarded.",
+      "output": null,
+      "success": false,
+      "error": "Failed to generate valid output after 3 attempts. Last error: 403 Client Error: Forbidden for url: https://api-inference.huggingface.co/models/google/gemma-7b-it (Request ID: Root=1-67f2e081-116df6a7341fd2e806d96c49;8217333e-14e1-40e9-8a95-eda4918010b7)\n\nThe model google/gemma-7b-it is too large to be loaded automatically (17GB > 10GB).",
+      "time_seconds": 0.2716796398162842
+    },
+    {
+      "input": "If the server receives an ACK with an invalid sequence number, it MUST respond with a RST packet.",
+      "output": null,
+      "success": false,
+      "error": "Failed to generate valid output after 3 attempts. Last error: 403 Client Error: Forbidden for url: https://api-inference.huggingface.co/models/google/gemma-7b-it (Request ID: Root=1-67f2e081-78f465122fc6b9e47b94ef7b;8754fff1-7857-4550-b3ef-9a8e551c5386)\n\nThe model google/gemma-7b-it is too large to be loaded automatically (17GB > 10GB).",
+      "time_seconds": 0.19957208633422852
+    },
+    {
+      "input": "A TCP receiver SHOULD NOT shrink its window, and MUST not shrink the right window edge.",
+      "output": null,
+      "success": false,
+      "error": "Failed to generate valid output after 3 attempts. Last error: 403 Client Error: Forbidden for url: https://api-inference.huggingface.co/models/google/gemma-7b-it (Request ID: Root=1-67f2e081-2aefa847686532ac3c421c5b;8be827f6-af0b-4474-b1f6-3af1fff57272)\n\nThe model google/gemma-7b-it is too large to be loaded automatically (17GB > 10GB).",
+      "time_seconds": 0.21727919578552246
+    },
+    {
+      "input": "A TCP implementation MUST be robust against wrapped sequence numbers.",
+      "output": null,
+      "success": false,
+      "error": "Failed to generate valid output after 3 attempts. Last error: 403 Client Error: Forbidden for url: https://api-inference.huggingface.co/models/google/gemma-7b-it (Request ID: Root=1-67f2e082-3fcc77c839b83b857e8d3f7b;b298cb87-1fde-4b67-960b-6271f090d35f)\n\nThe model google/gemma-7b-it is too large to be loaded automatically (17GB > 10GB).",
+      "time_seconds": 0.2467632293701172
+    }
+  ]
+}

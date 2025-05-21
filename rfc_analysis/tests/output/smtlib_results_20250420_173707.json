@@ -1,0 +1,71 @@
+{
+  "timestamp": "2025-04-20T17:37:07.894778",
+  "total_statements": 8,
+  "successful": 8,
+  "results": [
+    {
+      "statement": "A TCP segment has a sequence number.",
+      "timestamp": "2025-04-20T17:36:50.168663",
+      "success": true,
+      "smtlib_conversion": "```less\n(declare-sort Message)\n(declare-fun has_sequence_number (Message Int) Bool)\n(assert (forall ((m Message))\n(exists ((n Int))\n(has_sequence_number m n))))\n```\n",
+      "predicates_used": [],
+      "explanation": "We declare the `Message` sort and the `has_sequence_number` function that takes a message and an integer representing the sequence number. We use a universal quantifier to iterate over all messages, and for each message, we assert the existence of some integer as its sequence number using an existential quantifier. This ensures every TCP segment has a sequence number."
+    },
+    {
+      "statement": "A SYN segment has a SYN flag.",
+      "timestamp": "2025-04-20T17:36:58.546256",
+      "success": true,
+      "smtlib_conversion": "```less\n(declare-sort Message)\n(declare-fun has_flag (Message Symbol) Bool)\n(assert (forall ((m Message))\n(= (has_flag m SYN)\n(or (and (has_flag m SYN) (not (has_flag m ACK)))\n(and (not (has_flag m SYN)) (has_flag m ACK))\n(and (has_flag m SYN) (has_flag m ACK))))))\n```\n",
+      "predicates_used": [],
+      "explanation": "We declare the `Message` sort and the `has_flag` function that takes a message and a symbol as arguments. We use the `Symbol` sort to represent TCP flags such as SYN, ACK, etc.\n\nOur goal is to enforce that a SYN segment must have the SYN flag set. To achieve this, we write an assertion using a universally quantified variable `m` representing a message. We check whether the SYN flag is present in three different scenarios:\n\n1. When only the SYN flag is present (but not the ACK flag).\n2. When the ACK flag is present but not the SYN flag.\n3. When both SYN and ACK flags are present.\n\nIn each scenario, we require that the `has_flag` function returns true for the SYN flag on message `m`. If none of these cases apply, it means there's no SYN flag associated with message `m`, so our condition would fail. This ensures that every SYN segment will indeed have its SYN flag set."
+    },
+    {
+      "statement": "An ACK segment has an ACK flag.",
+      "timestamp": "2025-04-20T17:37:00.053328",
+      "success": true,
+      "smtlib_conversion": "",
+      "predicates_used": [],
+      "explanation": ""
+    },
+    {
+      "statement": "A TCP endpoint has a state.",
+      "timestamp": "2025-04-20T17:37:01.588637",
+      "success": true,
+      "smtlib_conversion": "",
+      "predicates_used": [],
+      "explanation": ""
+    },
+    {
+      "statement": "A TCP endpoint has a window size.",
+      "timestamp": "2025-04-20T17:37:03.108234",
+      "success": true,
+      "smtlib_conversion": "",
+      "predicates_used": [],
+      "explanation": ""
+    },
+    {
+      "statement": "A TCP segment has a source port.",
+      "timestamp": "2025-04-20T17:37:04.697042",
+      "success": true,
+      "smtlib_conversion": "",
+      "predicates_used": [],
+      "explanation": ""
+    },
+    {
+      "statement": "A TCP segment has a destination port.",
+      "timestamp": "2025-04-20T17:37:06.242617",
+      "success": true,
+      "smtlib_conversion": "",
+      "predicates_used": [],
+      "explanation": ""
+    },
+    {
+      "statement": "A TCP endpoint has a socket.",
+      "timestamp": "2025-04-20T17:37:07.894778",
+      "success": true,
+      "smtlib_conversion": "",
+      "predicates_used": [],
+      "explanation": ""
+    }
+  ]
+}

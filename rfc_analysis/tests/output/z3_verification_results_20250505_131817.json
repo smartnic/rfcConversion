@@ -1,0 +1,73 @@
+{
+  "timestamp": "2025-05-05T13:18:17.105500",
+  "total_statements": 8,
+  "successful": 6,
+  "results": [
+    {
+      "statement": "A TCP segment has a sequence number.",
+      "timestamp": "2025-05-05T13:18:17.067333",
+      "success": true,
+      "smtlib_conversion": "(declare-sort Message)\n(declare-fun has_sequence_number (Message Int) Bool)\n\n(assert (forall ((x Message))\n  (exists ((y Int))\n    (has_sequence_number x y))))",
+      "is_satisfiable": true,
+      "verification_message": "Expression is satisfiable",
+      "model": {}
+    },
+    {
+      "statement": "A SYN segment has a SYN flag.",
+      "timestamp": "2025-05-05T13:18:17.070943",
+      "success": false,
+      "error": "'Int'"
+    },
+    {
+      "statement": "An ACK segment has an ACK flag.",
+      "timestamp": "2025-05-05T13:18:17.070943",
+      "success": false,
+      "error": "'Int'"
+    },
+    {
+      "statement": "A TCP endpoint has a state.",
+      "timestamp": "2025-05-05T13:18:17.080267",
+      "success": true,
+      "smtlib_conversion": "(declare-sort Node)\n(declare-fun in_state (Node State) Bool)\n\n(assert (forall ((x Node))\n  (exists ((y State))\n    (in_state x y))))",
+      "is_satisfiable": true,
+      "verification_message": "Expression is satisfiable",
+      "model": {}
+    },
+    {
+      "statement": "A TCP endpoint has a window size.",
+      "timestamp": "2025-05-05T13:18:17.087758",
+      "success": true,
+      "smtlib_conversion": "(declare-sort Node)\n(declare-fun has_window_size (Node Int) Bool)\n\n(assert (forall ((x Node))\n  (exists ((y Int))\n    (has_window_size x y))))",
+      "is_satisfiable": true,
+      "verification_message": "Expression is satisfiable",
+      "model": {}
+    },
+    {
+      "statement": "A TCP segment has a source port.",
+      "timestamp": "2025-05-05T13:18:17.087758",
+      "success": true,
+      "smtlib_conversion": "(declare-sort Message)\n(declare-fun has_source_port (Message Port) Bool)\n\n(assert (forall ((x Message))\n  (exists ((y Port))\n    (has_source_port x y))))",
+      "is_satisfiable": true,
+      "verification_message": "Expression is satisfiable",
+      "model": {}
+    },
+    {
+      "statement": "A TCP segment has a destination port.",
+      "timestamp": "2025-05-05T13:18:17.087758",
+      "success": true,
+      "smtlib_conversion": "(declare-sort Message)\n(declare-fun has_destination_port (Message Port) Bool)\n\n(assert (forall ((x Message))\n  (exists ((y Port))\n    (has_destination_port x y))))",
+      "is_satisfiable": true,
+      "verification_message": "Expression is satisfiable",
+      "model": {}
+    },
+    {
+      "statement": "A TCP endpoint has a socket.",
+      "timestamp": "2025-05-05T13:18:17.105500",
+      "success": true,
+      "smtlib_conversion": "(declare-sort Node)\n(declare-fun has_socket (Node Socket) Bool)\n\n(assert (forall ((x Node))\n  (exists ((y Socket))\n    (has_socket x y))))",
+      "is_satisfiable": true,
+      "verification_message": "Expression is satisfiable",
+      "model": {}
+    }
+  ]
+}

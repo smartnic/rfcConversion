@@ -1,0 +1,94 @@
+
+================================================================================
+RFC Statement 1:
+"The sequence number field is a 32-bit number that identifies the first data octet in this segment."
+================================================================================
+
+FOL Conversion:
+∀m. (is_valid_segment(m) → ∃n. (has_sequence_number(m, n) ∧ BitLength(n, 32)))
+
+Predicates Used:
+- is_valid_segment(m): m is a valid TCP segment
+- has_sequence_number(m, n): m has sequence number n
+- BitLength(n, 32): n is a 32-bit number
+
+Explanation:
+Every valid TCP segment must have a sequence number that is 32 bits long.
+
+================================================================================
+
+
+================================================================================
+RFC Statement 2:
+"The urgent pointer is interpreted only if the URG control bit is set."
+================================================================================
+
+FOL Conversion:
+∀m. (has_urgent_pointer(m, p) → has_flag(m, URG))
+
+Predicates Used:
+- has_urgent_pointer(m, p): m has urgent pointer p
+- has_flag(m, URG): m has URG flag set
+
+Explanation:
+The urgent pointer in a segment is only meaningful if the URG flag is set.
+
+================================================================================
+
+
+================================================================================
+RFC Statement 3:
+"A TCP connection is established by the exchange of a SYN, a SYN-ACK, and an ACK."
+================================================================================
+
+FOL Conversion:
+∀c,s. (ThreeWayHandshake(c, s) → ∃m1,m2,m3. (has_flag(m1, SYN) ∧ has_flag(m2, SYN|ACK) ∧ has_flag(m3, ACK) ∧ precedes(m1, m2) ∧ precedes(m2, m3)))
+
+Predicates Used:
+- ThreeWayHandshake(c, s): valid handshake between client c and server s
+- has_flag(m, f): m has flag f set
+- precedes(m1, m2): m1 precedes m2
+
+Explanation:
+A TCP connection requires three messages in sequence: SYN, SYN-ACK, and ACK.
+
+================================================================================
+
+
+================================================================================
+RFC Statement 4:
+"If no acknowledgment is received before the timer expires, the segment is retransmitted."
+================================================================================
+
+FOL Conversion:
+∀x,m. (sends(x, m) ∧ TimerExpired(m) ∧ ¬∃a. (acknowledges(a, m))) → retransmits(x, m)
+
+Predicates Used:
+- sends(x, m): x sends message m
+- TimerExpired(m): timer for m has expired
+- acknowledges(a, m): a acknowledges m
+- retransmits(x, m): x retransmits m
+
+Explanation:
+If a sent message's timer expires without receiving an acknowledgment, it must be retransmitted.
+
+================================================================================
+
+
+================================================================================
+RFC Statement 5:
+"The window field is a 16-bit field that specifies the size of the receive window."
+================================================================================
+
+FOL Conversion:
+∀m. (is_valid_segment(m) → ∃w. (has_window_size(m, w) ∧ BitLength(w, 16)))
+
+Predicates Used:
+- is_valid_segment(m): m is a valid TCP segment
+- has_window_size(m, w): m has window size w
+- BitLength(w, 16): w is a 16-bit number
+
+Explanation:
+Every valid TCP segment must have a window size field that is 16 bits long.
+
+================================================================================

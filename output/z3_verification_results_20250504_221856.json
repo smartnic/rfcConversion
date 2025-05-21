@@ -1,0 +1,55 @@
+{
+  "timestamp": "2025-05-04T22:18:56.964787",
+  "total_statements": 8,
+  "successful": 0,
+  "results": [
+    {
+      "statement": "A TCP segment has a sequence number.",
+      "timestamp": "2025-05-04T22:18:56.961229",
+      "success": false,
+      "error": "Error parsing SMT-LIB: Z3 declaration or constant expected"
+    },
+    {
+      "statement": "A SYN segment has a SYN flag.",
+      "timestamp": "2025-05-04T22:18:56.961229",
+      "success": false,
+      "error": "'Int'"
+    },
+    {
+      "statement": "An ACK segment has an ACK flag.",
+      "timestamp": "2025-05-04T22:18:56.961229",
+      "success": false,
+      "error": "'Int'"
+    },
+    {
+      "statement": "A TCP endpoint has a state.",
+      "timestamp": "2025-05-04T22:18:56.961229",
+      "success": false,
+      "error": "Error parsing SMT-LIB: Z3 declaration or constant expected"
+    },
+    {
+      "statement": "A TCP endpoint has a window size.",
+      "timestamp": "2025-05-04T22:18:56.961229",
+      "success": false,
+      "error": "Error parsing SMT-LIB: Z3 declaration or constant expected"
+    },
+    {
+      "statement": "A TCP segment has a source port.",
+      "timestamp": "2025-05-04T22:18:56.963775",
+      "success": false,
+      "error": "Error parsing SMT-LIB: Z3 declaration or constant expected"
+    },
+    {
+      "statement": "A TCP segment has a destination port.",
+      "timestamp": "2025-05-04T22:18:56.963775",
+      "success": false,
+      "error": "Error parsing SMT-LIB: Z3 declaration or constant expected"
+    },
+    {
+      "statement": "A TCP endpoint has a socket.",
+      "timestamp": "2025-05-04T22:18:56.964787",
+      "success": false,
+      "error": "Error parsing SMT-LIB: Z3 declaration or constant expected"
+    }
+  ]
+}

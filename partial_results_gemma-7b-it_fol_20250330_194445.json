@@ -1,0 +1,14 @@
+{
+  "model": "google/gemma-7b-it",
+  "format": "FOL",
+  "timestamp": "2025-03-30T19:43:44.709190",
+  "test_cases": [
+    {
+      "requirement": "A server MUST send an error response if the request is invalid.",
+      "output": null,
+      "success": false,
+      "error": "Failed to generate valid output after 3 attempts. Last error: 402 Client Error: Payment Required for url: https://api-inference.huggingface.co/models/google/gemma-7b-it (Request ID: Root=1-67e9d72f-630908a915091be274a7ecbe;2e26f782-b1d1-4145-8a68-42f0a790803b)\n\nYou have exceeded your monthly included credits for Inference Providers. Subscribe to PRO to get 20x more monthly included credits.",
+      "time_seconds": 60.439988136291504
+    }
+  ]
+}

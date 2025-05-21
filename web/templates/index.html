@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RFC to FOL Converter</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">RFC to FOL Converter</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/yourusername/rfc-to-fol" target="_blank">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mt-4">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card mb-4">
+                    <div class="card-header bg-primary text-white">
+                        <h4>Convert RFC Rule to Formal Logic</h4>
+                    </div>
+                    <div class="card-body">
+                        <form id="converter-form">
+                            <div class="mb-3">
+                                <label for="rfc-text" class="form-label">RFC Rule Text:</label>
+                                <textarea id="rfc-text" class="form-control" rows="3" required 
+                                    placeholder="Enter the RFC rule to convert (e.g., 'The server MUST terminate the connection after 5 failed attempts.')"></textarea>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="output-format" class="form-label">Output Format:</label>
+                                    <select id="output-format" class="form-select">
+                                        <option value="FOL" selected>First-Order Logic (FOL)</option>
+                                        <option value="SMT-LIB">SMT-LIB</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="model-select" class="form-label">Model:</label>
+                                    <select id="model-select" class="form-select">
+                                        <!-- Will be populated dynamically -->
+                                        <option value="mistralai/Mixtral-8x7B-Instruct-v0.1" selected>Mixtral-8x7B-Instruct</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary" id="convert-btn">
+                                <span class="spinner-border spinner-border-sm d-none" id="spinner"></span>
+                                Convert
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="row" id="results-container" style="display: none;">
+                    <div class="col-md-12">
+                        <div class="card mb-4">
+                            <div class="card-header bg-success text-white">
+                                <h4>Conversion Results</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <h5>Formal Logic Output:</h5>
+                                    <div class="code-container">
+                                        <pre><code id="result-output" class="language-none"></code></pre>
+                                        <button class="btn btn-sm btn-outline-secondary copy-btn" id="copy-result">
+                                            <i class="fas fa-copy"></i> Copy
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <!-- FOL Explanation Section -->
+                                <div id="explanation-section" class="mb-3">
+                                    <h5>Explanation:</h5>
+                                    <div class="card bg-light">
+                                        <div class="card-body">
+                                            <div id="explanation-content">
+                                                <!-- Will be populated dynamically -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Visualization Section (for FOL) -->
+                                <div id="visualization-section" class="mb-3">
+                                    <h5>Visualization:</h5>
+                                    <div class="card bg-light">
+                                        <div class="card-body">
+                                            <div id="visualization-container" class="text-center">
+                                                <!-- Will be populated dynamically with D3 -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4" id="example-card">
+                    <div class="card-header bg-info text-white">
+                        <h4>Example RFC Rules</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="list-group">
+                            <!-- TCP Connection Examples -->
+                            <div class="list-group-item list-group-item-secondary">TCP Protocol (RFC 9293)</div>
+                            <button class="list-group-item list-group-item-action example-item">
+                                The server MUST terminate the connection after 5 failed attempts.
+                            </button>
+                            <button class="list-group-item list-group-item-action example-item">
+                                When receiving a SYN, servers MUST respond with SYN-ACK within 30 seconds.
+                            </button>
+                            <button class="list-group-item list-group-item-action example-item">
+                                If a client sends more than 3 retransmissions without receiving an ACK, it MUST abort the connection.
+                            </button>
+                            <button class="list-group-item list-group-item-action example-item">
+                                A server in the ESTABLISHED state MUST discard ACK packets with sequence numbers outside the allowed window.
+                            </button>
+                            <button class="list-group-item list-group-item-action example-item">
+                                TCP receivers MUST process RST and URG flags even when the window size is zero.
+                            </button>
+                            <button class="list-group-item list-group-item-action example-item">
+                                A TCP implementation MUST be robust against wrapped sequence numbers.
+                            </button>
+                            <button class="list-group-item list-group-item-action example-item">
+                                TCP senders MUST compute checksum on all outgoing segments.
+                            </button>
+                            <button class="list-group-item list-group-item-action example-item">
+                                TCP receivers MUST check checksums on incoming segments.
+                            </button>
+                            
+                            <!-- NAT Examples -->
+                            <div class="list-group-item list-group-item-secondary">NAT Protocol (RFC 3022)</div>
+                            <button class="list-group-item list-group-item-action example-item">
+                                All requests and responses pertaining to a session MUST be routed via the same NAT router.
+                            </button>
+                            <button class="list-group-item list-group-item-action example-item">
+                                NAT MUST be enabled only on border routers of a stub domain.
+                            </button>
+                            <button class="list-group-item list-group-item-action example-item">
+                                Basic NAT router MUST respond to ARP requests for the NAT mapped global addresses with its own MAC address.
+                            </button>
+                            <button class="list-group-item list-group-item-action example-item">
+                                A NAT device MUST NOT fragment IP packets that do not have the "May Fragment" bit set.
+                            </button>
+                            <button class="list-group-item list-group-item-action example-item">
+                                When a private host initiates a TCP session, the NAT router MUST ensure unique public port assignment.
+                            </button>
+                            <button class="list-group-item list-group-item-action example-item">
+                                For bi-directional NAT sessions, the router MUST maintain mapping consistency throughout the session lifetime.
+                            </button>
+                            
+                            <!-- HTTP Examples -->
+                            <div class="list-group-item list-group-item-secondary">HTTP Protocol (RFC 7230)</div>
+                            <button class="list-group-item list-group-item-action example-item">
+                                HTTP servers MUST respond to an OPTIONS request with a 405 status code if the resource is not allowed.
+                            </button>
+                            <button class="list-group-item list-group-item-action example-item">
+                                If a transfer coding is applied to a payload, the sender MUST generate a Transfer-Encoding header field.
+                            </button>
+                            <button class="list-group-item list-group-item-action example-item">
+                                A server that receives a request with a transfer coding it does not understand MUST respond with 501 (Not Implemented).
+                            </button>
+                            <button class="list-group-item list-group-item-action example-item">
+                                An HTTP client MUST NOT send the chunked and content-length header fields in the same message.
+                            </button>
+                            <button class="list-group-item list-group-item-action example-item">
+                                An HTTP/1.1 server MUST respond with a 400 (Bad Request) status code to any HTTP/1.1 request that lacks a Host header field.
+                            </button>
+                            
+                            <!-- TLS Examples -->
+                            <div class="list-group-item list-group-item-secondary">TLS Protocol (RFC 8446)</div>
+                            <button class="list-group-item list-group-item-action example-item">
+                                TLS clients MUST verify that the server's identity matches the server's certificate.
+                            </button>
+                            <button class="list-group-item list-group-item-action example-item">
+                                If a TLS implementation receives an unexpected record type, it MUST terminate the connection with an unexpected_message alert.
+                            </button>
+                            <button class="list-group-item list-group-item-action example-item">
+                                TLS servers MUST NOT send a CertificateRequest message that contains no certificate extensions.
+                            </button>
+                            <button class="list-group-item list-group-item-action example-item">
+                                If the client receives a CertificateRequest message when the authentication_method is "anonymous", it MUST abort the handshake.
+                            </button>
+                            
+                            <!-- QUIC Examples -->
+                            <div class="list-group-item list-group-item-secondary">QUIC Protocol (RFC 9000)</div>
+                            <button class="list-group-item list-group-item-action example-item">
+                                QUIC endpoints MUST treat any stream data received before a stream is created as a connection error.
+                            </button>
+                            <button class="list-group-item list-group-item-action example-item">
+                                If a packet contains no frames, it MUST be treated as a connection error of type PROTOCOL_VIOLATION.
+                            </button>
+                            <button class="list-group-item list-group-item-action example-item">
+                                QUIC implementations MUST support key updates after handshake completion.
+                            </button>
+                            <button class="list-group-item list-group-item-action example-item">
+                                A server MUST NOT send an Initial packet in response to a client Initial packet unless it needs to perform address validation.
+                            </button>
+                            
+                            <!-- DNS Examples -->
+                            <div class="list-group-item list-group-item-secondary">DNS Protocol (RFC 1035)</div>
+                            <button class="list-group-item list-group-item-action example-item">
+                                DNS clients MUST ignore name server addresses that do not match the query class when using the answer for hostname-to-address mapping.
+                            </button>
+                            <button class="list-group-item list-group-item-action example-item">
+                                If a DNS resolver receives a response with TC bit set, it SHOULD resubmit the query using TCP.
+                            </button>
+                            <button class="list-group-item list-group-item-action example-item">
+                                A DNS authoritative server MUST answer with RCODE 3 (Name Error) when the domain name specified in a query does not exist.
+                            </button>
+                            <button class="list-group-item list-group-item-action example-item">
+                                When a DNS server's response exceeds the requestor's advertised UDP message length, it MUST set the TC bit in its response.
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>RFC to FOL Converter</h5>
+                    <p>Convert RFC protocol specifications into formal logic for verification and analysis.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p>© 2023 RFC to FOL Project</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html> 

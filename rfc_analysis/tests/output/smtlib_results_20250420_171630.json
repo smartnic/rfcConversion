@@ -1,0 +1,71 @@
+{
+  "timestamp": "2025-04-20T17:16:30.704995",
+  "total_statements": 8,
+  "successful": 8,
+  "results": [
+    {
+      "statement": "A TCP segment has a sequence number.",
+      "timestamp": "2025-04-20T17:16:20.258023",
+      "success": true,
+      "smtlib_conversion": "",
+      "predicates_used": [],
+      "explanation": ""
+    },
+    {
+      "statement": "A SYN segment has a SYN flag.",
+      "timestamp": "2025-04-20T17:16:21.702694",
+      "success": true,
+      "smtlib_conversion": "",
+      "predicates_used": [],
+      "explanation": ""
+    },
+    {
+      "statement": "An ACK segment has an ACK flag.",
+      "timestamp": "2025-04-20T17:16:23.158141",
+      "success": true,
+      "smtlib_conversion": "",
+      "predicates_used": [],
+      "explanation": ""
+    },
+    {
+      "statement": "A TCP endpoint has a state.",
+      "timestamp": "2025-04-20T17:16:24.544403",
+      "success": true,
+      "smtlib_conversion": "",
+      "predicates_used": [],
+      "explanation": ""
+    },
+    {
+      "statement": "A TCP endpoint has a window size.",
+      "timestamp": "2025-04-20T17:16:26.282855",
+      "success": true,
+      "smtlib_conversion": "",
+      "predicates_used": [],
+      "explanation": ""
+    },
+    {
+      "statement": "A TCP segment has a source port.",
+      "timestamp": "2025-04-20T17:16:27.718536",
+      "success": true,
+      "smtlib_conversion": "",
+      "predicates_used": [],
+      "explanation": ""
+    },
+    {
+      "statement": "A TCP segment has a destination port.",
+      "timestamp": "2025-04-20T17:16:29.290232",
+      "success": true,
+      "smtlib_conversion": "",
+      "predicates_used": [],
+      "explanation": ""
+    },
+    {
+      "statement": "A TCP endpoint has a socket.",
+      "timestamp": "2025-04-20T17:16:30.704995",
+      "success": true,
+      "smtlib_conversion": "",
+      "predicates_used": [],
+      "explanation": ""
+    }
+  ]
+}
