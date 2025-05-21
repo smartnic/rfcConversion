@@ -100,9 +100,9 @@ python -m pytest tests/
 4. Push to the branch
 5. Create a Pull Request
 
-## License
+## Credit
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project was made by Rudraksh Simlote for Independent Study at Rutgers University under Professor Srinivas Narayana.
 
 ## Acknowledgments
 
