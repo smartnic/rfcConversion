@@ -21,7 +21,7 @@ CORS(app)  # Enable CORS for all routes
 converter = None
 try:
     # Use token from env variable or fall back to default
-    hf_token = os.getenv("HUGGINGFACE_TOKEN", "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")
+    hf_token = os.getenv("HUGGINGFACE_TOKEN", "key")
     model_name = os.getenv("DEFAULT_MODEL", "mistralai/Mixtral-8x7B-Instruct-v0.1")
     converter = HFLLMConverter(hf_token=hf_token, model_name=model_name)
 except Exception as e:
